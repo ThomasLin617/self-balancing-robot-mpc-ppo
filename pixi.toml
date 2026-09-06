@@ -1,0 +1,17 @@
+[workspace]
+channels = ["https://prefix.dev/robostack-jazzy"]
+name = "ros2_mujoco_env"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+ros-jazzy-desktop = ">=0.11.0,<0.12"
+ros-dev-tools = ">=1.0.2,<2"
+eigen = ">=5.0.1,<6"
+cmake = ">=4.4.3,<5"
+ninja = ">=1.13.2,<2"
+pkg-config = ">=0.29.2,<0.30"
+clang-format = ">=23.1.0,<24"
+clang-tools = ">=23.1.0,<24"
