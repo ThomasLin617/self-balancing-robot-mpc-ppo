@@ -8,17 +8,23 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(robot_interface REQUIRED)
-find_library(
-  MUJOCO_FRAMEWORK
-  mujoco
-  PATHS /Applications/MuJoCo.app/Contents/Frameworks
-  NO_DEFAULT_PATH
-  REQUIRED
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(GLFW3 REQUIRED IMPORTED_TARGET glfw3)
+
+set(MUJOCO_FRAMEWORK_DIR
+  "/Applications/MuJoCo.app/Contents/Frameworks"
 )
+set(MUJOCO_LIBRARY
+  "${MUJOCO_FRAMEWORK_DIR}/mujoco.framework/Versions/A/libmujoco.3.12.0.dylib"
+)
+
+# The library's install name starts with @rpath/mujoco.framework.
+set(CMAKE_BUILD_RPATH "${MUJOCO_FRAMEWORK_DIR}")
 
 add_library(
   mujoco_backend_lib
   src/mujoco_backend.cpp
+  src/mujoco_viewer.cpp
 )
 target_compile_features(
   mujoco_backend_lib
@@ -31,14 +37,29 @@ target_include_directories(
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:include>
 )
+target_compile_options(
+  mujoco_backend_lib
+  PUBLIC
+    "-F${MUJOCO_FRAMEWORK_DIR}"
+)
 target_link_libraries(
   mujoco_backend_lib
-  PRIVATE
-    ${MUJOCO_FRAMEWORK}
+  PUBLIC
+    "${MUJOCO_LIBRARY}"
+    "PkgConfig::GLFW3"
 )
 ament_target_dependencies(
   mujoco_backend_lib
   robot_interface
+)
+add_executable(
+  backend_smoke_test
+  src/backend_smoke_test.cpp
+)
+target_link_libraries(
+  backend_smoke_test
+  PRIVATE
+    mujoco_backend_lib
 )
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

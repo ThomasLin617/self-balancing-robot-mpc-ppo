@@ -166,6 +166,7 @@ environments:
       - conda: https://prefix.dev/conda-forge/osx-arm64/gettext-tools-0.25.1-h493aca8_0.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/git-2.55.0-pl5321h545aa0d_1.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/glew-2.3.0-hf163413_0.conda
+      - conda: https://prefix.dev/conda-forge/osx-arm64/glfw-3.5.1-h84a0fba_0.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/glib-2.88.3-h780921a_2.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/glib-tools-2.88.3-h026c20a_2.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/glslang-16.5.0-h1a33c25_2.conda
@@ -2707,6 +2708,17 @@ packages:
     - glew >=2.3.0,<2.4.0a0
   size: 458581
   timestamp: 1766373683267
+- conda: https://prefix.dev/conda-forge/osx-arm64/glfw-3.5.1-h84a0fba_0.conda
+  sha256: 60bbfa596735c372171c1e79c748e159e630f01e373c23ec6d76be38d05099ee
+  md5: e3ed0fae6db6fd8104ee40bb51c1e72a
+  depends:
+  - __osx >=11.0
+  license: Zlib
+  run_exports:
+    weak:
+    - glfw >=3.5.1,<4.0a0
+  size: 115683
+  timestamp: 1785586838026
 - conda: https://prefix.dev/conda-forge/osx-arm64/glib-2.88.3-h780921a_2.conda
   sha256: 019200b9912b40ddcb7a149d5b2f6b5d76514f9fbec31a4cf64159ba4ba56461
   md5: 729c7b72db261136219a59893db26153
