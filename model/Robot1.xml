@@ -28,7 +28,22 @@
                 mass="2.0"
                 rgba="0 0.75 0 1"
             />
-
+            <geom
+                name="face"
+                type="box"
+                pos = "0.095 0 0.32"
+                size="0.015 0.085 0.08"
+                mass="0.05"
+                rgba="0.15 0.15 0.15 0.8"
+            />
+            <geom
+                name="electronics_cover"
+                type="box"
+                pos="-0.09 0 0.442"
+                size="0.03 0.16 0.010"
+                mass="0.015"
+                rgba="0.3 0.5 0.3 1"
+            />
             <body
                 name="left_wheel"
                 pos="0 0.155 0"
