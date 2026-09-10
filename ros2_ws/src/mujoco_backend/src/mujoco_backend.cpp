@@ -108,6 +108,10 @@ namespace mujoco_backend
     data_->ctrl[left_wheel_motor_id_] = std::clamp(command.left_wheel_torque, -2.0, 2.0);
     data_->ctrl[right_wheel_motor_id_] = std::clamp(command.right_wheel_torque, -2.0, 2.0);
     }
+    void MujocoBackend::reset(){
+        mj_resetData(model_.get(), data_.get());
+        mj_forward(model_.get(), data_.get());
+    }
 }
 
 

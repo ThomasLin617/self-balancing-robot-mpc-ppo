@@ -18,6 +18,7 @@ public:
 
     robot_interface::SensorData read_sensor_data() const;
     void apply_command(const robot_interface::RobotCommand& command);
+    void reset();
 private:
 
 

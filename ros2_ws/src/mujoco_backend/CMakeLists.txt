@@ -9,6 +9,12 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(robot_interface REQUIRED)
 find_package(PkgConfig REQUIRED)
+
+
+
+find_package(state_estimator REQUIRED)
+
+
 pkg_check_modules(GLFW3 REQUIRED IMPORTED_TARGET glfw3)
 
 set(MUJOCO_FRAMEWORK_DIR
@@ -61,6 +67,29 @@ target_link_libraries(
   PRIVATE
     mujoco_backend_lib
 )
+
+
+add_executable(
+  estimator_smoke_test
+  src/estimator_smoke_test.cpp
+)
+
+target_link_libraries(
+  estimator_smoke_test
+  mujoco_backend_lib
+)
+
+ament_target_dependencies(
+  estimator_smoke_test
+  robot_interface
+  state_estimator
+)
+install(
+  TARGETS estimator_smoke_test
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
