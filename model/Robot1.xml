@@ -37,7 +37,7 @@
                 rgba="0.15 0.15 0.15 0.8"
             />
             <geom
-                name="electronics_cover"
+                name="spoiler"
                 type="box"
                 pos="-0.09 0 0.442"
                 size="0.03 0.16 0.010"
