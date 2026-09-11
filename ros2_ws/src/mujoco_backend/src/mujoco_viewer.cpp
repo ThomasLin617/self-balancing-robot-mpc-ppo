@@ -70,6 +70,17 @@ MujocoViewer::~MujocoViewer()
 }
 
 
+void MujocoViewer::track_body(const char* body_name)
+{
+    const int body_id = mj_name2id(backend_.model_.get(), mjOBJ_BODY, body_name);
+    if (body_id <= 0) {
+        throw std::invalid_argument("Camera tracking requires a non-world body.");
+    }
+    camera_.type = mjCAMERA_TRACKING;
+    camera_.trackbodyid = body_id;
+}
+
+
 void MujocoViewer::render()
 {
     mjrRect viewport{0, 0, 0, 0};

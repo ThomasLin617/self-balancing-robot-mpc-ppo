@@ -11,7 +11,8 @@
 
   <depend>robot_interface</depend>
   <depend>state_estimator</depend>
-  
+  <depend>controller</depend>
+
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 

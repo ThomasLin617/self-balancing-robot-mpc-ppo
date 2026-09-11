@@ -15,6 +15,7 @@ public:
     ~MujocoViewer();
 
     void render();
+    void track_body(const char* body_name);
     bool should_close() const;
 
 private:

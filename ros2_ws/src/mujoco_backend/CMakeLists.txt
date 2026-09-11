@@ -9,9 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(robot_interface REQUIRED)
 find_package(PkgConfig REQUIRED)
-
-
-
+find_package(controller REQUIRED)
 find_package(state_estimator REQUIRED)
 
 
@@ -88,7 +86,26 @@ install(
   TARGETS estimator_smoke_test
   DESTINATION lib/${PROJECT_NAME}
 )
+add_executable(
+  pd_smoke_test
+  src/pd_smoke_test.cpp
+)
 
+target_link_libraries(
+  pd_smoke_test
+  mujoco_backend_lib
+)
+
+ament_target_dependencies(
+  pd_smoke_test
+  robot_interface
+  state_estimator
+  controller
+)
+install(
+  TARGETS pd_smoke_test
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
