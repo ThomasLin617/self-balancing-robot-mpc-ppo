@@ -108,11 +108,22 @@ namespace mujoco_backend
     data_->ctrl[left_wheel_motor_id_] = std::clamp(command.left_wheel_torque, -2.0, 2.0);
     data_->ctrl[right_wheel_motor_id_] = std::clamp(command.right_wheel_torque, -2.0, 2.0);
     }
+    void MujocoBackend::set_body_forward_force(const char* body_name, double force_newtons){
+        const int id = mj_name2id(model_.get(), mjOBJ_BODY, body_name);
+        if (id <= 0) {
+            throw std::invalid_argument("External force requires a non-world body.");
+        }
+        // xfrc_applied uses world coordinates. Rotate the local forward axis.
+        for (int axis = 0; axis < 3; ++axis) {
+            data_->xfrc_applied[6 * id + axis] =
+                force_newtons * data_->xmat[9 * id + 3 * axis];
+        }
+    }
+
     void MujocoBackend::reset(){
         mj_resetData(model_.get(), data_.get());
         mj_forward(model_.get(), data_.get());
     }
 }
-
 
 

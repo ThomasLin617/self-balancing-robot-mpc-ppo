@@ -8,24 +8,32 @@ namespace state_estimator
         : pitch_filter_time_constant_(pitch_filter_time_constant),wheel_radius_(radius)
     {
         if (pitch_filter_time_constant <= 0.0){
-            throw std::invalid_argument("Tao must be positive.");
+            throw std::invalid_argument("Pitch filter time constant must be positive.");
         }
-        if (radius <= 0){
-            throw std:: invalid_argument("Wheel radius must be positive.");
+        if (radius <= 0.0){
+            throw std::invalid_argument("Wheel radius must be positive.");
         }
     }
     void StateEstimator::reset(){
         initialized_ = false;
         pitch_estimate_ = 0.0;
         previous_timestamp_ = 0.0;
+        initial_forward_position_ = 0.0;
     }
     robot_interface::RobotState  StateEstimator::update(
         const robot_interface::SensorData& sensor_data)
     {
-        
+        robot_interface::RobotState state;
         if(!initialized_){
             initialized_ = true;
             pitch_estimate_ = 0.0;
+            initial_forward_position_ = 
+                wheel_radius_ *
+                (
+                    (sensor_data.left_wheel_position
+                    + sensor_data.right_wheel_position) / 2.0
+                    + pitch_estimate_
+                );
             previous_timestamp_ = sensor_data.timestamp;
         }
         else{
@@ -36,10 +44,17 @@ namespace state_estimator
             }
             double alpha = pitch_filter_time_constant_ / (pitch_filter_time_constant_ + dt);
             double pitch_from_gyro = pitch_estimate_ + sensor_data.gyroscope[1] * dt;
-            pitch_estimate_ = alpha * pitch_from_gyro + (1 - alpha) * pitch_from_accel;
+            pitch_estimate_ = alpha * pitch_from_gyro + (1.0 - alpha) * pitch_from_accel;
             previous_timestamp_ = sensor_data.timestamp;
         }
-        robot_interface::RobotState state;
+        double current_forward_position =
+            wheel_radius_ *
+            (
+                (sensor_data.left_wheel_position
+                + sensor_data.right_wheel_position) / 2.0
+                + pitch_estimate_
+            );
+        state.forward_position = current_forward_position - initial_forward_position_;
         state.timestamp = sensor_data.timestamp;
         state.pitch = pitch_estimate_;
         state.left_wheel_position = sensor_data.left_wheel_position;

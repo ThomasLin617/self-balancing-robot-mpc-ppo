@@ -10,6 +10,7 @@ struct RobotState
     double pitch_rate = 0.0;
 
     double forward_velocity = 0.0;
+    double forward_position = 0.0;
     double yaw_rate = 0.0;
 
     double left_wheel_position = 0.0;

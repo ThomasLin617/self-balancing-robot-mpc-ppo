@@ -16,6 +16,8 @@ public:
 
     void render();
     void track_body(const char* body_name);
+    void set_camera_azimuth(double degrees);
+    void enable_studio_lighting();
     bool should_close() const;
 
 private:
@@ -27,6 +29,7 @@ private:
     mjvOption option_{};
     mjvScene scene_{};
     mjrContext context_{};
+    bool studio_lighting_ = false;
 };
 
 }  // namespace mujoco_backend

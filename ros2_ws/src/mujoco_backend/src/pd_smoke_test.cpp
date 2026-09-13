@@ -25,6 +25,8 @@ int main(int argc, char** argv) {
         mujoco_backend::MujocoBackend backend(model_path);
         mujoco_backend::MujocoViewer viewer(backend);
         viewer.track_body("base_body");
+        viewer.set_camera_azimuth(135.0);  // Front three-quarter view (+X is forward).
+        viewer.enable_studio_lighting();
 
         state_estimator::StateEstimator estimator(
             0.5,   // complementary-filter time constant [s]
@@ -49,6 +51,11 @@ int main(int argc, char** argv) {
         constexpr int render_interval_steps = 16;     // ~60 Hz render
 
         int step_count = 0;
+        constexpr double push_interval = 5.0;  // simulation seconds
+        constexpr double push_duration = 0.05; // 50 ms pulse
+        constexpr double push_force = -50.0;   // N: from the front, toward local -X
+        double next_push_time = push_interval;
+        double push_end_time = 0.0;
 
         std::cout << std::fixed << std::setprecision(4);
 
@@ -61,11 +68,16 @@ int main(int argc, char** argv) {
             }
 
             backend.apply_command(command);
+            const double now = backend.simulation_time();
+            if (now + 1e-9 >= next_push_time) {
+                push_end_time = next_push_time + push_duration;
+                next_push_time += push_interval;
+                std::cout << "Front push at t = " << now << " s\n";
+            }
+            backend.set_body_forward_force(
+                "base_body", now + 1e-9 < push_end_time ? push_force : 0.0);
             backend.step();
-            // ---------------------------------------------------------
-            // Print
-            // ---------------------------------------------------------
-            // You'll need a RobotState named `state` above.
+            
             if (step_count % print_interval_steps == 0) {
                 std::cout
                     << "t = " << state.timestamp
@@ -80,7 +92,6 @@ int main(int argc, char** argv) {
                     << '\n';
             }
 
-            // Rendering does not need to run at physics frequency.
             if (step_count % render_interval_steps == 0) {
                 viewer.render();
             }

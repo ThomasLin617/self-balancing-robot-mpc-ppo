@@ -18,6 +18,8 @@ public:
 
     robot_interface::SensorData read_sensor_data() const;
     void apply_command(const robot_interface::RobotCommand& command);
+    // Force at the body COM along its local +X axis; pass zero to clear it.
+    void set_body_forward_force(const char* body_name, double force_newtons);
     void reset();
 private:
 

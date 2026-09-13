@@ -23,6 +23,8 @@ private:
 
     double wheel_radius_ = 0.0;
 
+    double initial_forward_position_ = 0.0;
+
 };
 
 }

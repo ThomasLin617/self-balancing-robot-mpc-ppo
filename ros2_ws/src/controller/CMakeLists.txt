@@ -12,6 +12,7 @@ find_package(robot_interface REQUIRED)
 add_library(
   controller_lib
   src/pd_controller.cpp
+  src/lqr_controller.cpp
 )
 target_include_directories(
   controller_lib

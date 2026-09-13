@@ -2,6 +2,7 @@
 #include "mujoco_backend/mujoco_backend.hpp"
 
 #include <stdexcept>
+#include <cmath>
 
 namespace mujoco_backend
 {
@@ -81,6 +82,17 @@ void MujocoViewer::track_body(const char* body_name)
 }
 
 
+void MujocoViewer::enable_studio_lighting()
+{
+    studio_lighting_ = true;
+}
+
+void MujocoViewer::set_camera_azimuth(double degrees)
+{
+    camera_.azimuth = degrees;
+}
+
+
 void MujocoViewer::render()
 {
     mjrRect viewport{0, 0, 0, 0};
@@ -100,6 +112,44 @@ void MujocoViewer::render()
         mjCAT_ALL,
         &scene_
     );
+
+    if (studio_lighting_) {
+        // Reapply after updateScene, which rebuilds the scene lights each frame.
+        // Directional lights keep their brightness as the robot travels.
+        scene_.nlight = 3;
+        scene_.flags[mjRND_SHADOW] = 1;
+        const float directions[3][3] = {
+            {-0.6f, -0.8f, -1.0f},  // warm key light, above the camera side
+            {0.8f, 0.4f, -0.5f},    // cool fill light
+            {-0.3f, 1.0f, -0.6f}    // rear rim light
+        };
+        const float colors[3][3] = {
+            {0.48f, 0.46f, 0.42f},
+            {0.23f, 0.26f, 0.30f},
+            {0.20f, 0.22f, 0.25f}
+        };
+        for (int i = 0; i < 3; ++i) {
+            auto& light = scene_.lights[i];
+            light = mjvLight{};
+            light.id = -1;
+            light.texid = -1;
+            light.type = mjLIGHT_DIRECTIONAL;
+            light.attenuation[0] = 1.0f;
+            light.castshadow = (i == 0);
+            float norm = 0.0f;
+            for (int j = 0; j < 3; ++j) {
+                norm += directions[i][j] * directions[i][j];
+            }
+            norm = std::sqrt(norm);
+            for (int j = 0; j < 3; ++j) {
+                light.dir[j] = directions[i][j] / norm;
+                light.pos[j] = static_cast<float>(camera_.lookat[j]) - 3.0f * light.dir[j];
+                light.ambient[j] = (i == 0) ? 0.25f : 0.0f;
+                light.diffuse[j] = colors[i][j];
+                light.specular[j] = (i == 0) ? 0.08f : 0.03f;
+            }
+        }
+    }
 
     mjr_render(
         viewport,
