@@ -273,12 +273,14 @@ environments:
       - conda: https://prefix.dev/conda-forge/osx-arm64/libopenvino-tensorflow-frontend-2026.2.1-hc295da0_0.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/libopenvino-tensorflow-lite-frontend-2026.2.1-hf6b4638_0.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/libopus-1.6.1-h74c22ad_1.conda
+      - conda: https://prefix.dev/conda-forge/osx-arm64/libosqp-1.0.0-np2py313hd6693e2_2.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/libplacebo-7.360.1-h176d363_0.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/libpng-1.6.58-hf5e6511_1.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/libpq-18.4-ha770aab_0.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/libprotobuf-6.33.5-hb82ec63_2.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/libpsl-0.23.1-hdb0c161_1.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/libpython-3.12.14-h4e5ec87_3_cpython.conda
+      - conda: https://prefix.dev/conda-forge/osx-arm64/libqdldl-0.1.8-ha1acc90_1.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/libraqm-0.11.0-h45af499_0.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/libraw-0.22.2-h2d05ff4_0.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/librsvg-2.62.3-he8aa2a2_0.conda
@@ -321,6 +323,7 @@ environments:
       - conda: https://prefix.dev/conda-forge/osx-arm64/openldap-2.6.13-hf7f56bc_0.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/openssl-3.6.4-h55eecbc_0.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/orocos-kdl-1.5.4-hba3f793_0.conda
+      - conda: https://prefix.dev/conda-forge/osx-arm64/osqp-eigen-0.11.2-hb91c655_0.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/pango-1.58.2-hf9b25ef_1.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/pcl-1.15.1-hb4050a2_14.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/pcre-8.45-hbdafb3b_0.tar.bz2
@@ -4321,6 +4324,20 @@ packages:
     - libopus >=1.6.1,<2.0a0
   size: 317033
   timestamp: 1787247651190
+- conda: https://prefix.dev/conda-forge/osx-arm64/libosqp-1.0.0-np2py313hd6693e2_2.conda
+  sha256: ffe7388513d44cd05371a4d5714f66be10aafa78292c40dff45da72299e0cae4
+  md5: 518be505183d9a27f89271fc6b904119
+  depends:
+  - libcxx >=19
+  - __osx >=11.0
+  - libqdldl >=0.1.8,<0.1.9.0a0
+  license: Apache-2.0
+  license_family: APACHE
+  run_exports:
+    weak:
+    - libosqp >=1.0.0,<1.0.1.0a0
+  size: 74143
+  timestamp: 1760460382025
 - conda: https://prefix.dev/conda-forge/osx-arm64/libplacebo-7.360.1-h176d363_0.conda
   sha256: e9b39572e2feaef496167ba9f4ab75ed3afa4c16c3aeb0bb8c71adc515a74536
   md5: 7402fdef0c155dcd18c0ff4c5853c4b2
@@ -4405,6 +4422,19 @@ packages:
   run_exports: {}
   size: 1741765
   timestamp: 1788407528160
+- conda: https://prefix.dev/conda-forge/osx-arm64/libqdldl-0.1.8-ha1acc90_1.conda
+  sha256: a5b1a56274cb2323ff25a30b785cb7eff192eb4828873975facd058ab0a559d5
+  md5: f05eddf92ad3908f9beaf3b1c6ad84fe
+  depends:
+  - libcxx >=18
+  - __osx >=11.0
+  license: Apache-2.0
+  license_family: APACHE
+  run_exports:
+    weak:
+    - libqdldl >=0.1.8,<0.1.9.0a0
+  size: 21118
+  timestamp: 1744008234863
 - conda: https://prefix.dev/conda-forge/osx-arm64/libraqm-0.11.0-h45af499_0.conda
   sha256: b110f7f9b2cec61ea793c521950414e00cd64826e18aeb4ab40369acf05c0039
   md5: 46ea0eb4e71bffa35ab7070678bcb053
@@ -5015,6 +5045,22 @@ packages:
     - orocos-kdl >=1.5.4,<1.6.0a0
   size: 302717
   timestamp: 1788267747788
+- conda: https://prefix.dev/conda-forge/osx-arm64/osqp-eigen-0.11.2-hb91c655_0.conda
+  sha256: dba93c98696fe2d558a17e3841b40fed413abb670d10c62abaaf14958037256d
+  md5: 30b1ecb160c0112609d5981246339041
+  depends:
+  - eigen
+  - libcxx >=19
+  - __osx >=11.0
+  - eigen-abi >=5.0.1.100,<5.0.1.101.0a0
+  - libosqp >=1.0.0,<1.0.1.0a0
+  license: BSD-3-Clause
+  license_family: BSD
+  run_exports:
+    weak:
+    - osqp-eigen >=0.11.2,<0.12.0a0
+  size: 39948
+  timestamp: 1784534130919
 - conda: https://prefix.dev/conda-forge/osx-arm64/pango-1.58.2-hf9b25ef_1.conda
   sha256: 9ba23103198cffa523488ff583b184ad37eb6d90985d330a683a1039dc917771
   md5: 4a71e68873ce37dc6da671a899d09a46

@@ -8,11 +8,14 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(robot_interface REQUIRED)
+find_package(Eigen3 REQUIRED)
+find_package(OsqpEigen REQUIRED)
 
 add_library(
   controller_lib
   src/pd_controller.cpp
   src/lqr_controller.cpp
+  src/mpc_controller.cpp
 )
 target_include_directories(
   controller_lib
@@ -24,6 +27,12 @@ target_compile_features(
   controller_lib
   PUBLIC
     cxx_std_17
+)
+target_link_libraries(
+  controller_lib
+  PUBLIC
+  Eigen3::Eigen
+  OsqpEigen::OsqpEigen
 )
 ament_target_dependencies(
   controller_lib
@@ -47,6 +56,8 @@ ament_export_targets(
 
 ament_export_dependencies(
   robot_interface
+  Eigen3
+  OsqpEigen
 )
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

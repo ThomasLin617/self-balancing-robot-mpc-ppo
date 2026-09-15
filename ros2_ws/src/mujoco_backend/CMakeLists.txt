@@ -119,10 +119,28 @@ ament_target_dependencies(
   state_estimator
   controller
 )
+add_executable(
+  mpc_smoke_test
+  src/mpc_smoke_test.cpp
+)
+
+target_link_libraries(
+  mpc_smoke_test
+  mujoco_backend_lib
+)
+
+ament_target_dependencies(
+  mpc_smoke_test
+  robot_interface
+  state_estimator
+  controller
+)
+
 install(
   TARGETS
     pd_smoke_test
     lqr_smoke_test
+    mpc_smoke_test
   DESTINATION lib/${PROJECT_NAME}
 )
 
