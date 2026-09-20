@@ -2,6 +2,7 @@
 #include "robot_interface/sensor_data.hpp"
 #include <stdexcept>
 #include <algorithm>
+#include <cmath>
 namespace mujoco_backend
 {
 
@@ -118,6 +119,27 @@ namespace mujoco_backend
             data_->xfrc_applied[6 * id + axis] =
                 force_newtons * data_->xmat[9 * id + 3 * axis];
         }
+    }
+
+    std::array<double, 3> MujocoBackend::debug_planar_pose(const char* body_name) const {
+        const int id = mj_name2id(model_.get(), mjOBJ_BODY, body_name);
+        if (id <= 0) {
+            throw std::invalid_argument("Debug pose requires a non-world body.");
+        }
+        return {
+            data_->xpos[3 * id],
+            data_->xpos[3 * id + 1],
+            std::atan2(data_->xmat[9 * id + 3], data_->xmat[9 * id])
+        };
+    }
+
+    bool MujocoBackend::debug_has_contact(const char* geom_name) const {
+        const int id = mj_name2id(model_.get(), mjOBJ_GEOM, geom_name);
+        if (id < 0) throw std::invalid_argument("Contact check geometry is missing.");
+        for (int i = 0; i < data_->ncon; ++i) {
+            if (data_->contact[i].geom[0] == id || data_->contact[i].geom[1] == id) return true;
+        }
+        return false;
     }
 
     void MujocoBackend::reset(){

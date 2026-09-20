@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>robot_ros</name><version>0.1.0</version>
+  <description>Thin ROS 2 process adapters for the frozen balancing robot algorithms.</description>
+  <maintainer email="thomas@todo.todo">thomas</maintainer><license>TODO</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend><depend>robot_msgs</depend><depend>sensor_msgs</depend>
+  <depend>nav_msgs</depend><depend>geometry_msgs</depend><depend>rosgraph_msgs</depend>
+  <depend>std_msgs</depend><depend>std_srvs</depend><depend>ament_index_cpp</depend>
+  <depend>robot_interface</depend><depend>state_estimator</depend><depend>navigation</depend>
+  <depend>controller</depend><depend>learning_policy</depend><depend>mujoco_backend</depend>
+  <exec_depend>launch_ros</exec_depend><exec_depend>rclpy</exec_depend><exec_depend>rosbag2</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

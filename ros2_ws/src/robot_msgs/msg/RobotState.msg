@@ -1,0 +1,13 @@
+std_msgs/Header header
+uint64 epoch
+float64 episode_time
+float64 forward_position
+float64 forward_velocity
+float64 pitch
+float64 pitch_rate
+float64 yaw
+float64 yaw_rate
+float64 left_wheel_position
+float64 right_wheel_position
+float64 left_wheel_velocity
+float64 right_wheel_velocity

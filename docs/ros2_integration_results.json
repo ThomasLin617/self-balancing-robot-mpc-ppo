@@ -1,0 +1,1009 @@
+{
+  "regulation": {
+    "mode": "regulation",
+    "duration": 12.0,
+    "wall_seconds": 128.94903008300025,
+    "process_ids": [
+      41297,
+      41298,
+      41299
+    ],
+    "commands": [
+      [
+        "ros2_ws/install/robot_ros/lib/robot_ros/backend_node",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "duration:=12.0",
+        "-p",
+        "trace:=artifacts/ros2/d17/regulation/ros.csv",
+        "-p",
+        "encoder_stride:=1",
+        "-p",
+        "upright_reset:=false"
+      ],
+      [
+        "ros2_ws/install/robot_ros/lib/robot_ros/estimator_node",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "encoder_stride:=1"
+      ],
+      [
+        "ros2_ws/install/robot_ros/lib/robot_ros/mpc_node",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "mode:=regulation"
+      ]
+    ],
+    "node_graph": [
+      [
+        "integration_observer",
+        "/"
+      ],
+      [
+        "mujoco_backend_node",
+        "/"
+      ],
+      [
+        "state_estimator_node",
+        "/"
+      ],
+      [
+        "mpc_node",
+        "/"
+      ]
+    ],
+    "topics": [
+      [
+        "/active_goal",
+        [
+          "geometry_msgs/msg/PoseStamped"
+        ]
+      ],
+      [
+        "/clock",
+        [
+          "rosgraph_msgs/msg/Clock"
+        ]
+      ],
+      [
+        "/cmd_vel",
+        [
+          "geometry_msgs/msg/Twist"
+        ]
+      ],
+      [
+        "/controller_ready",
+        [
+          "std_msgs/msg/UInt64"
+        ]
+      ],
+      [
+        "/episode_start_ns",
+        [
+          "std_msgs/msg/UInt64"
+        ]
+      ],
+      [
+        "/estimator_ready",
+        [
+          "std_msgs/msg/UInt64"
+        ]
+      ],
+      [
+        "/goal_pose",
+        [
+          "geometry_msgs/msg/PoseStamped"
+        ]
+      ],
+      [
+        "/imu",
+        [
+          "sensor_msgs/msg/Imu"
+        ]
+      ],
+      [
+        "/joint_states",
+        [
+          "sensor_msgs/msg/JointState"
+        ]
+      ],
+      [
+        "/odom",
+        [
+          "nav_msgs/msg/Odometry"
+        ]
+      ],
+      [
+        "/parameter_events",
+        [
+          "rcl_interfaces/msg/ParameterEvent"
+        ]
+      ],
+      [
+        "/planned_path",
+        [
+          "nav_msgs/msg/Path"
+        ]
+      ],
+      [
+        "/reference_path",
+        [
+          "nav_msgs/msg/Path"
+        ]
+      ],
+      [
+        "/robot_state",
+        [
+          "robot_msgs/msg/RobotState"
+        ]
+      ],
+      [
+        "/rosout",
+        [
+          "rcl_interfaces/msg/Log"
+        ]
+      ],
+      [
+        "/wheel_torque",
+        [
+          "robot_msgs/msg/WheelTorqueCommand"
+        ]
+      ]
+    ],
+    "imu_count": 12000,
+    "encoder_count": 12000,
+    "state_count": 12000,
+    "command_count": 6000,
+    "max_pitch": 0.2569607969844347,
+    "max_applied_torque": 0.9825477966711208,
+    "contact_samples": 0,
+    "timing": {
+      "state_age": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "maximum": 0.0
+      },
+      "command_age": {
+        "mean": 0.0005000000000000001,
+        "p95": 0.001,
+        "maximum": 0.001
+      },
+      "state_wall_us": {
+        "mean": 6843.5417182500005,
+        "p95": 12161.75205,
+        "maximum": 18229.666
+      },
+      "command_wall_us": {
+        "mean": 13715.790113000001,
+        "p95": 18501.4705,
+        "maximum": 30211.375
+      },
+      "total_wall_us": {
+        "mean": 10447.188094333333,
+        "p95": 18557.666,
+        "maximum": 30398.459
+      }
+    },
+    "comparison": {
+      "time": {
+        "rmse": 0.0,
+        "maximum_error": 0.0
+      },
+      "p": {
+        "rmse": 2.9704586693410594e-14,
+        "maximum_error": 1.1426970480954424e-13
+      },
+      "v": {
+        "rmse": 4.1232347794125245e-13,
+        "maximum_error": 5.38991073995021e-12
+      },
+      "pitch": {
+        "rmse": 3.6285308479334253e-14,
+        "maximum_error": 2.4136248555350903e-13
+      },
+      "pitch_rate": {
+        "rmse": 1.5046337433541876e-12,
+        "maximum_error": 1.9519053040539802e-11
+      },
+      "yaw": {
+        "rmse": 7.317909045915945e-14,
+        "maximum_error": 4.729550084903167e-13
+      },
+      "yaw_rate": {
+        "rmse": 1.7003816917937912e-12,
+        "maximum_error": 2.3986872244975917e-11
+      },
+      "left": {
+        "rmse": 9.647672259971301e-12,
+        "maximum_error": 1.3760520500838425e-10
+      },
+      "right": {
+        "rmse": 9.279910877862863e-12,
+        "maximum_error": 1.3628426165368523e-10
+      },
+      "applied_l": {
+        "rmse": 9.647672259971301e-12,
+        "maximum_error": 1.3760520500838425e-10
+      },
+      "applied_r": {
+        "rmse": 9.279910877862863e-12,
+        "maximum_error": 1.3628426165368523e-10
+      }
+    }
+  },
+  "ppo": {
+    "mode": "ppo",
+    "duration": 36.0,
+    "wall_seconds": 290.92374795799697,
+    "process_ids": [
+      42291,
+      42292,
+      42293
+    ],
+    "commands": [
+      [
+        "ros2_ws/install/robot_ros/lib/robot_ros/backend_node",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "duration:=36.0",
+        "-p",
+        "trace:=artifacts/ros2/d17/ppo/ros.csv",
+        "-p",
+        "encoder_stride:=1",
+        "-p",
+        "upright_reset:=true"
+      ],
+      [
+        "ros2_ws/install/robot_ros/lib/robot_ros/estimator_node",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "encoder_stride:=1"
+      ],
+      [
+        "ros2_ws/install/robot_ros/lib/robot_ros/ppo_node",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "actor:=/Users/thomas/robotics/ros2_mujoco_balancing_robot/artifacts/learning/selected_policy.txt"
+      ]
+    ],
+    "node_graph": [
+      [
+        "integration_observer",
+        "/"
+      ],
+      [
+        "mujoco_backend_node",
+        "/"
+      ],
+      [
+        "state_estimator_node",
+        "/"
+      ],
+      [
+        "ppo_node",
+        "/"
+      ]
+    ],
+    "topics": [
+      [
+        "/active_goal",
+        [
+          "geometry_msgs/msg/PoseStamped"
+        ]
+      ],
+      [
+        "/clock",
+        [
+          "rosgraph_msgs/msg/Clock"
+        ]
+      ],
+      [
+        "/controller_ready",
+        [
+          "std_msgs/msg/UInt64"
+        ]
+      ],
+      [
+        "/episode_start_ns",
+        [
+          "std_msgs/msg/UInt64"
+        ]
+      ],
+      [
+        "/estimator_ready",
+        [
+          "std_msgs/msg/UInt64"
+        ]
+      ],
+      [
+        "/goal_pose",
+        [
+          "geometry_msgs/msg/PoseStamped"
+        ]
+      ],
+      [
+        "/imu",
+        [
+          "sensor_msgs/msg/Imu"
+        ]
+      ],
+      [
+        "/joint_states",
+        [
+          "sensor_msgs/msg/JointState"
+        ]
+      ],
+      [
+        "/odom",
+        [
+          "nav_msgs/msg/Odometry"
+        ]
+      ],
+      [
+        "/parameter_events",
+        [
+          "rcl_interfaces/msg/ParameterEvent"
+        ]
+      ],
+      [
+        "/planned_path",
+        [
+          "nav_msgs/msg/Path"
+        ]
+      ],
+      [
+        "/reference_path",
+        [
+          "nav_msgs/msg/Path"
+        ]
+      ],
+      [
+        "/robot_state",
+        [
+          "robot_msgs/msg/RobotState"
+        ]
+      ],
+      [
+        "/rosout",
+        [
+          "rcl_interfaces/msg/Log"
+        ]
+      ],
+      [
+        "/wheel_torque",
+        [
+          "robot_msgs/msg/WheelTorqueCommand"
+        ]
+      ]
+    ],
+    "imu_count": 36000,
+    "encoder_count": 36000,
+    "state_count": 36000,
+    "command_count": 18000,
+    "max_pitch": 0.02664633225171074,
+    "max_applied_torque": 0.607606762303571,
+    "contact_samples": 0,
+    "timing": {
+      "state_age": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "maximum": 0.0
+      },
+      "command_age": {
+        "mean": 0.0005,
+        "p95": 0.001,
+        "maximum": 0.001
+      },
+      "state_wall_us": {
+        "mean": 6265.994050138889,
+        "p95": 10991.5851,
+        "maximum": 112353.5
+      },
+      "command_wall_us": {
+        "mean": 9106.721341666665,
+        "p95": 12283.707699999999,
+        "maximum": 85174.458
+      },
+      "total_wall_us": {
+        "mean": 7835.7965857222225,
+        "p95": 11370.96635,
+        "maximum": 112588.375
+      }
+    },
+    "estimated_final_distance": 0.08551861405685073,
+    "true_final_distance": 0.08363287327325473,
+    "goal_results": [
+      {
+        "index": 0,
+        "success": true,
+        "time": 7.338,
+        "distance": 0.096964,
+        "pitch": -0.007753
+      },
+      {
+        "index": 1,
+        "success": true,
+        "time": 15.752,
+        "distance": 0.097718,
+        "pitch": -0.007178
+      },
+      {
+        "index": 2,
+        "success": true,
+        "time": 24.57,
+        "distance": 0.099126,
+        "pitch": -0.007032
+      },
+      {
+        "index": 3,
+        "success": true,
+        "time": 34.648,
+        "distance": 0.086746,
+        "pitch": -0.007205
+      }
+    ]
+  },
+  "known_map": {
+    "mode": "known_map",
+    "duration": 44.0,
+    "wall_seconds": 430.12502125000174,
+    "process_ids": [
+      42952,
+      42953,
+      42954
+    ],
+    "commands": [
+      [
+        "ros2_ws/install/robot_ros/lib/robot_ros/backend_node",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "duration:=44.0",
+        "-p",
+        "trace:=artifacts/ros2/d17/known_map/ros.csv",
+        "-p",
+        "encoder_stride:=1",
+        "-p",
+        "upright_reset:=false",
+        "-p",
+        "known_map:=/Users/thomas/robotics/ros2_mujoco_balancing_robot/model/known_map.txt"
+      ],
+      [
+        "ros2_ws/install/robot_ros/lib/robot_ros/estimator_node",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "encoder_stride:=1"
+      ],
+      [
+        "ros2_ws/install/robot_ros/lib/robot_ros/mpc_node",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "mode:=known_map",
+        "-p",
+        "known_map:=/Users/thomas/robotics/ros2_mujoco_balancing_robot/model/known_map.txt"
+      ]
+    ],
+    "node_graph": [
+      [
+        "integration_observer",
+        "/"
+      ],
+      [
+        "mujoco_backend_node",
+        "/"
+      ],
+      [
+        "state_estimator_node",
+        "/"
+      ],
+      [
+        "mpc_node",
+        "/"
+      ]
+    ],
+    "topics": [
+      [
+        "/active_goal",
+        [
+          "geometry_msgs/msg/PoseStamped"
+        ]
+      ],
+      [
+        "/clock",
+        [
+          "rosgraph_msgs/msg/Clock"
+        ]
+      ],
+      [
+        "/cmd_vel",
+        [
+          "geometry_msgs/msg/Twist"
+        ]
+      ],
+      [
+        "/controller_ready",
+        [
+          "std_msgs/msg/UInt64"
+        ]
+      ],
+      [
+        "/episode_start_ns",
+        [
+          "std_msgs/msg/UInt64"
+        ]
+      ],
+      [
+        "/estimator_ready",
+        [
+          "std_msgs/msg/UInt64"
+        ]
+      ],
+      [
+        "/goal_pose",
+        [
+          "geometry_msgs/msg/PoseStamped"
+        ]
+      ],
+      [
+        "/imu",
+        [
+          "sensor_msgs/msg/Imu"
+        ]
+      ],
+      [
+        "/joint_states",
+        [
+          "sensor_msgs/msg/JointState"
+        ]
+      ],
+      [
+        "/odom",
+        [
+          "nav_msgs/msg/Odometry"
+        ]
+      ],
+      [
+        "/parameter_events",
+        [
+          "rcl_interfaces/msg/ParameterEvent"
+        ]
+      ],
+      [
+        "/planned_path",
+        [
+          "nav_msgs/msg/Path"
+        ]
+      ],
+      [
+        "/reference_path",
+        [
+          "nav_msgs/msg/Path"
+        ]
+      ],
+      [
+        "/robot_state",
+        [
+          "robot_msgs/msg/RobotState"
+        ]
+      ],
+      [
+        "/rosout",
+        [
+          "rcl_interfaces/msg/Log"
+        ]
+      ],
+      [
+        "/wheel_torque",
+        [
+          "robot_msgs/msg/WheelTorqueCommand"
+        ]
+      ]
+    ],
+    "imu_count": 44000,
+    "encoder_count": 44000,
+    "state_count": 44000,
+    "command_count": 22000,
+    "max_pitch": 0.2658563506416115,
+    "max_applied_torque": 0.5144876238326612,
+    "contact_samples": 0,
+    "timing": {
+      "state_age": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "maximum": 0.0
+      },
+      "command_age": {
+        "mean": 0.0005000000000000001,
+        "p95": 0.001,
+        "maximum": 0.001
+      },
+      "state_wall_us": {
+        "mean": 6180.072948363638,
+        "p95": 10964.045199999999,
+        "maximum": 57233.208
+      },
+      "command_wall_us": {
+        "mean": 12624.239135363636,
+        "p95": 16704.625,
+        "maximum": 62922.5
+      },
+      "total_wall_us": {
+        "mean": 9543.754147818181,
+        "p95": 16784.16905,
+        "maximum": 62960.125
+      }
+    },
+    "estimated_final_distance": 0.02263629932017121,
+    "true_final_distance": 0.020560451650510188,
+    "post_recovery_max_pitch": 0.019086907751450687,
+    "final_forward_velocity": -5.921623066123384e-05,
+    "trajectory_duration": 34.366586
+  },
+  "encoder_500hz": {
+    "mode": "regulation",
+    "duration": 2.0,
+    "wall_seconds": 22.008541625000362,
+    "process_ids": [
+      43451,
+      43452,
+      43453
+    ],
+    "commands": [
+      [
+        "ros2_ws/install/robot_ros/lib/robot_ros/backend_node",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "duration:=2.0",
+        "-p",
+        "trace:=artifacts/ros2/d17/encoder_500hz/ros.csv",
+        "-p",
+        "encoder_stride:=2",
+        "-p",
+        "upright_reset:=false"
+      ],
+      [
+        "ros2_ws/install/robot_ros/lib/robot_ros/estimator_node",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "encoder_stride:=2"
+      ],
+      [
+        "ros2_ws/install/robot_ros/lib/robot_ros/mpc_node",
+        "--ros-args",
+        "-p",
+        "use_sim_time:=true",
+        "-p",
+        "mode:=regulation"
+      ]
+    ],
+    "node_graph": [
+      [
+        "integration_observer",
+        "/"
+      ],
+      [
+        "mujoco_backend_node",
+        "/"
+      ],
+      [
+        "state_estimator_node",
+        "/"
+      ],
+      [
+        "mpc_node",
+        "/"
+      ]
+    ],
+    "topics": [
+      [
+        "/active_goal",
+        [
+          "geometry_msgs/msg/PoseStamped"
+        ]
+      ],
+      [
+        "/clock",
+        [
+          "rosgraph_msgs/msg/Clock"
+        ]
+      ],
+      [
+        "/cmd_vel",
+        [
+          "geometry_msgs/msg/Twist"
+        ]
+      ],
+      [
+        "/controller_ready",
+        [
+          "std_msgs/msg/UInt64"
+        ]
+      ],
+      [
+        "/episode_start_ns",
+        [
+          "std_msgs/msg/UInt64"
+        ]
+      ],
+      [
+        "/estimator_ready",
+        [
+          "std_msgs/msg/UInt64"
+        ]
+      ],
+      [
+        "/goal_pose",
+        [
+          "geometry_msgs/msg/PoseStamped"
+        ]
+      ],
+      [
+        "/imu",
+        [
+          "sensor_msgs/msg/Imu"
+        ]
+      ],
+      [
+        "/joint_states",
+        [
+          "sensor_msgs/msg/JointState"
+        ]
+      ],
+      [
+        "/odom",
+        [
+          "nav_msgs/msg/Odometry"
+        ]
+      ],
+      [
+        "/parameter_events",
+        [
+          "rcl_interfaces/msg/ParameterEvent"
+        ]
+      ],
+      [
+        "/planned_path",
+        [
+          "nav_msgs/msg/Path"
+        ]
+      ],
+      [
+        "/reference_path",
+        [
+          "nav_msgs/msg/Path"
+        ]
+      ],
+      [
+        "/robot_state",
+        [
+          "robot_msgs/msg/RobotState"
+        ]
+      ],
+      [
+        "/rosout",
+        [
+          "rcl_interfaces/msg/Log"
+        ]
+      ],
+      [
+        "/wheel_torque",
+        [
+          "robot_msgs/msg/WheelTorqueCommand"
+        ]
+      ]
+    ],
+    "imu_count": 2000,
+    "encoder_count": 1000,
+    "state_count": 2000,
+    "command_count": 1000,
+    "max_pitch": 0.2569607969844347,
+    "max_applied_torque": 0.9825477966711208,
+    "contact_samples": 0,
+    "timing": {
+      "state_age": {
+        "mean": 0.0,
+        "p95": 0.0,
+        "maximum": 0.0
+      },
+      "command_age": {
+        "mean": 0.0005000000000000002,
+        "p95": 0.001,
+        "maximum": 0.001
+      },
+      "state_wall_us": {
+        "mean": 6693.5799935,
+        "p95": 10968.66315,
+        "maximum": 156170.25
+      },
+      "command_wall_us": {
+        "mean": 13759.220245999999,
+        "p95": 16735.6774,
+        "maximum": 170564.958
+      },
+      "total_wall_us": {
+        "mean": 10350.4036035,
+        "p95": 16795.51045,
+        "maximum": 170703.958
+      }
+    }
+  },
+  "faults": {
+    "stalled_clock_wall_watchdog_zero": true,
+    "stale_sim_state_zero": true,
+    "invalid_state_zero": true,
+    "equal_regulation_torque_order": true,
+    "missing_matching_encoder_blocks_state": true,
+    "joint_name_order_preserved": true,
+    "nonfinite_sensor_rejected": true,
+    "backend_clamp_and_left_right_sign": true,
+    "stale_command_timestamp_zero": true,
+    "reset_epoch": 63000000,
+    "consistent_initial_state": true,
+    "lost_controller_zero_samples": 23,
+    "ros_policy_parity_cases": 3,
+    "ros_policy_torque_maximum_error": 3.381392060797239e-08,
+    "missing_actor_fails_visibly": true
+  },
+  "command_interfaces": [
+    {
+      "mode": "goal",
+      "finite_commands": true,
+      "goal_uses_estimated_start": true,
+      "startup_parameters_read_only": true
+    },
+    {
+      "mode": "velocity",
+      "finite_commands": true,
+      "goal_uses_estimated_start": false,
+      "startup_parameters_read_only": true
+    }
+  ],
+  "launch_bag_verified": {
+    "launch_command": [
+      "ros2",
+      "launch",
+      "robot_ros",
+      "simulation.launch.py",
+      "mode:=regulation",
+      "duration:=1.0",
+      "trace:=artifacts/ros2/d17/launch_bag_verified/trace.csv"
+    ],
+    "duration": 1.0,
+    "observed_states": 1000,
+    "bag_counts": {
+      "/wheel_torque": 497,
+      "/robot_state": 994,
+      "/odom": 995,
+      "/joint_states": 995,
+      "/imu": 995,
+      "/goal_pose": 1,
+      "/episode_start_ns": 1,
+      "/clock": 997
+    },
+    "storage": "mcap",
+    "record_use_sim_time": true
+  },
+  "freeze": {
+    "files_checked": 95,
+    "changed": [],
+    "sha256": {
+      "ros2_ws/src/robot_interface/CMakeLists.txt": "4c51b7935a8b82ca82a10cd4a56857266e5f600fb6a349b603c12e3272718993",
+      "ros2_ws/src/robot_interface/package.xml": "c6f2c8073681b0eb2386001b8ff56cff4e3420c863efc544bc7672377bd05b1c",
+      "ros2_ws/src/navigation/CMakeLists.txt": "cbd31c37a8075f89ec9c1a5cd4a86ad401cc3d21c88daa615276d56e3ac6b687",
+      "ros2_ws/src/navigation/package.xml": "2abef376f6133d2890784eab6199abf706003fce43994e921c7efa283b7b0676",
+      "ros2_ws/src/mujoco_backend/CMakeLists.txt": "1a912d8e2d140fcab24cddc4afe6a880c95d9222eb195256d99a82a7b0d18872",
+      "ros2_ws/src/mujoco_backend/package.xml": "f1dea55c0d60dd1010daba9006986b4db63b13db0f0ba97cd77888d3baa63c4a",
+      "ros2_ws/src/controller/CMakeLists.txt": "54ba34e7c46158df1bae8c94a17d3566c23d6d3b371ab6836774b304f3b54690",
+      "ros2_ws/src/controller/package.xml": "8c5d355fb947329d25ebb5fade2208bf63c0afe9d23d1a413b1fed199612d563",
+      "ros2_ws/src/learning_policy/CMakeLists.txt": "e5d20cc50fd440c448d42984e62899190048eca3f20dbf5989307c5fb407eaa2",
+      "ros2_ws/src/learning_policy/package.xml": "77b984f7bdaaf33a06e992e53e956574ea0d8a7cb3f07df4da68fac40aab9956",
+      "ros2_ws/src/state_estimator/CMakeLists.txt": "f4bcbf41daf970e97207d54662e6cfd56051c357fd22bb7d4c1f477e2ddba1be",
+      "ros2_ws/src/state_estimator/package.xml": "338eacd4214f98b9baf42f03eced08ebd0a98f13b2df711b1fa712ad7f2d3097",
+      "ros2_ws/src/robot_interface/include/robot_interface/reference_horizon.hpp": "4633c79804e27e78c5377e51aac096159ec46c63e7217e12f77f5d98aa5626c7",
+      "ros2_ws/src/robot_interface/include/robot_interface/angle.hpp": "1e6d1c9a8b0dd7e328686109e0662d401bec8175381639889a20fe06b10381c9",
+      "ros2_ws/src/robot_interface/include/robot_interface/reference.hpp": "27899e7e7ea5a6f9e615353ca162294432a15ebd4c4cee58560ba3746347e122",
+      "ros2_ws/src/robot_interface/include/robot_interface/sensor_data.hpp": "22d925aeaacc816ed7152b7fe97841e181fa09b480533e6e92e119d266652637",
+      "ros2_ws/src/robot_interface/include/robot_interface/robot_command.hpp": "5bb06eccdad877f661bcc692bb8827db27b2cb488e7ac3786609a6fbb1caa73f",
+      "ros2_ws/src/robot_interface/include/robot_interface/robot_state.hpp": "ee361f2065f43038dad8d86ca01aece1eb19ef3271c6bef6819a92a9dfe53cba",
+      "ros2_ws/src/navigation/src/known_map.cpp": "52cde0c1e0171a8a0451c0080f985d7712a65f83e2d74be3b2c53ce12245860b",
+      "ros2_ws/src/navigation/src/navigation_test.cpp": "1a1f18d05543f6e0f261e4bd4ccdc9930166618ef44baaeb8494dd89140b7cdf",
+      "ros2_ws/src/navigation/src/reference_trajectory.cpp": "f0c02ec815e2eb4180e2d744274e35e56f4a47238255a80a712a4717e1f08e39",
+      "ros2_ws/src/navigation/src/path_trajectory.cpp": "eea3ee9057bc82cb8789c70fc4bb2667f94474252e0f212df40e3f7c4e570082",
+      "ros2_ws/src/navigation/src/planning_test.cpp": "b1cafaf934587e7fc90f8e531fedf01a2213412a64056c280ee0380d3179aef1",
+      "ros2_ws/src/navigation/src/timed_trajectory.cpp": "618f32a6a9969c0fdfc01e25e7fb692b801ad56d7ad3e81854e9462e04361b02",
+      "ros2_ws/src/navigation/src/global_planner.cpp": "58fc516b943d5804032b17f62d5b71fb75e1b51fc8792d9a4e10b95a13beec17",
+      "ros2_ws/src/navigation/src/occupancy_grid.cpp": "c60d977c8e310720b78b7f6d5cd97991644c265c2f83263553c2f0fd13971b06",
+      "ros2_ws/src/navigation/src/planar_odometry.cpp": "96f1b2a2ab0b7ba11369fb0383bd9f39503f85aae1ac245e99913c4f611d78e9",
+      "ros2_ws/src/navigation/include/navigation/occupancy_grid.hpp": "481059865c84082915af6857fb7f4d301f29476e2650ee80c71660e72b447e3c",
+      "ros2_ws/src/navigation/include/navigation/planar_odometry.hpp": "01ca4cb6673cedb7dfc8aaabb054141e834b7b745bd6221e0c65c27e10be32e9",
+      "ros2_ws/src/navigation/include/navigation/timed_trajectory.hpp": "ed0b3addd7bf3db134e82f4f6008c4cafd612e2a894e11ceb32c00943cb8a3d4",
+      "ros2_ws/src/navigation/include/navigation/global_planner.hpp": "e93dc030a0ec745a61bde89e7ed2aa51465afb2d4d0ade08d38c8bf57b3accf2",
+      "ros2_ws/src/navigation/include/navigation/reference_preview.hpp": "6e50f4828c9e550c31ab80d7acdb4e19f489c6f0bc2946a5db876ee926c2af2b",
+      "ros2_ws/src/navigation/include/navigation/path_trajectory.hpp": "168c7e971c1aadd01306806109a0e6c57aa1d9adff812b6213aedc833a7c3a92",
+      "ros2_ws/src/navigation/include/navigation/known_map.hpp": "4098b10e6e68080d08f8c346c0d0b880169f1f686fc253565e2b1b9d777c76a8",
+      "ros2_ws/src/navigation/include/navigation/reference_trajectory.hpp": "95c95409909c76336c99f5fe5dde87496b56e5e12c617a4d451208d5e2bf49cf",
+      "ros2_ws/src/mujoco_backend/src/pd_smoke_test.cpp": "dd9da0089577d6d1235fa1e92f620e071197cc505ba38e1fbe940622985d73f5",
+      "ros2_ws/src/mujoco_backend/src/yaw_sign_smoke_test.cpp": "37c46c6d3a85aa6d026858e17f19e50209dec86776be36d49ab48c2069821bb9",
+      "ros2_ws/src/mujoco_backend/src/controller_benchmark.cpp": "f94ad6553d98ede0fe334bbd66c08c2f0452a1c3b4d7d79e85269bb6ec3e0d7e",
+      "ros2_ws/src/mujoco_backend/src/mpc_smoke_test.cpp": "94504a0e294e988cc3f80d5187f01e945e091f12b9e50bdec57ce39f1a5865a1",
+      "ros2_ws/src/mujoco_backend/src/known_map_world.cpp": "9d481becf5c16a5fbc1681321021a8185cce20c95d53a4a3f2b68b4dddd05301",
+      "ros2_ws/src/mujoco_backend/src/mujoco_backend.cpp": "8056681245bfe32ae4b6e82829253366e3a2f1122fc2d34213778a64bf9b53b7",
+      "ros2_ws/src/mujoco_backend/src/ppo_smoke_test.cpp": "e84547f87065acc423d3040f928c6be4ddeb1bef1aa89cfa359b4ceb46e80efb",
+      "ros2_ws/src/mujoco_backend/src/mujoco_viewer.cpp": "af66c3f3465c68f5e50ee577e0221b1e3de43027e262a7db2376f6c1bcd53865",
+      "ros2_ws/src/mujoco_backend/src/estimator_smoke_test.cpp": "14bb95f511be12e067b9acb5220921dab743e57ff2d0fadfabb07d34b23c00a4",
+      "ros2_ws/src/mujoco_backend/src/navigation_smoke_test.cpp": "035085fc3f9d9cadb535e77a54191316a4558a839da4b024e6b63b1c569888aa",
+      "ros2_ws/src/mujoco_backend/src/yaw_mpc_smoke_test.cpp": "d7d945c124b7011a6e24d15a98befc8e55ab47458ffcbd9438a6d0dae7b01f97",
+      "ros2_ws/src/mujoco_backend/src/known_map_smoke_test.cpp": "a1f545bc18bd5ce7635b834e5b1145f524ab5f2ad4c2d2d52137666b0802fc85",
+      "ros2_ws/src/mujoco_backend/src/backend_smoke_test.cpp": "b192e4ef61637bd20b7769ec6cb0a6b2f632d86b18319be1ec6ddc99a5e826d2",
+      "ros2_ws/src/mujoco_backend/src/lqr_smoke_test.cpp": "3e69d3fb7ce92afa3267282e328272427689a5de5bff41bce306f6c6a47b22d4",
+      "ros2_ws/src/mujoco_backend/include/mujoco_backend/mujoco_backend.hpp": "7ac784b89cb1bdc3e8281feb05f225c95bafdfa1505e4ea7a7dcbc1cae7ca1a7",
+      "ros2_ws/src/mujoco_backend/include/mujoco_backend/known_map_world.hpp": "861df9960c825b698b14b0205d52da0efb95d25932ab97f64e44743e7261ab4d",
+      "ros2_ws/src/mujoco_backend/include/mujoco_backend/mujoco_viewer.hpp": "a973271a3df96d8b97bda67ea090d9d4c00a92b9c2d29aba7c194f2adeee6bd1",
+      "ros2_ws/src/controller/src/mpc_controller.cpp": "4482bb54dcc727939faa4547cd5e98b208409041bb2e8d1bf47b27b4c3a1f821",
+      "ros2_ws/src/controller/src/yaw_mpc_test.cpp": "ee2772a168d72242962dbb808203150b881d1244a0beeb6f67d56cb8e1cedcf9",
+      "ros2_ws/src/controller/src/pd_controller.cpp": "514617a95efb60425ef65d8da5f6a6f8766b51abe58e7c3af45e1f06a81731a1",
+      "ros2_ws/src/controller/src/mpc_preview_test.cpp": "9b05f8be31b0391b13bb43e7468d04bac1859642424f8e2800336b56fd79f250",
+      "ros2_ws/src/controller/src/lqr_controller.cpp": "cdd08751baca35c1856457f853481c25ea9f92960e1aab24b10adcee5dfd227a",
+      "ros2_ws/src/controller/include/controller/lqr_controller.hpp": "8212a8a4d5bdcd245ea32674e8c2cbd9376f2c09590a48c17acea60a39418dff",
+      "ros2_ws/src/controller/include/controller/pd_controller.hpp": "75088b426a3e2c1cfb6053a3885198b42e5daf1b3a646f9f55d7e4866b4a83dd",
+      "ros2_ws/src/controller/include/controller/mpc_model.hpp": "69d100f9091e7bce04fed9f46eaacd87ffede3f00b9c8de6b4496a1d6e598651",
+      "ros2_ws/src/controller/include/controller/mpc_controller.hpp": "b871f001062b86e0be891c830121f706e9ca6608eeb0ef7ed56ddf94d449d17b",
+      "ros2_ws/src/learning_policy/src/policy_parity_test.cpp": "88bbb60db189ca4d0934fcb2326f17432f5d2f2ffdce97b90f188657f44cc9f6",
+      "ros2_ws/src/learning_policy/src/ppo_policy.cpp": "ecadf8358526cb3f840a4e6d60057f0a407c59f3e69d6b3435e6873caf979533",
+      "ros2_ws/src/learning_policy/include/learning_policy/ppo_policy.hpp": "087c54db6e7ec7969e761528dda87eed619bc2127f9a1c65d694cd4838e54d94",
+      "ros2_ws/src/state_estimator/src/state_estimator.cpp": "e1e5c697374de663c6d27cffc34b898b402e3ceaa8c5dafa5f5483e4bb4ca913",
+      "ros2_ws/src/state_estimator/src/yaw_estimator_test.cpp": "33558b634e64edfaf89d7f257ba5248b2bccc30fb076533893e9fb32574e8e38",
+      "ros2_ws/src/state_estimator/include/state_estimator/state_estimator.hpp": "84974a55bfa2645a74e3321a82217418e9d7d8de8fb57455eb57a333ff34bc65",
+      "model/falling_box.xml": "e645783782da232e854724633c37f55d82119f62fbf818bf96cd115c728cc0d4",
+      "model/pendulum.xml": "2b696aef014c716b93aaa4ab8f9e35669e50ac9018b866e7eed3acd5ebec72a1",
+      "model/.DS_Store": "c9f5661ef497bb27921fef8197e07807c47ab0be8f1b149919f61c2ed28b8b2d",
+      "model/known_map.txt": "6db011377a9a6bf0a27717cc35b727088c982822ad81259f3645a81834e17de3",
+      "model/Robot1.xml": "09844f119ae63a7154feeb575c2fb5371c2fba0b941b68b57a0d78f15c270832",
+      "tools/learning/export_policy.py": "7fdc957325852717009901bf1c05bfebef09eca9c7739e18cf08cf1cb8e9d557",
+      "tools/learning/estimator_trace.cpp": "37136b02c74ad2ad480f53a797b51eaf5887670cc607d7525fe119350aee74ad",
+      "tools/learning/config.json": "776b7a3ccd66d78757247b626446347a8fd04ceed49eed3856d9091f315a718c",
+      "tools/learning/checks.py": "81ef83ff4cf11d56c780b7b13241dd3c83bfb0f815f29c72e7eba7647552487c",
+      "tools/learning/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tools/learning/plot_training.py": "a82f4ac7a37535861ce4f7160cc1a8c6deb5cbf4cf675d81c6c899c2df362328",
+      "tools/learning/diagnose.py": "37ea52eb79fe6d8742b34e09f26d4b23b26fb083f509041fd7a157e4d110c0f5",
+      "tools/learning/train.py": "9b58cfef7c8f1f02dc067ef8e315a30a65a31b1c155384a214dbe1745a00b074",
+      "tools/learning/environment.py": "5fe2797c032d55ea295f07399787e5f9819dff13a4588def23450c43108df958",
+      "tools/learning/evaluate.py": "66d3fcf3e1c63347feb35a3400a4581a30db25a986bd0789bda29f0c416a74a8",
+      "tools/learning/state.py": "264fbf04376d73bfc0c000617f338e2a1c82a72dcc69fdca2d3273c4bd7c0bbd",
+      "tools/benchmark/audit_report.py": "0fd31deeec15ba0fa7074b07e906b43547df242de59d8f532a018b3f46a156ff",
+      "tools/benchmark/run_benchmark.py": "3b8e906c8ce10f71cb7da5debf7cc88415cb5d116f7c7aba53c4b31db7fa2224",
+      "tools/benchmark/metrics.py": "a8b01a67472fa5d906b404bb87762ce19959444a08b3c2fd05af3e35c7da60d5",
+      "tools/benchmark/audit.py": "f6a6d14189aface603afe3e6c67ec1f4fc7a2997a3fa509dc5b11d6e84b9ab9a",
+      "tools/benchmark/report_checks.py": "3380ab83d232fa9973f859b9b7824b48786013335ee243c7219b2ebdf5b71c55",
+      "tools/benchmark/config.json": "f8a1499b5e1baaebfd335ea760af1dcb7d071a0094af1acf6f1ffb7b11bb9728",
+      "tools/benchmark/checks.py": "76ed3fe3af1ed422bb27babd96562dd0a53547b2411f33f78d5877f73e6c01d7",
+      "tools/benchmark/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tools/benchmark/audit_probe.cpp": "40362cd94847df89ce5536fb05b5f50ecbfc9e0fbefa8b35ccbd6b40124aa33f",
+      "tools/benchmark/audit_checks.py": "1febde73bed9eed0dec8f783d3fe23ea61ecdc6cea123d0f89eac643d981a731",
+      "tools/benchmark/report.py": "c4d2c9c15d1958c4c7574a40e20c9e9d5b04f53ba825cc0b4ad361d0a58c5872",
+      "artifacts/learning/selected_policy.txt": "6f315dfc6ec4b8c26768c39995306caaf1a0a0efb781182c7e723ed5edae377b"
+    }
+  },
+  "status": "Measured runs and frozen-source checks passed"
+}

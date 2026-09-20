@@ -1,0 +1,475 @@
+{
+  "checkpoint": "artifacts/learning/d_full_potential/best_validation.zip",
+  "checkpoint_sha256": "4b290bf34e41e3959a4b8dbcdf62b2b229e39aeda51293d45248b95191301128",
+  "actor_sha256": "6f315dfc6ec4b8c26768c39995306caaf1a0a0efb781182c7e723ed5edae377b",
+  "configuration": {
+    "model": "model/Robot1.xml",
+    "mujoco_version": "3.12.0",
+    "physics_dt": 0.001,
+    "action_steps": 2,
+    "wheel_radius": 0.12,
+    "pitch_filter_time_constant": 0.5,
+    "torque_limit": 2.0,
+    "observation_scales": [
+      1.0,
+      1.0,
+      1.0,
+      0.35,
+      2.0,
+      2.0
+    ],
+    "observation_clip": 5.0,
+    "reward_version": "potential_v1",
+    "reward": {
+      "progress": 15.0,
+      "pitch": 2.0,
+      "torque": 0.02,
+      "success": 30.0,
+      "fall": -20.0,
+      "yaw_rate": 1.0,
+      "heading": 0.0,
+      "turn_alignment": 0.0,
+      "heading_potential": 5.0,
+      "heading_distance_scale": 0.15
+    },
+    "success": {
+      "radius": 0.1,
+      "velocity": 0.05,
+      "yaw_rate": 0.1,
+      "pitch": 0.1,
+      "hold_seconds": 0.5
+    },
+    "fall_angle": 0.7,
+    "stages": {
+      "A": {
+        "goal_radius": [
+          0.0,
+          0.02
+        ],
+        "bearing": [
+          -3.141592653589793,
+          3.141592653589793
+        ],
+        "pitch_range": 0.025,
+        "velocity_range": 0.01,
+        "episode_seconds": 6.0,
+        "minimum_success_seconds": 5.0
+      },
+      "B": {
+        "goal_radius": [
+          0.2,
+          0.6
+        ],
+        "axis_only": true,
+        "pitch_range": 0.025,
+        "velocity_range": 0.01,
+        "episode_seconds": 15.0,
+        "minimum_success_seconds": 0.0
+      },
+      "C": {
+        "goal_radius": [
+          0.2,
+          0.6
+        ],
+        "bearing": [
+          -0.7,
+          0.7
+        ],
+        "pitch_range": 0.025,
+        "velocity_range": 0.01,
+        "episode_seconds": 12.0,
+        "minimum_success_seconds": 0.0
+      },
+      "D0": {
+        "goal_radius": [
+          0.2,
+          0.5
+        ],
+        "bearing": [
+          -3.141592653589793,
+          3.141592653589793
+        ],
+        "pitch_range": 0.025,
+        "velocity_range": 0.01,
+        "episode_seconds": 15.0,
+        "minimum_success_seconds": 0.0
+      },
+      "D1": {
+        "goal_radius": [
+          0.2,
+          0.7
+        ],
+        "bearing": [
+          -3.141592653589793,
+          3.141592653589793
+        ],
+        "pitch_range": 0.025,
+        "velocity_range": 0.01,
+        "episode_seconds": 15.0,
+        "minimum_success_seconds": 0.0
+      },
+      "D": {
+        "goal_radius": [
+          0.2,
+          1.0
+        ],
+        "bearing": [
+          -3.141592653589793,
+          3.141592653589793
+        ],
+        "pitch_range": 0.025,
+        "velocity_range": 0.01,
+        "episode_seconds": 15.0,
+        "minimum_success_seconds": 0.0
+      },
+      "B0": {
+        "goal_radius": [
+          0.02,
+          0.12
+        ],
+        "axis_only": true,
+        "pitch_range": 0.025,
+        "velocity_range": 0.01,
+        "episode_seconds": 8.0,
+        "minimum_success_seconds": 5.0
+      },
+      "B1": {
+        "goal_radius": [
+          0.1,
+          0.3
+        ],
+        "axis_only": true,
+        "pitch_range": 0.025,
+        "velocity_range": 0.01,
+        "episode_seconds": 10.0,
+        "minimum_success_seconds": 1.0
+      },
+      "B2": {
+        "goal_radius": [
+          0.18,
+          0.4
+        ],
+        "axis_only": true,
+        "pitch_range": 0.025,
+        "velocity_range": 0.01,
+        "episode_seconds": 12.0,
+        "minimum_success_seconds": 1.0
+      },
+      "B2a": {
+        "goal_radius": [
+          0.2,
+          0.35
+        ],
+        "axis_only": true,
+        "pitch_range": 0.025,
+        "velocity_range": 0.01,
+        "episode_seconds": 12.0,
+        "minimum_success_seconds": 1.0
+      },
+      "B2b": {
+        "goal_radius": [
+          0.3,
+          0.45
+        ],
+        "axis_only": true,
+        "pitch_range": 0.025,
+        "velocity_range": 0.01,
+        "episode_seconds": 14.0,
+        "minimum_success_seconds": 1.0
+      },
+      "B3": {
+        "goal_radius": [
+          0.3,
+          0.6
+        ],
+        "axis_only": true,
+        "pitch_range": 0.025,
+        "velocity_range": 0.01,
+        "episode_seconds": 14.0,
+        "minimum_success_seconds": 1.0
+      },
+      "C0": {
+        "goal_radius": [
+          0.1,
+          0.3
+        ],
+        "bearing": [
+          -0.5,
+          0.5
+        ],
+        "pitch_range": 0.025,
+        "velocity_range": 0.01,
+        "episode_seconds": 14.0,
+        "minimum_success_seconds": 1.0
+      },
+      "C05": {
+        "goal_radius": [
+          0.1,
+          0.25
+        ],
+        "bearing": [
+          -0.6,
+          0.6
+        ],
+        "pitch_range": 0.025,
+        "velocity_range": 0.01,
+        "episode_seconds": 16.0,
+        "minimum_success_seconds": 1.0
+      },
+      "Cside": {
+        "goal_radius": [
+          0.1,
+          0.25
+        ],
+        "bearing_choices": [
+          -1.5707963267948966,
+          1.5707963267948966
+        ],
+        "pitch_range": 0.025,
+        "velocity_range": 0.01,
+        "episode_seconds": 16.0,
+        "minimum_success_seconds": 1.0
+      },
+      "Cturn0": {
+        "goal_radius": [
+          0.15,
+          0.3
+        ],
+        "bearing_choices": [
+          -0.7,
+          0.7
+        ],
+        "pitch_range": 0.025,
+        "velocity_range": 0.01,
+        "episode_seconds": 16.0,
+        "minimum_success_seconds": 1.0
+      },
+      "Cturn": {
+        "goal_radius": [
+          0.2,
+          0.4
+        ],
+        "bearing_choices": [
+          -1.5707963267948966,
+          1.5707963267948966
+        ],
+        "pitch_range": 0.025,
+        "velocity_range": 0.01,
+        "episode_seconds": 16.0,
+        "minimum_success_seconds": 1.0
+      },
+      "C1": {
+        "goal_radius": [
+          0.2,
+          0.5
+        ],
+        "bearing": [
+          -0.8,
+          0.8
+        ],
+        "pitch_range": 0.025,
+        "velocity_range": 0.01,
+        "episode_seconds": 16.0,
+        "minimum_success_seconds": 1.0
+      }
+    },
+    "ppo": {
+      "learning_rate": 0.0001,
+      "n_steps": 2048,
+      "batch_size": 256,
+      "n_epochs": 10,
+      "gamma": 0.999,
+      "gae_lambda": 0.98,
+      "clip_range": 0.2,
+      "ent_coef": 0.0,
+      "vf_coef": 0.5,
+      "max_grad_norm": 0.5,
+      "target_kl": 0.03
+    },
+    "network": {
+      "hidden_sizes": [
+        64,
+        64
+      ],
+      "log_std_init": -1.0,
+      "resume_action_std": 0.05
+    },
+    "training": {
+      "seed": 15001,
+      "environments": 8,
+      "stage_steps": 1000000,
+      "evaluation_interval": 250000,
+      "validation_seed": 25000,
+      "validation_episodes": 20,
+      "audit_seed": 35000,
+      "audit_episodes": 100,
+      "final_test_seed": 195000,
+      "final_test_episodes": 100,
+      "progression_success_rate": 0.9,
+      "progression_fall_rate": 0.05
+    },
+    "evaluation": {
+      "representative_seed": 96000,
+      "representative_goals": [
+        [
+          0.3,
+          0
+        ],
+        [
+          0.8,
+          0
+        ],
+        [
+          -0.3,
+          0
+        ],
+        [
+          -0.8,
+          0
+        ],
+        [
+          0,
+          0.5
+        ],
+        [
+          0,
+          -0.5
+        ],
+        [
+          0.5,
+          0.5
+        ],
+        [
+          -0.5,
+          0.5
+        ],
+        [
+          -0.5,
+          -0.5
+        ],
+        [
+          0.5,
+          -0.5
+        ]
+      ],
+      "presentation_goals": [
+        [
+          0.4,
+          0
+        ],
+        [
+          0.4,
+          0.3
+        ],
+        [
+          0.4,
+          -0.3
+        ],
+        [
+          -0.3,
+          0
+        ]
+      ],
+      "challenge_pitch": -0.3490658503988659
+    }
+  },
+  "versions": {
+    "numpy": "2.5.2",
+    "torch": "2.10.0",
+    "mujoco": "3.12.0",
+    "gymnasium": "1.3.0",
+    "stable-baselines3": "2.9.0",
+    "python": "3.12.14 (main, Sep  3 2026, 03:46:19) [Clang 21.1.8 ]"
+  },
+  "selected_ancestry_transitions": 17015808,
+  "summaries": {
+    "audit": {
+      "success": 0.97,
+      "fall": 0.0,
+      "time": 10.021440000000002,
+      "time_to_success": 9.867463917525775,
+      "final_distance": 0.0976825145872639,
+      "estimated_final_distance": 0.09646072283624299,
+      "truth_inside_goal": 0.8,
+      "return": 40.880515147001326,
+      "maximum_pitch": 0.037526022851255454,
+      "rms_pitch": 0.01513326648306983,
+      "absolute_torque": 1.1663965927751738,
+      "squared_torque": 0.12560071647809293,
+      "maximum_torque": 0.5982287114858628,
+      "path_length": 0.600879119661341,
+      "straight_line_distance": 0.6236609565644678,
+      "path_efficiency": 1.0625403765914465,
+      "worst_pitch": 0.08445858405149337,
+      "worst_torque": 0.9338617324829102,
+      "episodes": 100,
+      "seed": 35000
+    },
+    "final_test": {
+      "success": 0.87,
+      "fall": 0.0,
+      "time": 10.50962,
+      "time_to_success": 9.83864367816092,
+      "final_distance": 0.09904734268945699,
+      "estimated_final_distance": 0.09769286309939003,
+      "truth_inside_goal": 0.73,
+      "return": 37.69548519546802,
+      "maximum_pitch": 0.03971365911311888,
+      "rms_pitch": 0.01571198109399359,
+      "absolute_torque": 1.075038266723826,
+      "squared_torque": 0.11008395904443696,
+      "maximum_torque": 0.5098699906468391,
+      "path_length": 0.588584238584839,
+      "straight_line_distance": 0.601668110976904,
+      "path_efficiency": 1.0626520531048456,
+      "worst_pitch": 0.11327614443447036,
+      "worst_torque": 0.9198353886604309,
+      "episodes": 100,
+      "seed": 195000
+    },
+    "representative": {
+      "success": 1.0,
+      "fall": 0.0,
+      "time": 9.999399999999998,
+      "time_to_success": 9.999399999999998,
+      "final_distance": 0.0976976595110157,
+      "estimated_final_distance": 0.09612455695855618,
+      "truth_inside_goal": 0.8,
+      "return": 41.31614121800824,
+      "maximum_pitch": 0.036799203883443043,
+      "rms_pitch": 0.014875325983429102,
+      "absolute_torque": 1.1051651407290264,
+      "squared_torque": 0.11592989783695964,
+      "maximum_torque": 0.5750438347458839,
+      "path_length": 0.5869708279630226,
+      "straight_line_distance": 0.6028427124746191,
+      "path_efficiency": 1.0627960614898238,
+      "worst_pitch": 0.06381640580445486,
+      "worst_torque": 0.8474366664886475,
+      "episodes": 10,
+      "seed": 96000
+    },
+    "challenge": {
+      "success": 0.8,
+      "fall": 0.2,
+      "time": 9.423399999999999,
+      "time_to_success": 11.705000000000002,
+      "final_distance": 0.24042746610767987,
+      "estimated_final_distance": 0.2214082781046244,
+      "truth_inside_goal": 0.4,
+      "return": 28.11398440673339,
+      "maximum_pitch": 0.4424552680565926,
+      "rms_pitch": 0.180177823046289,
+      "absolute_torque": 1.536952538286522,
+      "squared_torque": 0.362292154066524,
+      "maximum_torque": 0.7410427689552307,
+      "path_length": 2.182533294199141,
+      "straight_line_distance": 0.6028427124746191,
+      "path_efficiency": 3.559255443424977,
+      "worst_pitch": 0.7025368876925092,
+      "worst_torque": 0.8857126832008362,
+      "episodes": 10,
+      "seed": 96000
+    }
+  }
+}

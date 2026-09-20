@@ -5,6 +5,7 @@
 #include <OsqpEigen/OsqpEigen.h>
 
 #include <robot_interface/reference.hpp>
+#include <robot_interface/reference_horizon.hpp>
 #include <robot_interface/robot_command.hpp>
 #include <robot_interface/robot_state.hpp>
 
@@ -22,31 +23,37 @@ public:
         const robot_interface::Reference& reference
     );
 
+    robot_interface::RobotCommand compute_command(
+        const robot_interface::RobotState& state,
+        const robot_interface::ReferenceHorizon& references
+    );
+
+    int horizon_size() const;
+    double sample_time() const;
+
 private:
     void build_prediction_matrices();
     void build_qp_matrices();
     void initialize_solver();
 
-    Eigen::Vector4d build_error_state(
-        const robot_interface::RobotState& state,
-        const robot_interface::Reference& reference
-    ) const;
-
     int horizon_;
     double torque_limit_;
 
-    Eigen::Matrix4d Ad_;
-    Eigen::Vector4d Bd_;
+    Eigen::Matrix<double, 6, 6> Ad_;
+    Eigen::Matrix<double, 6, 2> Bd_;
 
-    Eigen::Matrix4d Qd_;
-    double Rd_;
-    Eigen::Matrix4d P_;
+    Eigen::Matrix<double, 6, 6> Qd_;
+    Eigen::Matrix2d Rd_;
+    Eigen::Matrix<double, 6, 6> P_;
 
     Eigen::MatrixXd Sx_;
     Eigen::MatrixXd Su_;
 
     Eigen::MatrixXd H_dense_;
     Eigen::MatrixXd F_;
+    Eigen::MatrixXd G_;
+    Eigen::VectorXd reference_vector_;
+    robot_interface::ReferenceHorizon constant_references_;
 
     Eigen::SparseMatrix<double> H_;
     Eigen::SparseMatrix<double> constraint_matrix_;

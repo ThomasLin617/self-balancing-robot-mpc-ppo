@@ -1,0 +1,23 @@
+{
+  "version": "d16_v1",
+  "model": "model/Robot1.xml",
+  "actor": "artifacts/learning/selected_policy.txt",
+  "physics_dt": 0.001,
+  "control_steps": 2,
+  "torque_limit": 2.0,
+  "initial_pitch_deg": 0.0,
+  "initial_velocity": 0.0,
+  "goal_seed": 216000,
+  "goal_count": 100,
+  "goal_radius": [0.2, 1.0],
+  "goal_bearing": [-3.141592653589793, 3.141592653589793],
+  "representative_goals": [[0.5,0],[-0.5,0],[0,0.5],[0,-0.5],[0.5,0.5],[-0.5,0.5],[-0.5,-0.5],[0.5,-0.5]],
+  "timeout": 15.0,
+  "success": {"distance": 0.1, "velocity": 0.05, "yaw_rate": 0.1, "pitch": 0.1, "hold": 0.5},
+  "fall_pitch": 0.7,
+  "trajectory": {"max_velocity": 0.18, "acceleration": 0.08},
+  "sagittal": {"references": [-0.2,-0.1,-0.05,0.05,0.1,0.2], "duration": 12.0, "position_band": 0.01, "pitch_band": 0.02},
+  "disturbance": {"force": -50.0, "duration": 0.05, "time": 5.0, "frame": "body_local_x", "body": "base_body"},
+  "timing": {"warmup": 500, "samples": 5000},
+  "workers": 4
+}

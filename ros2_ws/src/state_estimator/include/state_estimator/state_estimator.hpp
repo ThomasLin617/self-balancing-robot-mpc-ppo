@@ -19,6 +19,7 @@ private:
     double pitch_filter_time_constant_ = 0.0;
     double previous_timestamp_ = 0.0;
     double pitch_estimate_ = 0.0;
+    double yaw_estimate_ = 0.0;
     bool initialized_ = false;
 
     double wheel_radius_ = 0.0;

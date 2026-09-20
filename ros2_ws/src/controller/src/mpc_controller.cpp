@@ -1,6 +1,10 @@
 #include <controller/mpc_controller.hpp>
+#include <controller/mpc_model.hpp>
+#include <robot_interface/angle.hpp>
 #include <stdexcept>
 #include <vector>
+#include <algorithm>
+#include <cmath>
 namespace controller {
 
 MPCController::MPCController(
@@ -8,8 +12,7 @@ MPCController::MPCController(
     double torque_limit
 )
     : horizon_(horizon),
-      torque_limit_(torque_limit),
-      Rd_(0.0005)
+      torque_limit_(torque_limit)
 {
     if (horizon_ <= 0) {
         throw std::invalid_argument(
@@ -23,32 +26,7 @@ MPCController::MPCController(
         );
     }
 
-    Ad_ <<
-        1.0, 0.002, -0.000028125436694, -0.000000018750100,
-        0.0, 1.0, -0.028126153395458, -0.000028125436694,
-        0.0, 0.0, 1.000152898596171, 0.002000101931358,
-        0.0, 0.0, 0.152902492382236, 1.000152898596171;
-
-    Bd_ <<
-        0.000044647679981,
-        0.044648479969472,
-        -0.000170666848943,
-        -0.170671197930232;
-
-
-    Qd_.setZero();
-    Qd_.diagonal() <<
-        0.02222222,
-        0.002,
-        0.06565612,
-        0.0005;
-
-    P_ <<
-        10.970920248655020, 4.905278720982848, 5.018046445836401, 1.302898335322889,
-        4.905278720982848, 3.994263046826552, 3.646811455928461, 1.064037637729081,
-        5.018046445836401, 3.646811455928461, 6.868041879728636, 1.008104289912070,
-        1.302898335322889, 1.064037637729081, 1.008104289912070, 0.287476041587268;
-        
+    mpc_model::initialize(Ad_, Bd_, Qd_, Rd_, P_);
 
     build_prediction_matrices();
     build_qp_matrices();
@@ -56,36 +34,36 @@ MPCController::MPCController(
 }
 
 void MPCController::build_prediction_matrices() {
-    Sx_.resize(4 * horizon_, 4);
-    Su_.setZero(4 * horizon_, horizon_);
+    Sx_.resize(6 * horizon_, 6);
+    Su_.setZero(6 * horizon_, 2 * horizon_);
 
-    std::vector<Eigen::Matrix4d> powers(
+    std::vector<Eigen::Matrix<double, 6, 6>> powers(
         horizon_ + 1
     );
 
-    powers[0] = Eigen::Matrix4d::Identity();
+    powers[0] = Eigen::Matrix<double, 6, 6>::Identity();
 
     for (int i = 1; i <= horizon_; ++i) {
         powers[i] = powers[i - 1] * Ad_;
     }
 
     for (int i = 0; i < horizon_; ++i) {
-        Sx_.block<4, 4>(
-            4 * i,
+        Sx_.block<6, 6>(
+            6 * i,
             0
         ) = powers[i + 1];
 
         for (int j = 0; j <= i; ++j) {
-            Su_.block<4, 1>(
-                4 * i,
-                j
+            Su_.block<6, 2>(
+                6 * i,
+                2 * j
             ) = powers[i - j] * Bd_;
         }
     }
 }
 
 void MPCController::build_qp_matrices() {
-    const int state_dim = 4;
+    const int state_dim = 6;
 
     Eigen::MatrixXd Qbar =
         Eigen::MatrixXd::Zero(
@@ -94,22 +72,23 @@ void MPCController::build_qp_matrices() {
         );
 
     for (int i = 0; i < horizon_ - 1; ++i) {
-        Qbar.block<4, 4>(
+        Qbar.block<6, 6>(
             state_dim * i,
             state_dim * i
         ) = Qd_;
     }
 
-    Qbar.block<4, 4>(
+    Qbar.block<6, 6>(
         state_dim * (horizon_ - 1),
         state_dim * (horizon_ - 1)
     ) = P_;
 
-    Eigen::MatrixXd Rbar =
-        Rd_ * Eigen::MatrixXd::Identity(
-            horizon_,
-            horizon_
-        );
+    Eigen::MatrixXd Rbar = Eigen::MatrixXd::Zero(
+        2 * horizon_, 2 * horizon_
+    );
+    for (int i = 0; i < horizon_; ++i) {
+        Rbar.block<2, 2>(2 * i, 2 * i) = Rd_;
+    }
 
     H_dense_ =
         2.0 * (
@@ -117,44 +96,45 @@ void MPCController::build_qp_matrices() {
             + Rbar
         );
 
-    F_ =
-        2.0
-        * Su_.transpose()
-        * Qbar
-        * Sx_;
+    G_ = 2.0 * Su_.transpose() * Qbar;
+    F_ = G_ * Sx_;
+    reference_vector_.resize(6 * horizon_);
+    constant_references_.resize(horizon_);
 
     H_ = H_dense_.sparseView();
     H_.makeCompressed();
 
     constraint_matrix_.resize(
-        horizon_,
-        horizon_
+        2 * horizon_,
+        2 * horizon_
     );
 
     constraint_matrix_.setIdentity();
     constraint_matrix_.makeCompressed();
 
     gradient_ =
-        Eigen::VectorXd::Zero(horizon_);
+        Eigen::VectorXd::Zero(2 * horizon_);
 
     lower_bound_ =
         Eigen::VectorXd::Constant(
-            horizon_,
+            2 * horizon_,
             -torque_limit_
         );
 
     upper_bound_ =
         Eigen::VectorXd::Constant(
-            horizon_,
+            2 * horizon_,
             torque_limit_
         );
 }
 void MPCController::initialize_solver() {
     solver_.settings()->setVerbosity(false);
     solver_.settings()->setWarmStart(true);
+    solver_.settings()->setAbsoluteTolerance(1e-7);
+    solver_.settings()->setRelativeTolerance(1e-7);
 
-    solver_.data()->setNumberOfVariables(horizon_);
-    solver_.data()->setNumberOfConstraints(horizon_);
+    solver_.data()->setNumberOfVariables(2 * horizon_);
+    solver_.data()->setNumberOfConstraints(2 * horizon_);
 
     if (!solver_.data()->setHessianMatrix(H_)) {
         throw std::runtime_error(
@@ -195,34 +175,50 @@ void MPCController::initialize_solver() {
 }
 
 
-Eigen::Vector4d MPCController::build_error_state(
-    const robot_interface::RobotState& state,
-    const robot_interface::Reference& reference
-) const {
-    Eigen::Vector4d error_state;
-
-    error_state <<
-        state.forward_position
-            - reference.forward_position,
-        state.forward_velocity
-            - reference.forward_velocity,
-        state.pitch
-            - reference.pitch,
-        state.pitch_rate;
-
-    return error_state;
+int MPCController::horizon_size() const {
+    return horizon_;
 }
 
+double MPCController::sample_time() const {
+    return mpc_model::sample_time;
+}
 
-robot_interface::RobotCommand
-MPCController::compute_command(
+robot_interface::RobotCommand MPCController::compute_command(
     const robot_interface::RobotState& state,
     const robot_interface::Reference& reference
 ) {
-    const Eigen::Vector4d error_state =
-        build_error_state(state, reference);
+    std::fill(constant_references_.begin(), constant_references_.end(), reference);
+    return compute_command(state, constant_references_);
+}
 
-    gradient_ = F_ * error_state;
+robot_interface::RobotCommand MPCController::compute_command(
+    const robot_interface::RobotState& state,
+    const robot_interface::ReferenceHorizon& references
+) {
+    if (references.size() != static_cast<std::size_t>(horizon_)) {
+        throw std::invalid_argument("MPC reference horizon has incorrect length.");
+    }
+    Eigen::Matrix<double, 6, 1> current_state;
+    current_state << state.forward_position, state.forward_velocity,
+                     state.pitch, state.pitch_rate, state.yaw, state.yaw_rate;
+    if (!current_state.allFinite()) {
+        throw std::invalid_argument("MPC state must be finite.");
+    }
+
+    double previous_yaw = state.yaw;
+    for (int i = 0; i < horizon_; ++i) {
+        const auto& reference = references[i];
+        const double yaw = previous_yaw + robot_interface::wrap_to_pi(reference.yaw - previous_yaw);
+        reference_vector_.segment<6>(6 * i) <<
+            reference.forward_position, reference.forward_velocity,
+            reference.pitch, 0.0, yaw, reference.yaw_rate;
+        previous_yaw = yaw;
+    }
+    if (!reference_vector_.allFinite()) {
+        throw std::invalid_argument("MPC references must be finite.");
+    }
+    gradient_.noalias() = F_ * current_state;
+    gradient_.noalias() -= G_ * reference_vector_;
 
     if (!solver_.updateGradient(gradient_)) {
         throw std::runtime_error(
@@ -249,19 +245,18 @@ MPCController::compute_command(
     const auto& solution =
         solver_.getSolution();
 
-    if (solution.size() == 0) {
+    if (solution.size() != 2 * horizon_) {
         throw std::runtime_error(
             "MPC solver returned empty solution."
         );
     }
 
 
-    const double torque = solution[0];
 
     robot_interface::RobotCommand command;
     command.timestamp = state.timestamp;
-    command.left_wheel_torque = torque;
-    command.right_wheel_torque = torque;
+    command.left_wheel_torque = solution[0];
+    command.right_wheel_torque = solution[1];
 
     return command;
 }

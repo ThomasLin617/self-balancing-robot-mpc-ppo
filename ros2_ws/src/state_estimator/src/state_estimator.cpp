@@ -1,6 +1,7 @@
 #include <state_estimator/state_estimator.hpp>
 #include <stdexcept>
 #include <cmath>
+#include <robot_interface/angle.hpp>
 
 namespace state_estimator
 {
@@ -16,6 +17,7 @@ namespace state_estimator
     }
     void StateEstimator::reset(){
         initialized_ = false;
+        yaw_estimate_ = 0.0;
         pitch_estimate_ = 0.0;
         previous_timestamp_ = 0.0;
         initial_forward_position_ = 0.0;
@@ -45,6 +47,9 @@ namespace state_estimator
             double alpha = pitch_filter_time_constant_ / (pitch_filter_time_constant_ + dt);
             double pitch_from_gyro = pitch_estimate_ + sensor_data.gyroscope[1] * dt;
             pitch_estimate_ = alpha * pitch_from_gyro + (1.0 - alpha) * pitch_from_accel;
+            yaw_estimate_ = robot_interface::wrap_to_pi(
+                yaw_estimate_ + sensor_data.gyroscope[2] * dt
+            );
             previous_timestamp_ = sensor_data.timestamp;
         }
         double current_forward_position =
@@ -62,6 +67,7 @@ namespace state_estimator
         state.right_wheel_position = sensor_data.right_wheel_position;
         state.right_wheel_velocity = sensor_data.right_wheel_velocity;
         state.pitch_rate = sensor_data.gyroscope[1];
+        state.yaw = yaw_estimate_;
         state.yaw_rate = sensor_data.gyroscope[2];
         state.forward_velocity = wheel_radius_* ((sensor_data.left_wheel_velocity + sensor_data.right_wheel_velocity)/2.0 + sensor_data.gyroscope[1]);
         return state;

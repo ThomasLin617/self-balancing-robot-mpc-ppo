@@ -41,6 +41,9 @@ install(
 ament_export_targets(export_state_estimator HAS_LIBRARY_TARGET)
 ament_export_dependencies(robot_interface)
 if(BUILD_TESTING)
+  add_executable(yaw_estimator_test src/yaw_estimator_test.cpp)
+  target_link_libraries(yaw_estimator_test state_estimator)
+  add_test(NAME yaw_estimator COMMAND yaw_estimator_test)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
   # comment the line when a copyright and license is added to all source files

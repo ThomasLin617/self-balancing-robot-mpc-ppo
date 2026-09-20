@@ -60,6 +60,12 @@ ament_export_dependencies(
   OsqpEigen
 )
 if(BUILD_TESTING)
+  add_executable(mpc_preview_test src/mpc_preview_test.cpp)
+  target_link_libraries(mpc_preview_test controller_lib)
+  add_test(NAME mpc_preview_math COMMAND mpc_preview_test)
+  add_executable(yaw_mpc_test src/yaw_mpc_test.cpp)
+  target_link_libraries(yaw_mpc_test controller_lib)
+  add_test(NAME yaw_mpc_math COMMAND yaw_mpc_test)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
   # comment the line when a copyright and license is added to all source files

@@ -93,6 +93,40 @@ void MujocoViewer::set_camera_azimuth(double degrees)
 }
 
 
+void MujocoViewer::set_camera_overview(const std::array<double, 3>& center, double distance) {
+    if (!std::isfinite(distance) || distance <= 0.0) throw std::invalid_argument("Invalid camera distance.");
+    for (double value : center) {
+        if (!std::isfinite(value)) throw std::invalid_argument("Invalid camera center.");
+    }
+    camera_.type = mjCAMERA_FREE;
+    for (int i = 0; i < 3; ++i) camera_.lookat[i] = center[i];
+    camera_.distance = distance;
+    camera_.elevation = -60.0;
+}
+
+
+void MujocoViewer::set_reference_path(
+    const std::vector<std::array<double, 3>>& points,
+    const std::array<double, 3>& target
+) {
+    if (points.size() > 500) {
+        throw std::invalid_argument("Too many reference path points.");
+    }
+    reference_path_ = points;
+    target_ = target;
+}
+
+
+void MujocoViewer::set_planned_route(
+    const std::vector<std::array<double, 3>>& raw_path,
+    const std::vector<std::array<double, 3>>& waypoints
+) {
+    if (raw_path.size() + waypoints.size() > 800) throw std::invalid_argument("Too many planner debug points.");
+    raw_path_ = raw_path;
+    waypoints_ = waypoints;
+}
+
+
 void MujocoViewer::render()
 {
     mjrRect viewport{0, 0, 0, 0};
@@ -149,6 +183,43 @@ void MujocoViewer::render()
                 light.specular[j] = (i == 0) ? 0.08f : 0.03f;
             }
         }
+    }
+
+    if (!reference_path_.empty()) {
+        const float path_color[4] = {0.1f, 0.65f, 1.0f, 1.0f};
+        const float target_color[4] = {1.0f, 0.3f, 0.05f, 1.0f};
+        if (scene_.ngeom + static_cast<int>(reference_path_.size()) > scene_.maxgeom) {
+            throw std::runtime_error("Viewer scene has no room for the reference path.");
+        }
+        for (std::size_t i = 1; i < reference_path_.size(); ++i) {
+            auto& geom = scene_.geoms[scene_.ngeom++];
+            mjv_initGeom(&geom, mjGEOM_CAPSULE, nullptr, nullptr, nullptr, path_color);
+            mjv_connector(&geom, mjGEOM_CAPSULE, 0.008,
+                          reference_path_[i - 1].data(), reference_path_[i].data());
+            geom.category = mjCAT_DECOR;
+        }
+        const mjtNum size[3] = {0.05, 0.05, 0.05};
+        auto& target = scene_.geoms[scene_.ngeom++];
+        mjv_initGeom(&target, mjGEOM_SPHERE, size, target_.data(), nullptr, target_color);
+        target.category = mjCAT_DECOR;
+    }
+
+    if (scene_.ngeom + static_cast<int>(raw_path_.size() + waypoints_.size()) > scene_.maxgeom) {
+        throw std::runtime_error("Viewer scene has no room for planner geometry.");
+    }
+    const float raw_color[4] = {0.9f, 0.8f, 0.1f, 1.0f};
+    const float waypoint_color[4] = {0.9f, 0.9f, 0.9f, 1.0f};
+    for (std::size_t i = 1; i < raw_path_.size(); ++i) {
+        auto& geom = scene_.geoms[scene_.ngeom++];
+        mjv_initGeom(&geom, mjGEOM_LINE, nullptr, nullptr, nullptr, raw_color);
+        mjv_connector(&geom, mjGEOM_LINE, 2.0, raw_path_[i - 1].data(), raw_path_[i].data());
+        geom.category = mjCAT_DECOR;
+    }
+    for (const auto& waypoint : waypoints_) {
+        const mjtNum size[3] = {0.025, 0.025, 0.025};
+        auto& geom = scene_.geoms[scene_.ngeom++];
+        mjv_initGeom(&geom, mjGEOM_SPHERE, size, waypoint.data(), nullptr, waypoint_color);
+        geom.category = mjCAT_DECOR;
     }
 
     mjr_render(

@@ -7,3 +7,11 @@
 build/
 install/
 log/
+# Learning checkpoints and rollout metrics
+artifacts/learning/
+tools/learning/__pycache__/
+tools/__pycache__/
+tools/benchmark/__pycache__/
+artifacts/benchmark/
+artifacts/ros2/
+tools/ros2/__pycache__/

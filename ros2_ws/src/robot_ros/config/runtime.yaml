@@ -1,0 +1,22 @@
+/**:
+  ros__parameters:
+    use_sim_time: true
+mujoco_backend_node:
+  ros__parameters:
+    command_timeout: 0.01
+    wall_wait_timeout: 0.5
+    encoder_stride: 1
+state_estimator_node:
+  ros__parameters:
+    sensor_timeout: 0.01
+    encoder_stride: 1
+mpc_node:
+  ros__parameters:
+    state_timeout: 0.01
+    state_wall_timeout: 0.5
+    max_velocity: 0.18
+    acceleration: 0.08
+ppo_node:
+  ros__parameters:
+    state_timeout: 0.01
+    state_wall_timeout: 0.5

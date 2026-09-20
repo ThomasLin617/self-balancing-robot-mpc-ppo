@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <array>
 #include <memory>
 #include <mujoco/mujoco.h>
 #include <robot_interface/sensor_data.hpp>
@@ -21,6 +22,8 @@ public:
     // Force at the body COM along its local +X axis; pass zero to clear it.
     void set_body_forward_force(const char* body_name, double force_newtons);
     void reset();
+    std::array<double, 3> debug_planar_pose(const char* body_name) const;
+    bool debug_has_contact(const char* geom_name) const;
 private:
 
 
