@@ -1,17 +1,31 @@
 .DS_Store
-
-# pixi environments
-.pixi/*
-!.pixi/config.toml
 .pixi/
 build/
 install/
 log/
-# Learning checkpoints and rollout metrics
-artifacts/learning/
-tools/learning/__pycache__/
-tools/__pycache__/
-tools/benchmark/__pycache__/
+__pycache__/
+*.py[cod]
+MUJOCO_LOG.TXT
+
+# Keep the frozen inference export; exclude training checkpoints and traces.
+artifacts/learning/*
+!artifacts/learning/selected_policy.txt
+!artifacts/learning/selected_policy.parity.txt
+!artifacts/learning/selected_policy.observations.txt
+!artifacts/learning/selected_policy.scenario.txt
+!artifacts/learning/selected_policy.manifest.json
 artifacts/benchmark/
 artifacts/ros2/
-tools/ros2/__pycache__/
+artifacts/cleanup/
+
+# D18 portable inference weights and provenance.
+!artifacts/learning/d18_selected/
+artifacts/learning/d18_selected/*
+!artifacts/learning/d18_selected/actor.txt
+!artifacts/learning/d18_selected/manifest.json
+
+# Selected full-circle trajectory policy.
+!artifacts/learning/d18_selected_full_circle_v2/
+artifacts/learning/d18_selected_full_circle_v2/*
+!artifacts/learning/d18_selected_full_circle_v2/actor.txt
+!artifacts/learning/d18_selected_full_circle_v2/manifest.json

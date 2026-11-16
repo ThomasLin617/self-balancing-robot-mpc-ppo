@@ -1,0 +1,511 @@
+{
+  "checkpoint": "artifacts/learning/d18_e_full_v2/best_validation.zip",
+  "checkpoint_sha256": "df942838457afcac1512679bb2ae4aeb3446b2373266ddc1b9d39f7c19e3d097",
+  "actor_sha256": "6b71ba4542f1a772d19d13273f22faf3bcf4e5310dbc85087b437ae1b7a10f7d",
+  "contract": "d18_mlp_v1",
+  "input_dimension": 1256,
+  "cases": [
+    {
+      "case": 0,
+      "preprocessing_error": 1.4772898460080341e-08,
+      "action_error": 9.531977140930792e-08
+    },
+    {
+      "case": 1,
+      "preprocessing_error": 1.4773531731293588e-08,
+      "action_error": 2.165226062333936e-08
+    },
+    {
+      "case": 2,
+      "preprocessing_error": 8.937936613051534e-09,
+      "action_error": 3.821904831502465e-08
+    },
+    {
+      "case": 3,
+      "preprocessing_error": 8.755816738315048e-09,
+      "action_error": 1.6753255782653298e-08
+    },
+    {
+      "case": 4,
+      "preprocessing_error": 1.478919298136816e-08,
+      "action_error": 3.695088823807424e-08
+    },
+    {
+      "case": 5,
+      "preprocessing_error": 1.4867215014646717e-08,
+      "action_error": 3.3624687825750676e-08
+    },
+    {
+      "case": 6,
+      "preprocessing_error": 1.4861760710971339e-08,
+      "action_error": 3.3882642747062874e-08
+    },
+    {
+      "case": 7,
+      "preprocessing_error": 1.3830611766962875e-08,
+      "action_error": 2.1542461075413355e-08
+    },
+    {
+      "case": 8,
+      "preprocessing_error": 8.42647107646144e-09,
+      "action_error": 9.666309852551791e-08
+    },
+    {
+      "case": 9,
+      "preprocessing_error": 1.4776417422979193e-08,
+      "action_error": 3.212416133102636e-08
+    },
+    {
+      "case": 10,
+      "preprocessing_error": 1.4770063394564659e-08,
+      "action_error": 5.028874339174649e-08
+    },
+    {
+      "case": 11,
+      "preprocessing_error": 1.4899063316420325e-08,
+      "action_error": 1.4370825085485706e-08
+    },
+    {
+      "case": 12,
+      "preprocessing_error": 1.4774764856007039e-08,
+      "action_error": 1.791436282649883e-08
+    },
+    {
+      "case": 13,
+      "preprocessing_error": 1.481406997072554e-08,
+      "action_error": 1.0988920662313717e-08
+    },
+    {
+      "case": 14,
+      "preprocessing_error": 1.4615989640809346e-08,
+      "action_error": 2.5639709647085063e-08
+    },
+    {
+      "case": 15,
+      "preprocessing_error": 6.675814845369388e-09,
+      "action_error": 2.9462532413759845e-08
+    },
+    {
+      "case": 16,
+      "preprocessing_error": 1.4763640976411807e-08,
+      "action_error": 1.9218320990166404e-08
+    },
+    {
+      "case": 17,
+      "preprocessing_error": 1.4874695253297432e-08,
+      "action_error": 2.8399875229290217e-08
+    },
+    {
+      "case": 18,
+      "preprocessing_error": 6.710889732808312e-09,
+      "action_error": 6.686943557210334e-08
+    },
+    {
+      "case": 19,
+      "preprocessing_error": 1.4507611167946521e-08,
+      "action_error": 7.3254213805995505e-09
+    },
+    {
+      "case": 20,
+      "preprocessing_error": 1.4786063928795556e-08,
+      "action_error": 4.0165398840219524e-08
+    },
+    {
+      "case": 21,
+      "preprocessing_error": 1.3782519237004465e-08,
+      "action_error": 2.2158039403308294e-08
+    },
+    {
+      "case": 22,
+      "preprocessing_error": 1.4831443628793295e-08,
+      "action_error": 9.2605890789077e-08
+    },
+    {
+      "case": 23,
+      "preprocessing_error": 1.4386053792669884e-08,
+      "action_error": 7.509884270007205e-08
+    },
+    {
+      "case": 24,
+      "preprocessing_error": 1.0698352759241914e-08,
+      "action_error": 8.557767960937213e-08
+    },
+    {
+      "case": 25,
+      "preprocessing_error": 6.990831025177613e-09,
+      "action_error": 6.264253354926197e-08
+    },
+    {
+      "case": 26,
+      "preprocessing_error": 1.4730870301349341e-08,
+      "action_error": 9.706209064264115e-08
+    },
+    {
+      "case": 27,
+      "preprocessing_error": 8.843210053122164e-09,
+      "action_error": 4.2105975706085985e-08
+    },
+    {
+      "case": 28,
+      "preprocessing_error": 1.4401035031141873e-08,
+      "action_error": 4.410628939854888e-08
+    },
+    {
+      "case": 29,
+      "preprocessing_error": 1.3555093714145983e-08,
+      "action_error": 1.7565112558903806e-08
+    },
+    {
+      "case": 30,
+      "preprocessing_error": 1.4862584052366401e-08,
+      "action_error": 6.949207875805996e-10
+    },
+    {
+      "case": 31,
+      "preprocessing_error": 1.455344667000702e-08,
+      "action_error": 1.0338416711608289e-07
+    },
+    {
+      "case": 32,
+      "preprocessing_error": 6.862218571157541e-09,
+      "action_error": 1.4461423947231822e-08
+    },
+    {
+      "case": 33,
+      "preprocessing_error": 1.4681928561799396e-08,
+      "action_error": 8.404385720695018e-08
+    },
+    {
+      "case": 34,
+      "preprocessing_error": 1.4772484124847551e-08,
+      "action_error": 5.2665272406993147e-08
+    },
+    {
+      "case": 35,
+      "preprocessing_error": 1.4790991542668053e-08,
+      "action_error": 6.046008582671902e-09
+    },
+    {
+      "case": 36,
+      "preprocessing_error": 1.4328229713811425e-08,
+      "action_error": 5.321574274297358e-08
+    },
+    {
+      "case": 37,
+      "preprocessing_error": 7.437714388824901e-09,
+      "action_error": 2.036035051666829e-08
+    },
+    {
+      "case": 38,
+      "preprocessing_error": 1.372701996515957e-08,
+      "action_error": 1.0610564094015729e-08
+    },
+    {
+      "case": 39,
+      "preprocessing_error": 1.4733426478841238e-08,
+      "action_error": 1.0712079334673774e-08
+    },
+    {
+      "case": 40,
+      "preprocessing_error": 1.4734429953922046e-08,
+      "action_error": 4.315203150362379e-08
+    },
+    {
+      "case": 41,
+      "preprocessing_error": 1.441391928036495e-08,
+      "action_error": 9.456169069999021e-09
+    },
+    {
+      "case": 42,
+      "preprocessing_error": 1.4883138721444311e-08,
+      "action_error": 9.033360615084973e-08
+    },
+    {
+      "case": 43,
+      "preprocessing_error": 1.4886760490995243e-08,
+      "action_error": 3.772772588783724e-08
+    },
+    {
+      "case": 44,
+      "preprocessing_error": 1.457389497971917e-08,
+      "action_error": 8.379606175612508e-09
+    },
+    {
+      "case": 45,
+      "preprocessing_error": 1.4696451666740273e-08,
+      "action_error": 1.519191888954552e-08
+    },
+    {
+      "case": 46,
+      "preprocessing_error": 1.4753861243832489e-08,
+      "action_error": 6.636340199595026e-08
+    },
+    {
+      "case": 47,
+      "preprocessing_error": 1.4900329858846817e-08,
+      "action_error": 1.6711416472858787e-08
+    },
+    {
+      "case": 48,
+      "preprocessing_error": 1.484188505429529e-08,
+      "action_error": 3.638183931897743e-08
+    },
+    {
+      "case": 49,
+      "preprocessing_error": 1.1988781634109102e-08,
+      "action_error": 1.254518028348528e-07
+    },
+    {
+      "case": 50,
+      "preprocessing_error": 5.835145366894778e-09,
+      "action_error": 1.0000175398872102e-07
+    },
+    {
+      "case": 51,
+      "preprocessing_error": 1.4772418399644494e-08,
+      "action_error": 3.917268531772322e-08
+    },
+    {
+      "case": 52,
+      "preprocessing_error": 6.898157600687682e-09,
+      "action_error": 4.479707460536275e-08
+    },
+    {
+      "case": 53,
+      "preprocessing_error": 1.4888736465934471e-08,
+      "action_error": 8.176926180603061e-08
+    },
+    {
+      "case": 54,
+      "preprocessing_error": 7.427091830436439e-09,
+      "action_error": 2.8064831569807325e-09
+    },
+    {
+      "case": 55,
+      "preprocessing_error": 6.972242005964802e-09,
+      "action_error": 3.716050178681485e-08
+    },
+    {
+      "case": 56,
+      "preprocessing_error": 1.3379913177402614e-08,
+      "action_error": 1.5313696599683624e-07
+    },
+    {
+      "case": 57,
+      "preprocessing_error": 1.3100951101741032e-08,
+      "action_error": 7.483192754342838e-08
+    },
+    {
+      "case": 58,
+      "preprocessing_error": 1.3694463008029345e-08,
+      "action_error": 9.167200332171888e-10
+    },
+    {
+      "case": 59,
+      "preprocessing_error": 1.4787312707653655e-08,
+      "action_error": 1.3453001712626644e-08
+    },
+    {
+      "case": 60,
+      "preprocessing_error": 1.4063503583905401e-08,
+      "action_error": 6.278174202734021e-08
+    },
+    {
+      "case": 61,
+      "preprocessing_error": 1.47632754909921e-08,
+      "action_error": 5.366555477781532e-09
+    },
+    {
+      "case": 62,
+      "preprocessing_error": 1.485737577411328e-08,
+      "action_error": 1.577974054756126e-07
+    },
+    {
+      "case": 63,
+      "preprocessing_error": 1.781398850653204e-08,
+      "action_error": 3.447914787013673e-08
+    },
+    {
+      "case": 64,
+      "preprocessing_error": 1.4747316257057719e-08,
+      "action_error": 7.053817818736263e-08
+    },
+    {
+      "case": 65,
+      "preprocessing_error": 9.284670698939124e-09,
+      "action_error": 9.419781521469162e-08
+    },
+    {
+      "case": 66,
+      "preprocessing_error": 1.4732160047437048e-08,
+      "action_error": 7.283339065189409e-08
+    },
+    {
+      "case": 67,
+      "preprocessing_error": 2.1682771800257683e-08,
+      "action_error": 1.0511541248536815e-07
+    },
+    {
+      "case": 68,
+      "preprocessing_error": 7.335710150435659e-09,
+      "action_error": 1.33524682144337e-08
+    },
+    {
+      "case": 69,
+      "preprocessing_error": 1.4805084269653435e-08,
+      "action_error": 1.1607231842347687e-10
+    },
+    {
+      "case": 70,
+      "preprocessing_error": 1.4878920318039945e-08,
+      "action_error": 4.2351800094708736e-08
+    },
+    {
+      "case": 71,
+      "preprocessing_error": 6.478139635834879e-09,
+      "action_error": 2.4931486986012885e-08
+    },
+    {
+      "case": 72,
+      "preprocessing_error": 1.4803871017932124e-08,
+      "action_error": 9.49767287039549e-08
+    },
+    {
+      "case": 73,
+      "preprocessing_error": 7.676340452178465e-09,
+      "action_error": 5.8881779008146395e-08
+    },
+    {
+      "case": 74,
+      "preprocessing_error": 1.3961290512565228e-08,
+      "action_error": 3.429270307997445e-08
+    },
+    {
+      "case": 75,
+      "preprocessing_error": 1.2901444246260496e-08,
+      "action_error": 2.6084200410725344e-08
+    },
+    {
+      "case": 76,
+      "preprocessing_error": 8.95792440225307e-09,
+      "action_error": 8.158273182012898e-08
+    },
+    {
+      "case": 77,
+      "preprocessing_error": 1.4762989053451747e-08,
+      "action_error": 1.2631767076776157e-08
+    },
+    {
+      "case": 78,
+      "preprocessing_error": 1.4732677189321919e-08,
+      "action_error": 4.204192979861965e-08
+    },
+    {
+      "case": 79,
+      "preprocessing_error": 1.4879939058687341e-08,
+      "action_error": 1.0379803128124365e-08
+    },
+    {
+      "case": 80,
+      "preprocessing_error": 1.4295062467084563e-08,
+      "action_error": 3.803967876803149e-08
+    },
+    {
+      "case": 81,
+      "preprocessing_error": 1.4629945532806943e-08,
+      "action_error": 5.6488462241155446e-08
+    },
+    {
+      "case": 82,
+      "preprocessing_error": 6.171948757627277e-09,
+      "action_error": 6.48289977256411e-09
+    },
+    {
+      "case": 83,
+      "preprocessing_error": 1.4683288140915352e-08,
+      "action_error": 3.727990116608737e-08
+    },
+    {
+      "case": 84,
+      "preprocessing_error": 1.4709188089767622e-08,
+      "action_error": 6.558606657769417e-09
+    },
+    {
+      "case": 85,
+      "preprocessing_error": 1.4882842513941341e-08,
+      "action_error": 3.046383167948363e-08
+    },
+    {
+      "case": 86,
+      "preprocessing_error": 1.4557089866862327e-08,
+      "action_error": 2.5598092590062294e-08
+    },
+    {
+      "case": 87,
+      "preprocessing_error": 5.578294270947026e-09,
+      "action_error": 7.078062747023495e-08
+    },
+    {
+      "case": 88,
+      "preprocessing_error": 8.444970611698466e-09,
+      "action_error": 1.499703661256291e-08
+    },
+    {
+      "case": 89,
+      "preprocessing_error": 1.404649252467749e-08,
+      "action_error": 1.635499124325035e-08
+    },
+    {
+      "case": 90,
+      "preprocessing_error": 7.528141221513351e-09,
+      "action_error": 7.150938452493705e-08
+    },
+    {
+      "case": 91,
+      "preprocessing_error": 1.4663201319820018e-08,
+      "action_error": 3.5189442915140035e-08
+    },
+    {
+      "case": 92,
+      "preprocessing_error": 1.4866434305815801e-08,
+      "action_error": 1.8109683808109622e-08
+    },
+    {
+      "case": 93,
+      "preprocessing_error": 7.198239337924406e-09,
+      "action_error": 3.96436392047228e-08
+    },
+    {
+      "case": 94,
+      "preprocessing_error": 1.4051563468342465e-08,
+      "action_error": 1.3238234009005367e-08
+    },
+    {
+      "case": 95,
+      "preprocessing_error": 1.477651195846974e-08,
+      "action_error": 3.209233967460534e-08
+    },
+    {
+      "case": 96,
+      "preprocessing_error": 2.319627490088294e-08,
+      "action_error": 3.284437266604101e-08
+    },
+    {
+      "case": 97,
+      "preprocessing_error": 1.4724087060713487e-08,
+      "action_error": 1.8496411069435226e-09
+    },
+    {
+      "case": 98,
+      "preprocessing_error": 5.355557219921536e-09,
+      "action_error": 2.0123327865162466e-08
+    },
+    {
+      "case": 99,
+      "preprocessing_error": 8.654987837530825e-09,
+      "action_error": 1.22207388653095e-09
+    }
+  ],
+  "preprocessing_max_error": 2.319627490088294e-08,
+  "action_max_error": 1.577974054756126e-07
+}

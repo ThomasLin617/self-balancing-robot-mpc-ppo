@@ -8,8 +8,20 @@ import unittest
 class IntegrationReportChecks(unittest.TestCase):
     def test_frozen_core(self):
         before = json.loads(Path('artifacts/ros2/d17/before_hashes.json').read_text())
+        extensions = json.loads(Path('docs/d18_build_extensions.json').read_text())
+        for name, record in extensions.items():
+            self.assertTrue(name.endswith('/CMakeLists.txt'))
+            self.assertEqual(hashlib.sha256(Path(name).read_bytes()).hexdigest(), record['d18_sha256'], name)
+        validation = json.loads(Path('docs/d18_validation_extensions.json').read_text())
+        self.assertEqual(set(validation), {'tools/benchmark/audit_checks.py', 'tools/benchmark/audit_report.py', 'tools/benchmark/report.py'})
+        for name, record in validation.items():
+            self.assertEqual(hashlib.sha256(Path(name).read_bytes()).hexdigest(), record['d18_sha256'], name)
+        extensions.update(validation)
         for name, digest in before.items():
-            self.assertEqual(hashlib.sha256(Path(name).read_bytes()).hexdigest(), digest, name)
+            if Path(name).name == ".DS_Store":
+                continue
+            expected = extensions[name]['d18_sha256'] if name in extensions else digest
+            self.assertEqual(hashlib.sha256(Path(name).read_bytes()).hexdigest(), expected, name)
         for package in ['controller', 'state_estimator', 'navigation', 'learning_policy']:
             for source in Path('ros2_ws/src', package).rglob('*'):
                 if source.suffix in ['.cpp', '.hpp', '.xml']:
@@ -34,7 +46,7 @@ class IntegrationReportChecks(unittest.TestCase):
             self.assertGreater(snapshot['launch_bag_verified']['bag_counts'][topic], 0)
 
     def test_report_links(self):
-        for document in ['README.md', 'docs/D17_ROS2_INTEGRATION.md']:
+        for document in ['README.md', 'docs/ROS2_INTEGRATION.md']:
             path = Path(document)
             text = path.read_text()
             for target in re.findall(r'\]\(([^)]+)\)', text):
@@ -42,7 +54,7 @@ class IntegrationReportChecks(unittest.TestCase):
                     continue
                 name = target.split('#')[0]
                 self.assertTrue((path.parent / name).exists(), f'{document}: {target}')
-            self.assertIn('<!-- ROS_RESULTS_BEGIN -->', text)
+            self.assertIn('### ROS 2 Runtime' if document=='README.md' else '<!-- ROS_RESULTS_BEGIN -->', text)
             self.assertNotIn('runtime ROS nodes and transport integration are future work', text)
 
     def test_bringup_sim_time(self):

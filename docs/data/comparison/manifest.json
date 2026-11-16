@@ -1,0 +1,26 @@
+{
+  "files": {
+    "mpc_staggered_21.csv.gz": "e8da1bf67a1248718c870508a3fecbe033cb4ed9dc15bb5e7511be2e5a17d326",
+    "ppo_staggered_21.csv.gz": "e5e6831820e81e79f22f3424eae2cba9a56bd0f1656685286e23951b9d623369",
+    "compute.csv": "6e71ecf380729ff4b37fc1ebfa34b62767690d7cc7d85f24b47eca4fe877c884",
+    "staggered_21.txt": "b3ab894d262ddb427d67b415d7eb71646e205373f8a04c975c4867e047cf7faf"
+  },
+  "machine": {
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "cpu": "Apple M4",
+    "compiler": "clang version 21.1.7",
+    "build_type": "Release",
+    "warmup": 500,
+    "samples": 5000,
+    "clock": "std::chrono::steady_clock",
+    "python_dependencies": {
+      "mujoco": "3.12.0",
+      "numpy": "2.5.2",
+      "torch": "2.10.0",
+      "stable-baselines3": "2.9.0",
+      "pybind11": "3.0.4"
+    }
+  },
+  "source": "artifacts/benchmark/d18_full_circle_retrained_v2",
+  "actor_sha256": "6b71ba4542f1a772d19d13273f22faf3bcf4e5310dbc85087b437ae1b7a10f7d"
+}

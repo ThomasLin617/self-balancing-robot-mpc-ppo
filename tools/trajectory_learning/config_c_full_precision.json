@@ -1,0 +1,42 @@
+{
+  "version": "d18_full_circle_precision_v3",
+  "stage": "C_full",
+  "seed": 327000,
+  "validation_seed": 427000,
+  "validation_episodes": 40,
+  "evaluation_interval": 250000,
+  "max_transitions": 2400000,
+  "environments": 8,
+  "physics_dt": 0.001,
+  "control_steps": 2,
+  "horizon": 250,
+  "network": [
+    128,
+    128
+  ],
+  "ppo": {
+    "learning_rate": 1e-06,
+    "n_steps": 2048,
+    "batch_size": 256,
+    "n_epochs": 10,
+    "gamma": 0.999,
+    "gae_lambda": 0.98,
+    "clip_range": 0.2,
+    "ent_coef": 0.0,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "target_kl": 0.03
+  },
+  "success_rate": 0.9,
+  "fall_rate": 0.05,
+  "previous_stage": "E",
+  "curriculum": {
+    "bearing": [
+      0.3,
+      3.141592653589793
+    ],
+    "settled_radius": 0.03
+  },
+  "continue_stage": true,
+  "exploration_std": 0.05
+}

@@ -1,0 +1,119 @@
+{
+  "actor_sha256": "6b71ba4542f1a772d19d13273f22faf3bcf4e5310dbc85087b437ae1b7a10f7d",
+  "cases": [
+    {
+      "state": [
+        -3.0,
+        -0.04,
+        -0.03,
+        -0.2,
+        3.141592643589793,
+        0.0
+      ],
+      "distance": -0.2,
+      "velocity_reference": -0.06,
+      "pitch_reference": -0.02,
+      "yaw_change": -0.6000000000000001,
+      "yaw_rate_reference": -0.09,
+      "python_action": [
+        0.3807452917098999,
+        -0.9670291543006897
+      ]
+    },
+    {
+      "state": [
+        -2.0,
+        -0.02,
+        -0.02,
+        -0.1,
+        -3.141592643589793,
+        0.02
+      ],
+      "distance": -0.1,
+      "velocity_reference": -0.04,
+      "pitch_reference": -0.01,
+      "yaw_change": -0.4,
+      "yaw_rate_reference": -0.06,
+      "python_action": [
+        0.37222927808761597,
+        -0.8069655895233154
+      ]
+    },
+    {
+      "state": [
+        -1.0,
+        0.0,
+        -0.01,
+        0.0,
+        3.141592643589793,
+        0.04
+      ],
+      "distance": 0.0,
+      "velocity_reference": -0.02,
+      "pitch_reference": 0.0,
+      "yaw_change": -0.2,
+      "yaw_rate_reference": -0.03,
+      "python_action": [
+        0.3555544316768646,
+        -0.5516489148139954
+      ]
+    },
+    {
+      "state": [
+        0.0,
+        0.02,
+        0.0,
+        0.1,
+        -3.141592643589793,
+        0.06
+      ],
+      "distance": 0.1,
+      "velocity_reference": 0.0,
+      "pitch_reference": 0.01,
+      "yaw_change": 0.0,
+      "yaw_rate_reference": 0.0,
+      "python_action": [
+        0.3145727813243866,
+        -0.17094804346561432
+      ]
+    },
+    {
+      "state": [
+        1.0,
+        0.04,
+        0.01,
+        0.2,
+        3.141592643589793,
+        0.08
+      ],
+      "distance": 0.2,
+      "velocity_reference": 0.02,
+      "pitch_reference": 0.02,
+      "yaw_change": 0.2,
+      "yaw_rate_reference": 0.03,
+      "python_action": [
+        0.2135622352361679,
+        0.22882111370563507
+      ]
+    },
+    {
+      "state": [
+        2.0,
+        0.06,
+        0.02,
+        0.30000000000000004,
+        -3.141592643589793,
+        0.1
+      ],
+      "distance": 0.30000000000000004,
+      "velocity_reference": 0.04,
+      "pitch_reference": 0.03,
+      "yaw_change": 0.4,
+      "yaw_rate_reference": 0.06,
+      "python_action": [
+        0.06360039114952087,
+        0.48369330167770386
+      ]
+    }
+  ]
+}

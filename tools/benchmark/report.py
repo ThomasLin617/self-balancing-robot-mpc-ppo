@@ -131,7 +131,7 @@ def main():
                 [[k,s['count'],*[number(s[x]) for x in ['mean','median','std','p95','maximum']]] for k,s in value['metrics'].items()]))
     full='\n\n'.join(details)+'\n'
     (root/'benchmark_distributions.md').write_text(full)
-    for filename,fragment in [('README.md',compact),('docs/D16_UNIFIED_BENCHMARK.md',full)]:
+    for filename,fragment in [('README.md',compact),('docs/OBSTACLE_FREE_BENCHMARK.md',full)]:
         path=Path(filename)
         if path.exists():
             text=path.read_text()
@@ -160,7 +160,7 @@ def main():
         units={'time':'s','estimated goal error':'m','debug true goal error':'m','max torque':'N·m',
                'max pitch after recovery':'rad','max odometry error':'m'}
         fragment=table(['Known-map capability metric','Measured value'],[['Total simulated duration (including startup recovery)' if k=='time' else k,number(v)+' '+units.get(k,'')] for k,v in values.items()])
-        for name in ['README.md','docs/D16_UNIFIED_BENCHMARK.md']:
+        for name in ['README.md','docs/OBSTACLE_FREE_BENCHMARK.md']:
             path=Path(name)
             text=path.read_text()
             start,end='<!-- KNOWN_MAP_RESULT_BEGIN -->','<!-- KNOWN_MAP_RESULT_END -->'

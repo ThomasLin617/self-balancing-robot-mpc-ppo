@@ -1,0 +1,11 @@
+{
+  "description": "Frozen selected PPO inference export; no training or weight changes during repository preparation.",
+  "source_checkpoint": "artifacts/learning/d_full_potential/best_validation.zip",
+  "source_checkpoint_sha256": "4b290bf34e41e3959a4b8dbcdf62b2b229e39aeda51293d45248b95191301128",
+  "files": {
+    "artifacts/learning/selected_policy.txt": "6f315dfc6ec4b8c26768c39995306caaf1a0a0efb781182c7e723ed5edae377b",
+    "artifacts/learning/selected_policy.parity.txt": "31e9e50fe94c6639ad61ac00027c00d2f265acc52f2ca392412b0c48c2a14e74",
+    "artifacts/learning/selected_policy.observations.txt": "b8371365f087f911fbd3874563721576551544b4736e6ed2fb1760bb2b50312b",
+    "artifacts/learning/selected_policy.scenario.txt": "455031f07c8e7403047dba4b474b0307db345132ef2c549e46cacbbff6853311"
+  }
+}

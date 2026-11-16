@@ -1,0 +1,24 @@
+{
+  "mpc": {
+    "denominator": 100,
+    "success": 61,
+    "fall": 39,
+    "timeout": 0
+  },
+  "ppo": {
+    "denominator": 100,
+    "success": 83,
+    "fall": 0,
+    "timeout": 17
+  },
+  "paired_goals_identical": true,
+  "source": "docs/benchmark_episodes.json",
+  "source_sha256": "ffd37e01d1a868ca8b4e5e5f56c8306171f30f571e4e5977481858474dce5384",
+  "all_trial_count": 265,
+  "notes": [
+    "Headline denominator excludes eight fixed directional checks per method.",
+    "Completion-time statistics use successful episodes only; see success counts above.",
+    "Disturbance pulse-exposed denominators are 5 MPC and 8 PPO, not 100.",
+    "Historical D15 final 87/100 is a separate evaluation population."
+  ]
+}

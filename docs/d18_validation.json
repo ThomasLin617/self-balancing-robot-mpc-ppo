@@ -1,0 +1,76 @@
+{
+  "python_tests": 38,
+  "cpp_functional_tests": 14,
+  "paired_cases_per_method": 100,
+  "paired_reference_hashes_match": true,
+  "ros_reset_and_trace_comparison": {
+    "native_ros_max_errors": {
+      "p": 2.4353852268177434e-12,
+      "v": 4.95939400657619e-12,
+      "pitch": 1.0693217145085754e-12,
+      "pitch_rate": 1.4511874341094355e-11,
+      "yaw": 3.382627511427927e-12,
+      "yaw_rate": 1.2410628080772312e-11,
+      "left": 8.536032991557363e-12,
+      "right": 8.092526648795229e-12
+    },
+    "estimated_final_distance": 0.020766033887993876,
+    "contact_samples": 0,
+    "state_count": 36000,
+    "valid_commands": 17999,
+    "process_ids": [
+      85061,
+      85062,
+      85063
+    ],
+    "reset_origin_zero": true,
+    "single_torque_publisher": true
+  },
+  "ros_faults": {
+    "stalled_clock_zero_command": true,
+    "stale_state_zero_command": true,
+    "nonfinite_state_rejected": true,
+    "missing_actor_fails_visibly": true
+  },
+  "build": "Release; colcon success with existing install_name_tool RPATH stderr",
+  "media_verified": [
+    "Document/demo/d18_mpc.mp4",
+    "Document/demo/d18_trajectory_ppo.mp4"
+  ],
+  "recording_tools_removed": true,
+  "source_hashes": {
+    "tools/trajectory_learning/scenarios.py": "9cdb539611093910fca85184c366e2d181be9f405f86bdad36edb92ae0844091",
+    "tools/trajectory_learning/CMakeLists.txt": "c94af177c6b9e0e3acdeff5bc867f643ae68ab07d0e0bef9dde5bab90c0794ae",
+    "tools/trajectory_learning/benchmark.py": "b2809da4b7e52a247fc23cdc15970349688a69cf8ac7817c54cb1ae8aba946a7",
+    "tools/trajectory_learning/policy_bridge.cpp": "2b2092e2ddaa6d16eaf79b6330db28b309deb1cca4bbe392a0c87088456118a7",
+    "tools/trajectory_learning/config_c3_slow.json": "d7bac8444e1c390c8b6535cd2ebc2ee2f9363229eb0949d98ef57a27a407efc4",
+    "tools/trajectory_learning/config_c2_profiled.json": "7d6cdb3871b088816fffc6ee00a24a827a66d4d717865ae5ec0efbc0eb1a6071",
+    "tools/trajectory_learning/benchmark_report.py": "682fe1014f1c05d93a306f2bff066018fad2c84fd44c8b944d0f61c9c2dd2c57",
+    "tools/trajectory_learning/config.json": "ba55d1aebf2009fac2ddcfe0de92cd53834cccca9567df6e389521ce420fa93a",
+    "tools/trajectory_learning/config_c1.json": "0ae72dd197c1a3689649bf45491ba9c19c315723d4fe62180fb0373d331d3dd2",
+    "tools/trajectory_learning/checks.py": "718635ada33042a00efe96ffd67f0c4b3e4c3679849a87b08da24e4bdecfab79",
+    "tools/trajectory_learning/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tools/trajectory_learning/runtime_checks.py": "7deab95617feabe17a4b1a4c416d2c6e256bd10b25b26ec940e7ca66f3a8ab1e",
+    "tools/trajectory_learning/config_c0.json": "f5e3a13535ee8cb74479762825cc9675eefdfa27faf91ffcb5dceac4885ca790",
+    "tools/trajectory_learning/export.py": "a69be38e94f980123e631c9344523e6d28c43059307060611387a03f109b83d7",
+    "tools/trajectory_learning/system_report.py": "988b6edbe2cc30b890c05f35b2c99551f54cd60579aa7d5bf81174fdef9f10a3",
+    "tools/trajectory_learning/ros_fault_checks.py": "b8f26703b8faef158294fc07f5e5501ed1c8fe6afbd2e5694e9e4f64911c54c0",
+    "tools/trajectory_learning/reproduce_curriculum.py": "03ac2b75e38c50c69a321ecbeca638d24df1562ccd741b8ecef44eb6cc266073",
+    "tools/trajectory_learning/config_c3.json": "5a1c7ec0bc2aa551c9faa7dd830d65ead8bc7c94ea0ee35ed34c984bde07f9eb",
+    "tools/trajectory_learning/diagnose.py": "e2ff0344117f54cfc308c7e11afbfadc1e68da09da30b6a9d7e99da63e766b7f",
+    "tools/trajectory_learning/config_e.json": "c1a6c88dc9814065fe2a9760a5bd0e7dbb581a3fbb59741fff7913c6068005c8",
+    "tools/trajectory_learning/compute_timing.cpp": "a8cce0fcea589cdd93e0aed2be962a09063d5274aa42fc873576dfafed1048fd",
+    "tools/trajectory_learning/bridge.cpp": "93bc6db754efd56bf877ac4211a41e1a8ff8be29e3c9af10c8eea259ac1c5288",
+    "tools/trajectory_learning/config_d.json": "cd20728d6ff7992e9a501eb34a4f4892ed712067b582cb76023bb0e70503ca40",
+    "tools/trajectory_learning/train.py": "dc997f417bcbb5953b36d9856d845d700374ae0fbffd9c58c33233e0692bf440",
+    "tools/trajectory_learning/environment.py": "51458832ac920f959a351334a347e0bdff2d7447f588e2c8413382b62d340464",
+    "tools/trajectory_learning/controller_bridge.cpp": "2e8ff865dd676a13e6f8075a4469986ac0450538ff1487b47c9b2cefdc10b931",
+    "tools/trajectory_learning/config_c2.json": "25f1e50ce06aae4a44968f5acd62ebc768cdfa7b5153fb29b97bbbaad20dadd0",
+    "tools/trajectory_learning/config_c.json": "75dfdca665dadcbb72513955e3463c1a22f1bf98f635394b77b845062f50b682",
+    "tools/trajectory_learning/ros_checks.py": "efaa19044a88ad028554ee543408b774aa065ae17bb35f2ae024d2946441f013",
+    "tools/trajectory_learning/challenges.py": "43f6fa891f31aacdc764a772e097db7d19676e9673c2cd263090e18947ee362e",
+    "tools/trajectory_learning/report.py": "46c5ca356dd406ee4caf84783e26256c78e06bc3dc3caad07c489db42035be51",
+    "tools/trajectory_learning/state.py": "bf4c62526f1e56c5d5954e03f3764f0f28528de7396ea5f29f3fd10705892f0c",
+    "tools/trajectory_learning/config_b.json": "a4b3da6ab7781fec6bc0dc4b82b83ffa2a980421a336547d6b4a4b37db144cbe"
+  }
+}

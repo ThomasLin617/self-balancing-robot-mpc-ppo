@@ -1,0 +1,18 @@
+{
+  "ros2_ws/src/learning_policy/CMakeLists.txt": {
+    "before_sha256": "e5d20cc50fd440c448d42984e62899190048eca3f20dbf5989307c5fb407eaa2",
+    "d18_sha256": "716ad8452a81e3fbec71f92b36bc579aceb46999e6c48398571703a75239a356",
+    "reason": "Add separate trajectory policy, smoke-test, or ROS adapter targets; existing algorithm sources unchanged."
+  },
+  "ros2_ws/src/mujoco_backend/CMakeLists.txt": {
+    "before_sha256": "1a912d8e2d140fcab24cddc4afe6a880c95d9222eb195256d99a82a7b0d18872",
+    "d18_sha256": "8957ee837ecd7174135d84bb7b1bcad21b28d25cd6b14ac2163826cdf8e865bc",
+    "reason": "Add separate trajectory policy, smoke-test, or ROS adapter targets; existing algorithm sources unchanged."
+  },
+  "ros2_ws/src/robot_ros/CMakeLists.txt": {
+    "before_sha256": "bf29ccd8ae1b6d6ae282aa9d2977d31f779d4eab4492035ac790d30b2f7eeffc",
+    "d18_sha256": "057ff19f48d6f16079ebf76ee539b1923581ec1d8683f4ea3d9eaf8116b37d05",
+    "reason": "Add trajectory ROS adapter and install the selected full-circle actor. Algorithm source files and controller parameters are unchanged.",
+    "previous_selected_actor_install_sha256": "f6d7ddeef63daef289069b68a5b8d42de24b96107d60155b08123e0caccef5c3"
+  }
+}

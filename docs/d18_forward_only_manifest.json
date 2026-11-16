@@ -1,0 +1,2235 @@
+{
+  "seed": 518000,
+  "count": 100,
+  "cases": [
+    {
+      "family": "wall",
+      "index": 0,
+      "candidate": 0,
+      "goal": [
+        2.455590682885,
+        -0.030870728872
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.231188945514672,
+      "duration": 31.783925465381287,
+      "timeout": 41.78392546538129,
+      "scenario_sha256": "59baeaa6a8a0608df1c8bb5f927c2423cd25c63552461b0b9f31dc9efe903e9b",
+      "sampled_reference_sha256": "ec345a1d5ba5b80f47d3dc7360f15f6c70d4e6f32ebba40ab58af56f6e5a36f8",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_00.txt"
+    },
+    {
+      "family": "wall",
+      "index": 1,
+      "candidate": 1,
+      "goal": [
+        2.426325313665,
+        0.056714364155
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1960951360332968,
+      "duration": 32.52505563549412,
+      "timeout": 42.52505563549412,
+      "scenario_sha256": "87273d008e5efe50bb42517963222f24dd8a644db1c368c3ab3c8a36bee9fe7f",
+      "sampled_reference_sha256": "43fd494abf2d4fbff603eb11a4d253dc5af12bd07836520631a0d0bc44772e98",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_01.txt"
+    },
+    {
+      "family": "wall",
+      "index": 2,
+      "candidate": 2,
+      "goal": [
+        2.334984343074,
+        -0.067731983546
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.048518269885795,
+      "duration": 30.587357509092396,
+      "timeout": 40.5873575090924,
+      "scenario_sha256": "8521563def2cf8fa90815b9a2e5e61bb3932657ac0ff5f3a104d3e306628af92",
+      "sampled_reference_sha256": "34b9f1c5c1eaf8cecb23c4dc81fe0ef183200a5142b86b8866e2331633c8d58b",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_02.txt"
+    },
+    {
+      "family": "wall",
+      "index": 3,
+      "candidate": 3,
+      "goal": [
+        2.382447447561,
+        -0.124432891744
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1210653610431893,
+      "duration": 30.393109090586147,
+      "timeout": 40.39310909058615,
+      "scenario_sha256": "5418d5ea860f1c69035b35377533f86d56a745cf3089e3c6aa249c676b993dd2",
+      "sampled_reference_sha256": "3bc1a271f5dd5405a0a549379a639b057792b769d7514ecaac00ca279d95c8bc",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_03.txt"
+    },
+    {
+      "family": "wall",
+      "index": 4,
+      "candidate": 4,
+      "goal": [
+        2.411963694863,
+        0.128979959143
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.139439590983101,
+      "duration": 31.992062204787022,
+      "timeout": 41.99206220478702,
+      "scenario_sha256": "39827463dd4fd3ee24e33c3f6657b86caeef1d0d51dcd70676774ec2fef3e774",
+      "sampled_reference_sha256": "6940d353322f75c0cde51ab63b573abbf73b0b0dfb202f281be26c06ae0413e7",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_04.txt"
+    },
+    {
+      "family": "wall",
+      "index": 5,
+      "candidate": 5,
+      "goal": [
+        2.223310222614,
+        0.078317502301
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9556318052813726,
+      "duration": 31.174066442917308,
+      "timeout": 41.17406644291731,
+      "scenario_sha256": "a5e7cfd00c76a7331c3e9adaa4decc4cf4001d9872e3147cc6d46b1f6d063d8c",
+      "sampled_reference_sha256": "9ca604e6eccdac679d7a107aef60e918fc121d49f1a568499047199533c4b56d",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_05.txt"
+    },
+    {
+      "family": "wall",
+      "index": 6,
+      "candidate": 6,
+      "goal": [
+        2.185191437351,
+        0.080024374573
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.046792943701386,
+      "duration": 31.982447638915176,
+      "timeout": 41.982447638915176,
+      "scenario_sha256": "db32155230f97f61728157c65f7b066e14d39dacc491fc368bec37e000e2a817",
+      "sampled_reference_sha256": "1061a1f7404553a883c6dc87e8ba7db341c5b04ad3a510028c866d0cd3d8e8a4",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_06.txt"
+    },
+    {
+      "family": "wall",
+      "index": 7,
+      "candidate": 7,
+      "goal": [
+        2.108937357386,
+        -0.145952208795
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9020656488927514,
+      "duration": 30.438994059058356,
+      "timeout": 40.43899405905836,
+      "scenario_sha256": "398f53d3d74081425e88387b9e08234e553788f32814f38c7490c5cf1b597fa7",
+      "sampled_reference_sha256": "15c2af4367b38b0d2425a0d4bc51d35442838cd9fe22204456b17f54f04907e7",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_07.txt"
+    },
+    {
+      "family": "wall",
+      "index": 8,
+      "candidate": 8,
+      "goal": [
+        2.101110210168,
+        0.06755941929
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9615117543876206,
+      "duration": 31.750545198507307,
+      "timeout": 41.75054519850731,
+      "scenario_sha256": "45eb9e1e5674cfe9cd5d09d881a6f51ea7ff20fed29e22db7462a0d8e488facd",
+      "sampled_reference_sha256": "9b717dc98c556173109982373150cdfdfd9bd717aaae3387be6a453f580fec66",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_08.txt"
+    },
+    {
+      "family": "wall",
+      "index": 9,
+      "candidate": 9,
+      "goal": [
+        2.120180338563,
+        -0.094583134583
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9485371008580215,
+      "duration": 30.823691122924256,
+      "timeout": 40.82369112292426,
+      "scenario_sha256": "4af45635d606a82f702b260ef84402a299d257fc989cdc4cfd4f7de891052092",
+      "sampled_reference_sha256": "63a697379a61d0b59eab044d43ff1f0b1b42f2bfd3e918aa9752703319029cc9",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_09.txt"
+    },
+    {
+      "family": "wall",
+      "index": 10,
+      "candidate": 10,
+      "goal": [
+        2.226077004251,
+        -0.055953574403
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0556330687762365,
+      "duration": 32.058978282202325,
+      "timeout": 42.058978282202325,
+      "scenario_sha256": "d0f28931e84dbc8aba3e5b5caa5b629d837020181f01343405c6b8c6bd48b024",
+      "sampled_reference_sha256": "1ab99f07897cb03d1b470770453f5dec2d1447d6120d6b1bcf17ba9200152708",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_10.txt"
+    },
+    {
+      "family": "wall",
+      "index": 11,
+      "candidate": 11,
+      "goal": [
+        2.444568093159,
+        -0.122474749931
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1029746902414623,
+      "duration": 30.643480286117963,
+      "timeout": 40.64348028611796,
+      "scenario_sha256": "994fa562ebe3403a109c783cfae19578cff6fb8c3f80928ae9a59bb5534d96b0",
+      "sampled_reference_sha256": "601b793892dcdfeca1731f621789a9e68ad67b059e0f2e343063e55d6740a394",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_11.txt"
+    },
+    {
+      "family": "wall",
+      "index": 12,
+      "candidate": 12,
+      "goal": [
+        2.302531560385,
+        -0.062607682324
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0960515728709517,
+      "duration": 31.290746308512272,
+      "timeout": 41.29074630851227,
+      "scenario_sha256": "eeb3a0e3e381d627d4c4f12ad5fd0dd8a914fde53137e148ddbf05861a0dcd5d",
+      "sampled_reference_sha256": "cbd200f9866c811f7a0e668d679bb7474f6c901a8e38a2390d817d0c0d8067ac",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_12.txt"
+    },
+    {
+      "family": "wall",
+      "index": 13,
+      "candidate": 13,
+      "goal": [
+        2.340006616295,
+        -0.01039947378
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1781940191064084,
+      "duration": 32.75202216855654,
+      "timeout": 42.75202216855654,
+      "scenario_sha256": "a88a5df6b57b35ab946207b674ad4013362b29cb2179c1d7529321b9b47fcbe1",
+      "sampled_reference_sha256": "60059c2311883623dd24a1773c70ca39dd9206c80209b2a92ff0715dcd73e735",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_13.txt"
+    },
+    {
+      "family": "wall",
+      "index": 14,
+      "candidate": 14,
+      "goal": [
+        2.275933967379,
+        0.023814150984
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1398755064586745,
+      "duration": 31.867317360751226,
+      "timeout": 41.86731736075123,
+      "scenario_sha256": "bed67fa5c179591f4a25243d1ed798bdbb502235f9007ad8a9ddf0c1c6d70ce8",
+      "sampled_reference_sha256": "af6daded11dbb9db558529aabb750dd9b07148fb73d8bbf871607f2ad25c21fc",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_14.txt"
+    },
+    {
+      "family": "wall",
+      "index": 15,
+      "candidate": 15,
+      "goal": [
+        2.466564244448,
+        -0.048903703354
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2282116114290047,
+      "duration": 31.673846319418278,
+      "timeout": 41.673846319418274,
+      "scenario_sha256": "a3cdc2ff3d6058efb9059f59c00acbdf6c19fba20159464eb5cf48f5a9a13fdd",
+      "sampled_reference_sha256": "19b9d2dcd15c08dc6c3b64db2575946464529234ec8a8bab2774171182fe0bf6",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_15.txt"
+    },
+    {
+      "family": "wall",
+      "index": 16,
+      "candidate": 16,
+      "goal": [
+        2.378959992796,
+        0.133273424209
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2089908367000817,
+      "duration": 32.650480350007406,
+      "timeout": 42.650480350007406,
+      "scenario_sha256": "0f7e786f1a18c3ccb228e2c903636fa3e53d8e70f4d398b93ea0ee8245e218b8",
+      "sampled_reference_sha256": "9caf159b13746142f19aba96f1389dcb7c0d2f1c3d17c6e1a27a4e176c30f845",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_16.txt"
+    },
+    {
+      "family": "wall",
+      "index": 17,
+      "candidate": 17,
+      "goal": [
+        2.160021808838,
+        0.057725610717
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.088299342968908,
+      "duration": 32.639133663833285,
+      "timeout": 42.639133663833285,
+      "scenario_sha256": "917c10eda5bf0b947d4e462d294a240a910e03508fd61313d5c48a440ecad636",
+      "sampled_reference_sha256": "e236753d88341126f7536ac1ce8cecb4ddd0971615f5c6974687a900880e8719",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_17.txt"
+    },
+    {
+      "family": "wall",
+      "index": 18,
+      "candidate": 18,
+      "goal": [
+        2.236973655014,
+        0.037543725064
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.124805898283026,
+      "duration": 31.898843543746892,
+      "timeout": 41.89884354374689,
+      "scenario_sha256": "a87492f1d53869af691b797a98e65fe3e53f0bf282d09f703f39aae72b7e1a4e",
+      "sampled_reference_sha256": "39cb1e5923aee2c10a23e27bdb1f85879f3c08eb2387c5d070c91000d689898a",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_18.txt"
+    },
+    {
+      "family": "wall",
+      "index": 19,
+      "candidate": 19,
+      "goal": [
+        2.108141215243,
+        0.091517845677
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0165892145302458,
+      "duration": 33.26225214576238,
+      "timeout": 43.26225214576238,
+      "scenario_sha256": "a1524aa0974cf24bee5a62ce466643ea0171646cdc4f8fd943fd247847542984",
+      "sampled_reference_sha256": "79483955525cc4dc9176ae9e00053dd0adeb837c2a7b7a09ff6c1f2f6b58df4a",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_19.txt"
+    },
+    {
+      "family": "wall",
+      "index": 20,
+      "candidate": 20,
+      "goal": [
+        2.359516570408,
+        0.018566481087
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.095906393133089,
+      "duration": 31.87917429198348,
+      "timeout": 41.87917429198348,
+      "scenario_sha256": "fc9630fcc78ed6e8c6f6fd42485595f46f0c49f2d3393f09011f9d158ceabc5a",
+      "sampled_reference_sha256": "997031bf9d99355e4d8f071cc3553970bacbb8f938b0a83e66b7a29812722b74",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_20.txt"
+    },
+    {
+      "family": "wall",
+      "index": 21,
+      "candidate": 21,
+      "goal": [
+        2.364919161584,
+        0.103252431068
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0454622984193067,
+      "duration": 31.30484553907842,
+      "timeout": 41.30484553907842,
+      "scenario_sha256": "6c63dd0b21d864d9c2e4ed3e3e06402dc2d146bc1381b74b8b9dc42867073232",
+      "sampled_reference_sha256": "f053ba8bff22ebc83690169b111751000498dbe6d56f05e5f29033eff9a84571",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_21.txt"
+    },
+    {
+      "family": "wall",
+      "index": 22,
+      "candidate": 22,
+      "goal": [
+        2.191785724185,
+        -0.132512154205
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9585736532935845,
+      "duration": 29.724138501710474,
+      "timeout": 39.72413850171047,
+      "scenario_sha256": "d38c3add514678eb56bcf2c615ddec54067b8af228867edbf07880cbcbc16f94",
+      "sampled_reference_sha256": "64eb10a7bcbeaa10fd6a1f05eb13d9f674be81c8af6236f9e2ecc848ec5c28fe",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_22.txt"
+    },
+    {
+      "family": "wall",
+      "index": 23,
+      "candidate": 23,
+      "goal": [
+        2.419679005935,
+        -0.093379974002
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.163803131937124,
+      "duration": 31.24981999019815,
+      "timeout": 41.24981999019815,
+      "scenario_sha256": "55df8f0956e6c2037d819d3ff00fb3c9cb9712af657b38410412168ed37d46f7",
+      "sampled_reference_sha256": "59cf13eacf54a0ec0a4274d5986d2e93f60a110cc7c03fe330522877f62cb301",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_23.txt"
+    },
+    {
+      "family": "wall",
+      "index": 24,
+      "candidate": 24,
+      "goal": [
+        2.374558568833,
+        -0.097152348082
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2646806854820754,
+      "duration": 33.38207588638595,
+      "timeout": 43.38207588638595,
+      "scenario_sha256": "f463341e3fbf0c66e46049794180861ae3a41a3cf9c51e280d4d0a5b4d68816f",
+      "sampled_reference_sha256": "8346a06eba5a9452a8a42b9d36636fc48c8f28130ac928f81e60e7676a024119",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_24.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 0,
+      "candidate": 0,
+      "goal": [
+        2.211003947572,
+        -0.017991147259
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.324616517132419,
+      "duration": 35.67540567737443,
+      "timeout": 45.67540567737443,
+      "scenario_sha256": "fb2c16e3ac0af2bbf3625e3cd7ed450fd4b0ccf62dba78244eeb3e519e420dd4",
+      "sampled_reference_sha256": "c56fc00d19a99d285a7b05e5e7d0dd98744161fc6dd709b8a72113467dda8a00",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_00.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 1,
+      "candidate": 1,
+      "goal": [
+        2.288035064005,
+        0.049257704319
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.175165017834664,
+      "duration": 33.78634776205804,
+      "timeout": 43.78634776205804,
+      "scenario_sha256": "42b12e1845533647f68b1697b9d7213afd2e58842f9c52b775d4a5ee48e3899b",
+      "sampled_reference_sha256": "92565b7471bc6ebfdfa0058a075768735f26f2f395d3bf80f47e3cb4d6f228fb",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_01.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 2,
+      "candidate": 2,
+      "goal": [
+        2.36316062781,
+        -0.007490003495
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2592624381786606,
+      "duration": 33.85906513033654,
+      "timeout": 43.85906513033654,
+      "scenario_sha256": "d31c4da24a0e26e7249ec7ed1284a83a4fc335845e29aaeb726a364aa412e5e4",
+      "sampled_reference_sha256": "22392719df3b5fce23ec6ad2fac3dd12271241f0254704ffc65a03f22535e1b4",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_02.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 3,
+      "candidate": 3,
+      "goal": [
+        2.132386822618,
+        -0.089230183558
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.282834955409311,
+      "duration": 36.744075436787575,
+      "timeout": 46.744075436787575,
+      "scenario_sha256": "2a9b6426a8e994a90ad662079d63e1718df3cac02536aad8aac8e9b4062a325f",
+      "sampled_reference_sha256": "27d812874cd3978c1de9dc2b36873007f1128c0a659bf86c59c37499a2e348fc",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_03.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 4,
+      "candidate": 4,
+      "goal": [
+        2.380997983152,
+        -0.041276074701
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.3294702776832277,
+      "duration": 33.78697536903559,
+      "timeout": 43.78697536903559,
+      "scenario_sha256": "9042be4a65bc8819d4e9343dbb8fc92f22a81b35f0d9865a087c30d265ca2ffa",
+      "sampled_reference_sha256": "730a853307414af68e6fd8360b749accc8c2f7749ecf6ad3a3ad83b9bdefbacf",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_04.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 5,
+      "candidate": 5,
+      "goal": [
+        2.184094518058,
+        0.04753072548
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2462591875804963,
+      "duration": 35.092978490224944,
+      "timeout": 45.092978490224944,
+      "scenario_sha256": "62a97c25c006c0998e0356cc12fc738d9f8c638c57a72a33b6fde89e94cc56c5",
+      "sampled_reference_sha256": "335ed2c6727e0861a668791faaa3bb43a776eb82c9c18f1369f64934a6cba82f",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_05.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 6,
+      "candidate": 6,
+      "goal": [
+        2.202684475484,
+        0.001828064203
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1935292058409415,
+      "duration": 34.455259211355084,
+      "timeout": 44.455259211355084,
+      "scenario_sha256": "c2302ced3fb75424ee463889bde314d1e0918003b5fa6c31b05475460d2e523b",
+      "sampled_reference_sha256": "8958d314821c2049e8a3fc1d65cc4395a019bc40f87b557617d244c53ac69707",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_06.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 7,
+      "candidate": 7,
+      "goal": [
+        2.123824832814,
+        -0.006895269291
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2954665829434706,
+      "duration": 36.155615194402856,
+      "timeout": 46.155615194402856,
+      "scenario_sha256": "93b3cde5088bd2e380e68222456904e5710e42f0c86bc15c98b8d2e29b55d4bb",
+      "sampled_reference_sha256": "5a05a838f353bb353a32a2f5273521bdd6d2777689407d894ecb79bb6fb23fee",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_07.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 8,
+      "candidate": 8,
+      "goal": [
+        2.240972415696,
+        0.071295727603
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.243743526253199,
+      "duration": 34.92244842482863,
+      "timeout": 44.92244842482863,
+      "scenario_sha256": "9a825e445c0c07085ff4639dc276e2a2e2641eefc7d50b582c92ee22b150397d",
+      "sampled_reference_sha256": "08fd1612c502205053bc741017692d440764d25c2f1164dfed8480f0a3569b79",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_08.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 9,
+      "candidate": 9,
+      "goal": [
+        2.427725195519,
+        -0.117567367972
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.4149183939266403,
+      "duration": 34.5357749258887,
+      "timeout": 44.5357749258887,
+      "scenario_sha256": "1c5ca810880d27b31e3db524420018eda8544cbc64921906454b8b780ee9c902",
+      "sampled_reference_sha256": "e4c8dc892311e46feb70288b6a803ed1d1f2fef8425ef8d728222a286f7b7214",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_09.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 10,
+      "candidate": 10,
+      "goal": [
+        2.213872680522,
+        0.102936204792
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2966013150020723,
+      "duration": 35.84315283279521,
+      "timeout": 45.84315283279521,
+      "scenario_sha256": "90210be077f5ed35d4d6ac387f80b4a16a8faea6e435e41cf799dd7e625855a9",
+      "sampled_reference_sha256": "02a025f095ab5e4301de43b739de320928c2833f69037f338a76d342735853b1",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_10.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 11,
+      "candidate": 11,
+      "goal": [
+        2.328396954707,
+        -0.025335004389
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.313811162632342,
+      "duration": 34.9454019518889,
+      "timeout": 44.9454019518889,
+      "scenario_sha256": "fbf6518303e43996034c564fb54e9ebe9e63751f40b48ed68096c7c7545269bf",
+      "sampled_reference_sha256": "d4967c59f854b5c5a7fe7f77253457abe0c1ab9d903ac9da2a620738f91892a7",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_11.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 12,
+      "candidate": 12,
+      "goal": [
+        2.489427753267,
+        0.113385645032
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.318565990737335,
+      "duration": 34.06846029936513,
+      "timeout": 44.06846029936513,
+      "scenario_sha256": "aedd296273944bb4592e40c3fbe1e90cac203f5d1ba40d5dc20b7e4e4a792443",
+      "sampled_reference_sha256": "bc04770da5014325b963fd273afff4618503db8ba53f4cc6ce5153e739592c04",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_12.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 13,
+      "candidate": 13,
+      "goal": [
+        2.427903425795,
+        -0.027257181114
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.401278205339294,
+      "duration": 34.88518422846913,
+      "timeout": 44.88518422846913,
+      "scenario_sha256": "3b3e6b413a4d4333bf91de97f93d75643b4eebce6f5fa92742401625fcc4eee1",
+      "sampled_reference_sha256": "11de2908e1806cdacd404b2305ccca7247c99a475d3e830a07866220c770bd29",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_13.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 14,
+      "candidate": 14,
+      "goal": [
+        2.158038313806,
+        0.046497401464
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.3341546463024647,
+      "duration": 41.276977424595145,
+      "timeout": 51.276977424595145,
+      "scenario_sha256": "37fc52d262fb0df5982bd7f111c1edb2ac48693e1a3509563cdf36791d9458a4",
+      "sampled_reference_sha256": "d058e70c77c28f6a9b16ee0e8b44094d08ac3241cbe60d00b9cbd2f624decbbb",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_14.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 15,
+      "candidate": 15,
+      "goal": [
+        2.251416308611,
+        0.034396309508
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.282130078910961,
+      "duration": 35.11724048827496,
+      "timeout": 45.11724048827496,
+      "scenario_sha256": "0eba915da045488e44dd77aacfa5786508bfddfdde27069567d45af038177bfc",
+      "sampled_reference_sha256": "75707fa3b0a1cdadd3cffa944f31eddd274e2c70dcb62b9547979c49c364cfbc",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_15.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 16,
+      "candidate": 16,
+      "goal": [
+        2.292757223228,
+        0.118265558289
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.3016712690527212,
+      "duration": 35.30529641970122,
+      "timeout": 45.30529641970122,
+      "scenario_sha256": "d98eb49f98a46aa13083ca147f397fb70f5c84902c2c6af59a57f59d761517db",
+      "sampled_reference_sha256": "75b2aa0077a943eac11a4eb034f439651740bb2f4d548af6ac53505e3e1a2342",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_16.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 17,
+      "candidate": 17,
+      "goal": [
+        2.117312764481,
+        0.032278988136
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.310354547918295,
+      "duration": 36.98797193247279,
+      "timeout": 46.98797193247279,
+      "scenario_sha256": "2462dc3dd9ca7b909b6b47426923e3d397b46d266304d2ad980c91347f030798",
+      "sampled_reference_sha256": "bef511015d0946359debef0e3567f76ad228992a416f682d1da4eacbbebeafc3",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_17.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 18,
+      "candidate": 18,
+      "goal": [
+        2.195176442056,
+        0.105189372305
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2917724893284097,
+      "duration": 35.68377652449867,
+      "timeout": 45.68377652449867,
+      "scenario_sha256": "e5c6a395e383a1b3be182d44aeeaf7423052a0cf410b7bc5a1e56f21bb9cb60d",
+      "sampled_reference_sha256": "c009a9fa05ff7b8c3735e37c21d28aa241ef321d427445d4f9c617c818e75e9f",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_18.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 19,
+      "candidate": 19,
+      "goal": [
+        2.160796515239,
+        0.059592231423
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1454886300700697,
+      "duration": 34.828533313966986,
+      "timeout": 44.828533313966986,
+      "scenario_sha256": "8df4bfacd0c275dc11f0a872e8592faa6a8e35aecd1cb481497d5696bc02b14f",
+      "sampled_reference_sha256": "39c96089755a3d3f557d0ecf525e9ef31a2c94ca105a76d22cfa68b62b66250e",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_19.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 20,
+      "candidate": 20,
+      "goal": [
+        2.154066864632,
+        -0.071542843901
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2038129709571153,
+      "duration": 35.63769322272423,
+      "timeout": 45.63769322272423,
+      "scenario_sha256": "b328dfea3742951e5fce0e527e6317aa40b893e016d3ef3a436fb24d373c55fd",
+      "sampled_reference_sha256": "06c7287836fa53757fcf0f07c9788e9e22eb71093bd6dc208b6dd4b931bddb18",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_20.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 21,
+      "candidate": 21,
+      "goal": [
+        2.459620770787,
+        0.004168407588
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.418649313843933,
+      "duration": 34.0226803736717,
+      "timeout": 44.0226803736717,
+      "scenario_sha256": "b3ab894d262ddb427d67b415d7eb71646e205373f8a04c975c4867e047cf7faf",
+      "sampled_reference_sha256": "34a32423fd606d205fb07723971b011b078a2a5032aded92ae5b991fb2b2998a",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_21.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 22,
+      "candidate": 22,
+      "goal": [
+        2.414174071763,
+        -0.09604141102
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.3611218407484875,
+      "duration": 34.413330134917686,
+      "timeout": 44.413330134917686,
+      "scenario_sha256": "cfd14484a1ab30ea0095e4117d0796718eb90e3091b3fba3b3bcfc314deb10af",
+      "sampled_reference_sha256": "cfa446c680f6ff9f34577dea68fb84dbe8211e979ce5a6f679336ebfb9f45991",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_22.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 23,
+      "candidate": 23,
+      "goal": [
+        2.350323802665,
+        -0.118094726898
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.3658131743387454,
+      "duration": 34.70197037026613,
+      "timeout": 44.70197037026613,
+      "scenario_sha256": "c85383ad992c8684ce42f92ccaa6dd13862df059ff6ea5dbcbe8c75eb0069db0",
+      "sampled_reference_sha256": "99ed4624c2066df05a45a062b1debb831f993b34c185a4c31b8a9bd8166a36b0",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_23.txt"
+    },
+    {
+      "family": "staggered",
+      "index": 24,
+      "candidate": 24,
+      "goal": [
+        2.430667497017,
+        0.1181749025
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.397020980418738,
+      "duration": 33.80909468050996,
+      "timeout": 43.80909468050996,
+      "scenario_sha256": "b77a6447af2a74d9b6847a22039a6150d351bb12b862a909495ed68aedc7c2e0",
+      "sampled_reference_sha256": "c2c1aac3b25b7b140397b672f9001292f1d98f934738f20a46b84f4d588f9329",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_24.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 0,
+      "candidate": 0,
+      "goal": [
+        2.207798390139,
+        0.007888539929
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.168590040256414,
+      "duration": 34.055080192654714,
+      "timeout": 44.055080192654714,
+      "scenario_sha256": "2cdc647a611f12d8d54e704c2e2da720ebd225092d244d40b8d544c29b5e307e",
+      "sampled_reference_sha256": "72ea7d37d15a620fad6a2a1bc3ddae9b45fab3b9abaa09d86b13efe0306ce7c6",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_00.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 1,
+      "candidate": 1,
+      "goal": [
+        2.388137844311,
+        0.118038320855
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.233168026156651,
+      "duration": 33.50896652400959,
+      "timeout": 43.50896652400959,
+      "scenario_sha256": "e9cc9bce5ee69fe40f2252f24b280b6bc252c1c0f8e342be70a443de42c7ee59",
+      "sampled_reference_sha256": "e412bcd4b5f891a6c8ab6b04cca33270cb868b96ef9e3c4d2c473b137ce40e7f",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_01.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 2,
+      "candidate": 2,
+      "goal": [
+        2.124303859452,
+        -0.035902757585
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9970734567635287,
+      "duration": 31.240432982264572,
+      "timeout": 41.24043298226457,
+      "scenario_sha256": "7216bcd650d0f69144344eae6cb64d8ba7cc926f825ede248427b6853e0dd4ea",
+      "sampled_reference_sha256": "fb1d97c75a3fefeadcdce7d46c8a8276bc8e752aba91fbbb16e5e8d0f29583f5",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_02.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 3,
+      "candidate": 3,
+      "goal": [
+        2.466207163163,
+        0.071304093663
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.237500003280501,
+      "duration": 33.20258196549417,
+      "timeout": 43.20258196549417,
+      "scenario_sha256": "0cdf37c0ce33133ac377e230fa6c8de3e124d03380293392cc4c37c374214f58",
+      "sampled_reference_sha256": "e1eeb4e59fc3e781b167dbce5f22a332f70d9dba0ac657f7ecf83de5b49f2000",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_03.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 4,
+      "candidate": 4,
+      "goal": [
+        2.236918930983,
+        0.005192065467
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1855932183591107,
+      "duration": 33.194663431599935,
+      "timeout": 43.194663431599935,
+      "scenario_sha256": "412e268dafa4c96cc5c9bf668ebb4e109fa07db0025551a8db83497f89e90a05",
+      "sampled_reference_sha256": "3e4352e0e5a1d6a7849a504129475e9afea4125ef4c03cc7d1893b78c26c9a08",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_04.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 5,
+      "candidate": 5,
+      "goal": [
+        2.176226532752,
+        -0.000812630732
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9786654328484965,
+      "duration": 31.4430595164726,
+      "timeout": 41.4430595164726,
+      "scenario_sha256": "20fa9dc562aa284841e21afedd21764a190f50e0093ff261d16dc6b504541cff",
+      "sampled_reference_sha256": "a34d1ad6649d27fb706390c24967a0bf518240c1379f794dba5cd8bbb47a020a",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_05.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 6,
+      "candidate": 6,
+      "goal": [
+        2.171728208733,
+        0.135348340618
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0866899387967255,
+      "duration": 40.57072064784171,
+      "timeout": 50.57072064784171,
+      "scenario_sha256": "0fadb645929a69ec70dc689edcbc39107e73742ef0daed69a3d9d01ee6bed683",
+      "sampled_reference_sha256": "8884e2048a546ff5c80a5307b1daf98f438cd41d0d25ee649287dff3965b55bc",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_06.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 7,
+      "candidate": 7,
+      "goal": [
+        2.39700624049,
+        -0.012471977435
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2630745849081064,
+      "duration": 33.511635710998526,
+      "timeout": 43.511635710998526,
+      "scenario_sha256": "668acc26b0d73856b01f04d1f9e2c6954f263bbec85c21505c8517d92581118b",
+      "sampled_reference_sha256": "fc22d3a758779c8452ae1ca8049043fdccada185b0979101ddfc4c9d4713d012",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_07.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 8,
+      "candidate": 8,
+      "goal": [
+        2.390375670298,
+        0.135589027237
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2205307214695864,
+      "duration": 33.39250424455693,
+      "timeout": 43.39250424455693,
+      "scenario_sha256": "bd86e91af3666631213d951f02fd54beb96b235bf276d5f818bb34541d23cfb4",
+      "sampled_reference_sha256": "525bfccc84dbce1cc6115a7d8a53346ed20ca1416384c0c6d54f4180826e7b8d",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_08.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 9,
+      "candidate": 9,
+      "goal": [
+        2.100824998204,
+        -0.141351711348
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9860090021054737,
+      "duration": 31.986677187472676,
+      "timeout": 41.98667718747268,
+      "scenario_sha256": "949f99458e81d1eefb8a68e1a69047595ce9bcc3f9b06464698ffce9b81301fa",
+      "sampled_reference_sha256": "53af4b8456e351c3f761a27f0a470c464de16cdf914b8b5e05a1b645f10dcb67",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_09.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 10,
+      "candidate": 10,
+      "goal": [
+        2.465661031318,
+        0.092260139074
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.323911417005416,
+      "duration": 31.914410606926488,
+      "timeout": 41.91441060692649,
+      "scenario_sha256": "b47cfdd939eb1a2f676c0263fd849d5153442de73d7fbf184b90abe85905b466",
+      "sampled_reference_sha256": "39c586da044692ee0ace235a18cc370a264baebc80a3ed628c379ff261b27b58",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_10.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 11,
+      "candidate": 11,
+      "goal": [
+        2.436228197484,
+        0.113362470461
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1860717139211183,
+      "duration": 32.86803783684861,
+      "timeout": 42.86803783684861,
+      "scenario_sha256": "f8e0cb2880d843798b9559641c70e52a1a26cbaa8767c9fc402920f5939925d5",
+      "sampled_reference_sha256": "b9f0126a136b31b0f8910e5c6965d3857c3f123ec607dbf07b18006da88163e1",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_11.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 12,
+      "candidate": 12,
+      "goal": [
+        2.125752937071,
+        -0.089539448664
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.042094308002502,
+      "duration": 32.37093830933568,
+      "timeout": 42.37093830933568,
+      "scenario_sha256": "c9d4b784841d265a2091d4b04d082e2f870a340f506b7e504250fc48a4249c82",
+      "sampled_reference_sha256": "3298115a8b8796f647b130d5318c3cd012b3cb3b2389af42b68c7db85232d166",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_12.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 13,
+      "candidate": 13,
+      "goal": [
+        2.219423852194,
+        -0.026407142116
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2046748023062674,
+      "duration": 34.242190980106685,
+      "timeout": 44.242190980106685,
+      "scenario_sha256": "43d8287784748394262db63ba6510859c6ab73ae80df9a891068c7f02d22c066",
+      "sampled_reference_sha256": "01ddfd7f95b23ca99baf95c7e36083b1a7f3db6f2b91c328fdd09067e991fa79",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_13.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 14,
+      "candidate": 14,
+      "goal": [
+        2.271019118475,
+        0.026579483981
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.22385772208526,
+      "duration": 33.403515193259096,
+      "timeout": 43.403515193259096,
+      "scenario_sha256": "590d195f1bbaf5b81d51ddb96e9961064bb3f57d7c35c902e77bd6e867352eb7",
+      "sampled_reference_sha256": "d1ee132d90a8bc9391971e6b027c580de62f9ffd1127d60ad118d83280a0d7ef",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_14.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 15,
+      "candidate": 15,
+      "goal": [
+        2.122611049747,
+        0.064333169033
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.079136793033302,
+      "duration": 32.1542284642147,
+      "timeout": 42.1542284642147,
+      "scenario_sha256": "36646ea3cf1e8c8b6376cebd17c59c22cbf2c4d7f15bcaa6661d579be48699a3",
+      "sampled_reference_sha256": "6d9bd82d4d177738a422734a69689cc356b07b86ff84c82744d9c761024b754e",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_15.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 16,
+      "candidate": 16,
+      "goal": [
+        2.309241766097,
+        0.13274636599
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2442274558186472,
+      "duration": 32.65664205387577,
+      "timeout": 42.65664205387577,
+      "scenario_sha256": "55f1935d9f9b3f46869ed46d2694fcd0777cc63ecf5e627fb13a104120bc7c2e",
+      "sampled_reference_sha256": "0cc9fdd5a5baf539611b3b6d77552da4f1d7cc6d1c2ad05519b4cce1df8ad932",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_16.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 17,
+      "candidate": 17,
+      "goal": [
+        2.175387166436,
+        0.126973011288
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.161411522599019,
+      "duration": 32.76831906914044,
+      "timeout": 42.76831906914044,
+      "scenario_sha256": "e27db4d47ef9a2b2d428f4e8c988ba582828197bd593cef47bdf5cd920668e0c",
+      "sampled_reference_sha256": "1b5d7909bdb499049f0638b7a98dc3a798eca5fc1792e7bc5f04ce374aab08d0",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_17.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 18,
+      "candidate": 18,
+      "goal": [
+        2.192500371237,
+        -0.063798756337
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9329059861909017,
+      "duration": 30.128359633777663,
+      "timeout": 40.12835963377766,
+      "scenario_sha256": "8c62b37149f1fe792eae73c584704f11b3afc9912a68d642b6eaeddf7381fa29",
+      "sampled_reference_sha256": "b6417726219550e1248f2fab577528cc8932567caf3e2ebbdc94e8d615e62652",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_18.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 19,
+      "candidate": 19,
+      "goal": [
+        2.112392843127,
+        -0.106935885369
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0201592087478226,
+      "duration": 32.23388626786743,
+      "timeout": 42.23388626786743,
+      "scenario_sha256": "e9fb07619554eac0781559af916d242cc0307bf8aa4eb4424e0278b996c6476c",
+      "sampled_reference_sha256": "6be6af3f985da3e6a19ee9ee2e7ff2ef40dd5528da4c28ad1ca57e2a936150bc",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_19.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 20,
+      "candidate": 20,
+      "goal": [
+        2.238630859583,
+        -0.000125996337
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.020860060309825,
+      "duration": 31.57705172488015,
+      "timeout": 41.57705172488015,
+      "scenario_sha256": "5bba6ae4329d807459f827ecd97dcb93858ff815c2275b936b6cddaa957f05db",
+      "sampled_reference_sha256": "9e3ea75a7e177ec0b9b9114dc1824764986e53286d483d90c0a4446abf60712e",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_20.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 21,
+      "candidate": 21,
+      "goal": [
+        2.230739702951,
+        0.062382399079
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2123060359593545,
+      "duration": 34.29058514930453,
+      "timeout": 44.29058514930453,
+      "scenario_sha256": "7ed8d7d1c6cfa3645316aaed7828b059b1c4fbc498a8030999ff386e7732274b",
+      "sampled_reference_sha256": "7dcba2120b11bb73f57e6103cc6d603b8c2b29ec1e975f65a4453c1ab99eed4f",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_21.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 22,
+      "candidate": 22,
+      "goal": [
+        2.280467734627,
+        -0.030786274822
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.102950779283982,
+      "duration": 31.49001329739888,
+      "timeout": 41.49001329739888,
+      "scenario_sha256": "c2d542e8199e3cf3043295fec6552fa3d250773675dc03d05d697ecb726e21ab",
+      "sampled_reference_sha256": "059029183d627684768f8114c53d12637a1222aad5722d0e5df2678a8583bab0",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_22.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 23,
+      "candidate": 23,
+      "goal": [
+        2.208029337185,
+        0.018066222279
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0137732602236467,
+      "duration": 31.630213709430308,
+      "timeout": 41.63021370943031,
+      "scenario_sha256": "71f2d8a6d4fcfb3ef27c35cb7c595348b9db7e2dd9a8ecf384b96ef9631a18cb",
+      "sampled_reference_sha256": "39307e6dc916cc3f23122c52e4f8d08a4e2698a5b57206d8ca4e67bf90a7a5f9",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_23.txt"
+    },
+    {
+      "family": "elbow",
+      "index": 24,
+      "candidate": 24,
+      "goal": [
+        2.36698144001,
+        5.0596979e-05
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2366187581260513,
+      "duration": 33.369699543147846,
+      "timeout": 43.369699543147846,
+      "scenario_sha256": "2781132ab06992ea4772d0115a1fc2e9c7ee1fc0d2cd4ade9fa37d86caca970d",
+      "sampled_reference_sha256": "0f29e2c2a38f8bcc7e93cffc83cc0e3eb24b623fd647b30ca8008e116f0eb8c8",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_24.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 0,
+      "candidate": 1,
+      "goal": [
+        2.246655396126,
+        -0.129331162965
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9411366380901125,
+      "duration": 29.95000299275935,
+      "timeout": 39.95000299275935,
+      "scenario_sha256": "68a5b4d34c9d22f867647ac6418f50bbcaf4f2e34e6389b9c6c0c93ac2fa4a92",
+      "sampled_reference_sha256": "4e8e84d6fde0cf95b98c790a7e97dcabf856f5fbb0a89b9adfc0af0b9fd09bd6",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_00.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 1,
+      "candidate": 2,
+      "goal": [
+        2.199278976984,
+        -0.028622405811
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9731977131641987,
+      "duration": 31.30809894858905,
+      "timeout": 41.30809894858905,
+      "scenario_sha256": "f6a3e39dc7b588c6775ff3ef463e61a3fc743090d846de1b1d3345c60d06b540",
+      "sampled_reference_sha256": "60cd8b36cebf2c12fdad9783b43645cc1f4ffce1842754d8df2de1f81b7da051",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_01.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 2,
+      "candidate": 5,
+      "goal": [
+        2.105140995731,
+        0.138697702263
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.8298837208601992,
+      "duration": 30.537771478661284,
+      "timeout": 40.537771478661284,
+      "scenario_sha256": "bc291ff2ba1c9c99d27809e81e75d0b890b87ef7391a6b3bb1bb3693a6eed8fd",
+      "sampled_reference_sha256": "7800f9f8c9a0f1fa0f58a9a55eedbea89a25fe44f65b707529a7111602059e77",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_02.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 3,
+      "candidate": 6,
+      "goal": [
+        2.202186302616,
+        -0.106790087678
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0797596906443716,
+      "duration": 32.33455714487088,
+      "timeout": 42.33455714487088,
+      "scenario_sha256": "b60a512487b0436256a80a6f16d5fb7b53dfb7e4dbbbcc169f2f5673fb60fdfc",
+      "sampled_reference_sha256": "a3bef272ef5df1e52f62e5df0b8d4ee1deab8800c1537a9a9770c50ff19a8e7e",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_03.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 4,
+      "candidate": 9,
+      "goal": [
+        2.397191791292,
+        -0.148757269125
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.23942089111902,
+      "duration": 33.043482104874286,
+      "timeout": 43.043482104874286,
+      "scenario_sha256": "64bc1b26c2396585f48193ec82e77c78d8b65bd129319e71cd3d5e06cbe5caa9",
+      "sampled_reference_sha256": "14d7c77f6382d1bb6c46aee587f8c16af333bf334a8868b0043571e7e41caab2",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_04.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 5,
+      "candidate": 10,
+      "goal": [
+        2.148439133047,
+        0.00864504361
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9681004492500285,
+      "duration": 31.451556175915293,
+      "timeout": 41.45155617591529,
+      "scenario_sha256": "e82d305aaaae20dd369ef1253f2f544bdaac7ed1dd4ea468e33beef27157d828",
+      "sampled_reference_sha256": "af7881d5aad5044e837a0cbd0c5a0adeed41eadd41166f90456a75075f849142",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_05.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 6,
+      "candidate": 14,
+      "goal": [
+        2.360376731788,
+        -0.057468357751
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1485733467271686,
+      "duration": 32.378038918535,
+      "timeout": 42.378038918535,
+      "scenario_sha256": "fe67408edb27b7d29f7ad1eab07ac28c6cacc94466dfca6ad952751a9a3cc422",
+      "sampled_reference_sha256": "d6adc9fbfaec42a2eb89fdc3659e495daff5bce7b894dcc5de77133490f0996b",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_06.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 7,
+      "candidate": 21,
+      "goal": [
+        2.120356239895,
+        -0.084514811757
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0146495460865252,
+      "duration": 31.87518810537297,
+      "timeout": 41.87518810537297,
+      "scenario_sha256": "0e7630c7c96daea8a6fd386f40b9b03622216621dcaac8010f59f5e9f8b911ff",
+      "sampled_reference_sha256": "cc9c48482e151f2f522787730c0c3e747dfce66263a00b9eab58814c719f3d95",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_07.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 8,
+      "candidate": 22,
+      "goal": [
+        2.280227766353,
+        0.096662585671
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.120476979862082,
+      "duration": 32.28878939109524,
+      "timeout": 42.28878939109524,
+      "scenario_sha256": "36089b0f7a3fd9c420c9a0ef29ba0abfdc60c18f43cb793c2fe1c6c13c3a0fa7",
+      "sampled_reference_sha256": "5d5ff1a4ed49eb94c0d050e22e85a85bf5caa085ee9ef7d1650591edcf5e830d",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_08.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 9,
+      "candidate": 23,
+      "goal": [
+        2.299593351832,
+        0.013892542763
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.073314736665334,
+      "duration": 31.804510658099215,
+      "timeout": 41.80451065809922,
+      "scenario_sha256": "d8ac39caa344fd404c131be3f5359d1d94af3950510e78e1999072ba90c84c13",
+      "sampled_reference_sha256": "f694042ba2103502badb3f510ec05d3dc39d21ea80bd776de5e2ad513ff4a482",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_09.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 10,
+      "candidate": 24,
+      "goal": [
+        2.108991132405,
+        0.054533667271
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9825547038236335,
+      "duration": 32.59564446559952,
+      "timeout": 42.59564446559952,
+      "scenario_sha256": "c4521b2011752ef2292861e403157f4b0de1beb582100cb42390d037f74b52f1",
+      "sampled_reference_sha256": "08154c790e389ad7741d5ba79317d8c48c2d519090224fbd204edd6236578584",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_10.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 11,
+      "candidate": 25,
+      "goal": [
+        2.218981940674,
+        0.052117029012
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0466809526624203,
+      "duration": 31.871654444948458,
+      "timeout": 41.87165444494846,
+      "scenario_sha256": "d3c7bb65e265490cdfc61bccb0be41f87da9caeabb5c95099ac239fb97845eba",
+      "sampled_reference_sha256": "e0c66dfe381202132cf5262d3fb92f6598fda2249fe21755e3f7ff783230154f",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_11.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 12,
+      "candidate": 26,
+      "goal": [
+        2.142303377407,
+        -0.145032473727
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.841177157173908,
+      "duration": 29.497097098344142,
+      "timeout": 39.49709709834414,
+      "scenario_sha256": "6406eed046abbcade64af73931ca6ec9be55052b4c65c02edf5c779c57bad12f",
+      "sampled_reference_sha256": "7bcc335fc04330f34ee0af02648a77cd9470d10d39ce027bf8982748dc002731",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_12.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 13,
+      "candidate": 27,
+      "goal": [
+        2.165462524802,
+        0.045330783884
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0073502807872114,
+      "duration": 31.721369984520397,
+      "timeout": 41.72136998452039,
+      "scenario_sha256": "ea876d40c1b437768d66b707afc91b34ca0f6d4566989b88065e4b707bb10387",
+      "sampled_reference_sha256": "dd9a1f4549ead0487ee6fd633f359ba4f4d042f2a4d57ebdbaf10a9e9595f3a1",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_13.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 14,
+      "candidate": 29,
+      "goal": [
+        2.155335072534,
+        -0.103452763416
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0487662994774882,
+      "duration": 32.227178949755704,
+      "timeout": 42.227178949755704,
+      "scenario_sha256": "70cc3d9a9ed3286bd745c43726ec5bc1f71dcfbc7096f3343ddcbac2906c242f",
+      "sampled_reference_sha256": "d1ebf945d87cb9958811be5877628cc5683e07c63e584ade18efdbb1620d1b25",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_14.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 15,
+      "candidate": 30,
+      "goal": [
+        2.391820626996,
+        0.05668476597
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0956301872280467,
+      "duration": 31.69488250252681,
+      "timeout": 41.69488250252681,
+      "scenario_sha256": "c3dc9ec2e430da9a9c0c9325cdefacb8dfee47654ba5675d2b9782a0917a00dd",
+      "sampled_reference_sha256": "0903ab07f3c1deddae4fd1bca0b364002e10c09c16e0309631d2eec73d527424",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_15.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 16,
+      "candidate": 31,
+      "goal": [
+        2.438530269779,
+        0.027319544424
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1503893390917055,
+      "duration": 32.01082768722727,
+      "timeout": 42.01082768722727,
+      "scenario_sha256": "ab9ad6b460f8724107bc6f779fa8187166bfde762e7bc18fc4a7bcec304160a8",
+      "sampled_reference_sha256": "69d6cc7e6800a38c8e8132956af2d10426fa66044a294a23fc5bdeee20b4b2d3",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_16.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 17,
+      "candidate": 32,
+      "goal": [
+        2.352840626525,
+        0.133748916096
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.017188113745281,
+      "duration": 31.055709697935526,
+      "timeout": 41.05570969793553,
+      "scenario_sha256": "f844b4e81388fc7994d8aec65c7d3958d4d4c554d685e598b0c6095866108e4a",
+      "sampled_reference_sha256": "b3dcc57c50a80b0836062e801f0330c30ec38431828a0bc04376cc3b4dcd6c88",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_17.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 18,
+      "candidate": 33,
+      "goal": [
+        2.264140962782,
+        -0.066769826262
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0888606298263857,
+      "duration": 32.21139152327266,
+      "timeout": 42.21139152327266,
+      "scenario_sha256": "d8124cc1761a151f8f7fe258ea6084d4880d2e05b0ba4f4fbc1346e511e96a2a",
+      "sampled_reference_sha256": "db39fa1b18b4527a865f37f0489b42d234d60adf3197f1dcb4f421e4f4462aa2",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_18.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 19,
+      "candidate": 35,
+      "goal": [
+        2.22630211139,
+        0.119027114678
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9297432384522657,
+      "duration": 30.89938125709174,
+      "timeout": 40.89938125709174,
+      "scenario_sha256": "fe8af3378fb1caa09e8e81062af4c4db46d313e0959f6edcf6c6c1d0caf8bbce",
+      "sampled_reference_sha256": "56bc2276a0d4cc5ec5dce28257e1afdfd1e7b334648bea4ea7a4c63a22c8fc36",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_19.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 20,
+      "candidate": 38,
+      "goal": [
+        2.10052534761,
+        -0.083738684762
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0032995561338978,
+      "duration": 31.840104755762688,
+      "timeout": 41.84010475576269,
+      "scenario_sha256": "5a843bf3474cf8daa5c9711bf60b187a7480a3823e94a5c2bed643646d9de661",
+      "sampled_reference_sha256": "5ae61180e07970676cdb980d226e42b99cf9e86cf90d207b55298d89fd47fc01",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_20.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 21,
+      "candidate": 39,
+      "goal": [
+        2.368013753044,
+        -0.059370597888
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1553599361074847,
+      "duration": 32.408956826157414,
+      "timeout": 42.408956826157414,
+      "scenario_sha256": "085db81731c49324e1fdf4d4a7d78329f1412e81514887239a16a6d842179de6",
+      "sampled_reference_sha256": "d25fc4aeef8f426f78b520cd3e8dc4507739aa8f51aac91d7d75b49632e34fd3",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_21.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 22,
+      "candidate": 40,
+      "goal": [
+        2.431832737486,
+        -0.056475365385
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1998648138421912,
+      "duration": 32.55072254772093,
+      "timeout": 42.55072254772093,
+      "scenario_sha256": "74f9b7c48e4310a716dba8542d7bef8fa7098b77072cf28dae66139d87346920",
+      "sampled_reference_sha256": "bf1d9b4cc14e3686ba34639818760b525227efbf18089e5f623bfb65dfdb40ec",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_22.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 23,
+      "candidate": 41,
+      "goal": [
+        2.376285109088,
+        0.080557769255
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.177593222411958,
+      "duration": 31.574266926521297,
+      "timeout": 41.5742669265213,
+      "scenario_sha256": "4a355e9262d250b1dbf6bdffd0128e845fda925ecbda7c25d01b925f8379eb2a",
+      "sampled_reference_sha256": "9a0595c934d9131d7d67dd0b0f4d597901b9b1f7216267709abde8e172eb8eb8",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_23.txt"
+    },
+    {
+      "family": "corridor",
+      "index": 24,
+      "candidate": 43,
+      "goal": [
+        2.230446818804,
+        0.029835884036
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.995102740024939,
+      "duration": 31.512387240986023,
+      "timeout": 41.51238724098602,
+      "scenario_sha256": "ee8f2e9873966c42ff1cbf59c1b1b614858e7469f38688bd8cda967158a9b452",
+      "sampled_reference_sha256": "b2520e84464f9cc93656259872a31cfdc1b741af4c9861779b9319547a5bff32",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_24.txt"
+    }
+  ],
+  "rejected": [
+    {
+      "family": "corridor",
+      "candidate": 0,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.423900384801 0.142882981514\nobstacle divider 0.950000000000 -0.312186193683 1.150000000000 0.387813806317 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 3,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.181964058180 0.048494353395\nobstacle divider 0.950000000000 -0.376633241364 1.150000000000 0.323366758636 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 4,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.183375150376 0.094635587245\nobstacle divider 0.950000000000 -0.323432999587 1.150000000000 0.376567000413 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 7,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.422338490380 0.046614748014\nobstacle divider 0.950000000000 -0.321440963923 1.150000000000 0.378559036077 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 8,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.203937171492 -0.076116392812\nobstacle divider 0.950000000000 -0.322712944356 1.150000000000 0.377287055644 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 11,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.160133769138 0.053277341854\nobstacle divider 0.950000000000 -0.364385386544 1.150000000000 0.335614613456 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 12,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.137786575632 0.109005275765\nobstacle divider 0.950000000000 -0.383361059352 1.150000000000 0.316638940648 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 13,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.160076975673 -0.114540932264\nobstacle divider 0.950000000000 -0.326997603204 1.150000000000 0.373002396796 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 15,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.388624732338 -0.108989661191\nobstacle divider 0.950000000000 -0.322425201464 1.150000000000 0.377574798536 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 16,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.219040473485 0.026909365092\nobstacle divider 0.950000000000 -0.353366712115 1.150000000000 0.346633287885 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 17,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.204610297009 0.084898804061\nobstacle divider 0.950000000000 -0.364766554764 1.150000000000 0.335233445236 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 18,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.354437238575 -0.075457280475\nobstacle divider 0.950000000000 -0.315142389047 1.150000000000 0.384857610953 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 19,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.251067334409 -0.088351039340\nobstacle divider 0.950000000000 -0.324179375926 1.150000000000 0.375820624074 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 20,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.113695586635 0.067159909245\nobstacle divider 0.950000000000 -0.305628283334 1.150000000000 0.394371716666 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 28,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.100537088560 0.134287345012\nobstacle divider 0.950000000000 -0.356117867628 1.150000000000 0.343882132372 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 34,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.270723896175 -0.124347816004\nobstacle divider 0.950000000000 -0.307658892390 1.150000000000 0.392341107610 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 36,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.396472293150 0.040539639157\nobstacle divider 0.950000000000 -0.386683541129 1.150000000000 0.313316458871 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 37,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.145406199026 0.147440395626\nobstacle divider 0.950000000000 -0.343008047044 1.150000000000 0.356991952956 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 42,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.200796684618 -0.136024889640\nobstacle divider 0.950000000000 -0.316283988962 1.150000000000 0.383716011038 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    }
+  ],
+  "initial_pitch": 0,
+  "initial_velocity": 0,
+  "physics_dt": 0.001,
+  "control_dt": 0.002,
+  "torque_limit": 2,
+  "success": {
+    "distance": 0.1,
+    "velocity": 0.05,
+    "yaw_rate": 0.1,
+    "pitch": 0.1,
+    "hold": 0.5
+  },
+  "selection": "Geometry only, before controller evaluation; no controller-dependent filtering."
+}

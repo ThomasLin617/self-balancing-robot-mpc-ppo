@@ -1,0 +1,36 @@
+{
+  "version": "d18_profiled_v2",
+  "stage": "C",
+  "seed": 324000,
+  "validation_seed": 424000,
+  "validation_episodes": 40,
+  "evaluation_interval": 250000,
+  "max_transitions": 5000000,
+  "environments": 8,
+  "physics_dt": 0.001,
+  "control_steps": 2,
+  "horizon": 250,
+  "network": [
+    128,
+    128
+  ],
+  "ppo": {
+    "learning_rate": 0.0001,
+    "n_steps": 2048,
+    "batch_size": 256,
+    "n_epochs": 10,
+    "gamma": 0.999,
+    "gae_lambda": 0.98,
+    "clip_range": 0.2,
+    "ent_coef": 0.0,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "target_kl": 0.03
+  },
+  "success_rate": 0.9,
+  "fall_rate": 0.05,
+  "previous_stage": "C2",
+  "curriculum": {
+    "profiled": true
+  }
+}

@@ -219,4 +219,9 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+add_executable(trajectory_policy_smoke_test src/trajectory_policy_smoke_test.cpp src/known_map_world.cpp)
+target_link_libraries(trajectory_policy_smoke_test mujoco_backend_lib)
+ament_target_dependencies(trajectory_policy_smoke_test robot_interface state_estimator navigation controller learning_policy)
+install(TARGETS trajectory_policy_smoke_test DESTINATION lib/${PROJECT_NAME})
+
 ament_package()

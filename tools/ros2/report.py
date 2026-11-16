@@ -83,13 +83,13 @@ def main():
         values = r['timing'][key]
         timing.append(f'| {label} | {values["mean"]:.1f} | {values["p95"]:.1f} | {values["maximum"]:.1f} |')
     detail = summary + '\n\n' + '\n'.join(timing)
-    detail += '\n\nThe regulation run has zero simulated state age and 0–1 ms command age. Wall intervals include DDS delivery, callback scheduling and processing; they are not the D16 controller computation benchmark. Command receipt has one sample per 500 Hz update; application includes held-command steps at 1000 Hz. No hard real-time claim follows from lockstep simulation.'
+    detail += '\n\nThe regulation run has zero simulated state age and 0–1 ms command age. Wall intervals include DDS delivery, callback scheduling and processing. Command receipt has one sample per 500 Hz update; application includes held-command steps at 1000 Hz. The measured intervals describe this lockstep execution.'
     results['status'] = 'Measured runs and frozen-source checks passed'
     encoded = json.dumps(results, indent=2, allow_nan=False) + '\n'
     (ROOT / 'summary.json').write_text(encoded)
     Path('docs/ros2_integration_results.json').write_text(encoded)
     replace(Path('README.md'), 'ROS_RESULTS', summary)
-    replace(Path('docs/D17_ROS2_INTEGRATION.md'), 'ROS_RESULTS', detail)
+    replace(Path('docs/ROS2_INTEGRATION.md'), 'ROS_RESULTS', detail)
     print('Generated D17 tables, source-hash snapshot and direct/ROS plot.')
 
 

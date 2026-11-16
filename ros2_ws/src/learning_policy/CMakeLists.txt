@@ -32,4 +32,14 @@ if(BUILD_TESTING)
     ${CMAKE_CURRENT_SOURCE_DIR}/../../../artifacts/learning/selected_policy.observations.txt)
 endif()
 
+add_library(trajectory_policy_lib src/trajectory_policy.cpp)
+target_compile_features(trajectory_policy_lib PUBLIC cxx_std_17)
+target_include_directories(trajectory_policy_lib PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>)
+ament_target_dependencies(trajectory_policy_lib robot_interface)
+install(TARGETS trajectory_policy_lib EXPORT export_trajectory_policy
+  ARCHIVE DESTINATION lib LIBRARY DESTINATION lib RUNTIME DESTINATION bin)
+ament_export_targets(export_trajectory_policy HAS_LIBRARY_TARGET)
+
 ament_package()

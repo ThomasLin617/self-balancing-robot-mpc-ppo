@@ -1,0 +1,18 @@
+{
+  "tools/benchmark/audit_checks.py": {
+    "before_sha256": "1febde73bed9eed0dec8f783d3fe23ea61ecdc6cea123d0f89eac643d981a731",
+    "d18_sha256": "94b81e781cf3353b2e3a667ed4ea09dff349852435ee7d2c05ff274fcbbc6d49",
+    "reason": "Public report paths use functional names. Document checks cover the published benchmark report.",
+    "previous_document_layout_sha256": "40366ea6490c2bc4bb93cd688362f70e0ec3b6c82448892665eaf0e03e9072af"
+  },
+  "tools/benchmark/audit_report.py": {
+    "baseline_sha256": "0fd31deeec15ba0fa7074b07e906b43547df242de59d8f532a018b3f46a156ff",
+    "d18_sha256": "5095f7511861d6035e81a34c10cd0e56c66b0c99013e16733104f91b95154b60",
+    "reason": "Update published document paths and remove private notebook output."
+  },
+  "tools/benchmark/report.py": {
+    "baseline_sha256": "c4d2c9c15d1958c4c7574a40e20c9e9d5b04f53ba825cc0b4ad361d0a58c5872",
+    "d18_sha256": "6faa415aa98c889613dd6d29691a21720359e7def50617e4c01ba7ef4ee1a1d6",
+    "reason": "Update published document paths and remove private notebook output."
+  }
+}

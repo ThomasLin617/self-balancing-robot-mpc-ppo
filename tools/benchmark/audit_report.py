@@ -68,9 +68,7 @@ def main():
         f"Selected K={timing['updates_per_batch']} by requiring median calibration batch duration ≥20 µs; retained {timing['batches']} batches after {timing['warmup_batches']} warm-up batches. Minimum retained batch duration is {number(timing['minimum_batch_us'])} µs. Selection uses duration, not a favorable result. Each call reads a different prebuilt state/reference and stores its returned command. One state also changes between batches. Allocation/input generation and checksum/CSV writing are outside the timer. A recorded checksum consumes all torque outputs. Release disassembly shows a call to production LQR inside the timed loop, so there is no deleted or hoisted command evaluation.",
         'The batch contains sequential independent calls plus indexed loads/stores; cache residency, memory traffic, loop overhead and throughput differ from an isolated 500 Hz call. No empty-loop time is subtracted. Division by K amortizes two clock reads. p95/p99/max describe the distribution of batch means, not single-call tails, jitter or a hard real-time bound. MPC and PPO timings are the original frozen measurements. Original quantized LQR CSVs remain preserved; only the displayed LQR timing method is replaced.'])
     (root/'audit_summary.md').write_text(long+'\n')
-    replace_block(Path('docs/D16_UNIFIED_BENCHMARK.md'),long)
-    notebook = long.replace('](figures/','](../figures/')
-    replace_block(Path('docs/learning/PPO_DEVELOPMENT_HISTORY.md'),notebook)
+    replace_block(Path('docs/OBSTACLE_FREE_BENCHMARK.md'),long)
     print('Updated audit tables, figures links and traceable JSON snapshot.')
 
 

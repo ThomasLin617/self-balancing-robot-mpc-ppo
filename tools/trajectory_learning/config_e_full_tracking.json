@@ -1,0 +1,44 @@
+{
+  "version": "d18_full_circle_tracking_reward_v2",
+  "stage": "E",
+  "seed": 329000,
+  "validation_seed": 428000,
+  "validation_episodes": 40,
+  "evaluation_interval": 250000,
+  "max_transitions": 3800000,
+  "environments": 8,
+  "physics_dt": 0.001,
+  "control_steps": 2,
+  "horizon": 250,
+  "network": [
+    128,
+    128
+  ],
+  "ppo": {
+    "learning_rate": 1e-06,
+    "n_steps": 2048,
+    "batch_size": 256,
+    "n_epochs": 10,
+    "gamma": 0.999,
+    "gae_lambda": 0.98,
+    "clip_range": 0.2,
+    "ent_coef": 0.0,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "target_kl": 0.03
+  },
+  "success_rate": 1.0,
+  "fall_rate": 0.05,
+  "previous_stage": "C_full",
+  "curriculum": {
+    "full_circle": true,
+    "tracking_scales": [
+      0.03,
+      0.2,
+      0.1,
+      1,
+      0.1,
+      0.5
+    ]
+  }
+}

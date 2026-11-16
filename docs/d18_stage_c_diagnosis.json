@@ -1,0 +1,61 @@
+{
+  "best_steps": 250000,
+  "last_steps": 5000000,
+  "groups": {
+    "best": {
+      "right_curve": {
+        "count": 10,
+        "success": 1,
+        "fall": 9,
+        "timeout": 0
+      },
+      "right_rotation": {
+        "count": 10,
+        "success": 10,
+        "fall": 0,
+        "timeout": 0
+      },
+      "left_curve": {
+        "count": 10,
+        "success": 5,
+        "fall": 0,
+        "timeout": 5
+      },
+      "left_rotation": {
+        "count": 10,
+        "success": 10,
+        "fall": 0,
+        "timeout": 0
+      }
+    },
+    "last": {
+      "right_curve": {
+        "count": 10,
+        "success": 0,
+        "fall": 0,
+        "timeout": 10
+      },
+      "right_rotation": {
+        "count": 10,
+        "success": 10,
+        "fall": 0,
+        "timeout": 0
+      },
+      "left_curve": {
+        "count": 10,
+        "success": 3,
+        "fall": 4,
+        "timeout": 3
+      },
+      "left_rotation": {
+        "count": 10,
+        "success": 10,
+        "fall": 0,
+        "timeout": 0
+      }
+    }
+  },
+  "source_validation_sha256": "5c9358b5e86b0599b5c35dc1069018b3fd81d275cc9ea4d779898a9c2407fbcc",
+  "best_actor_sha256": "a81e88d50b1b906d70d184663e02a28c54f51e37a458504971bf83f4916ec58e",
+  "status": "Stage C budget exhausted; obstacle stages not started"
+}

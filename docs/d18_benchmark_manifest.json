@@ -1,0 +1,2843 @@
+{
+  "seed": 518000,
+  "count": 100,
+  "cases": [
+    {
+      "family": "wall",
+      "index": 0,
+      "candidate": 0,
+      "goal": [
+        -1.882110963128054,
+        1.5775097230273731
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.231188945514672,
+      "duration": 32.70547522385941,
+      "timeout": 42.70547522385941,
+      "scenario_sha256": "59baeaa6a8a0608df1c8bb5f927c2423cd25c63552461b0b9f31dc9efe903e9b",
+      "sampled_reference_sha256": "22d3aa93fcc25af1432fb08ca8fad8bbf3bb7e3c151bf9650f223a882bdf2d21",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_00.txt",
+      "world_goal": [
+        2.455590682885,
+        -0.030870728872
+      ],
+      "world_initial_yaw": -2.456583679551778,
+      "bearing": 2.444012731585586
+    },
+    {
+      "family": "wall",
+      "index": 1,
+      "candidate": 1,
+      "goal": [
+        1.9371342980174042,
+        -1.4621155078439203
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1960951360332968,
+      "duration": 30.973484622821978,
+      "timeout": 40.97348462282198,
+      "scenario_sha256": "87273d008e5efe50bb42517963222f24dd8a644db1c368c3ab3c8a36bee9fe7f",
+      "sampled_reference_sha256": "dada9babedf07eebb02e071d5dab6fba08a7ba52d2d1448bb2e990a2cdc463e4",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_01.txt",
+      "world_goal": [
+        2.426325313665,
+        0.056714364155
+      ],
+      "world_initial_yaw": 0.6699253698544241,
+      "bearing": -0.6465550335759015
+    },
+    {
+      "family": "wall",
+      "index": 2,
+      "candidate": 2,
+      "goal": [
+        0.2917542546478481,
+        2.317675335091322
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.048518269885795,
+      "duration": 29.451240483729066,
+      "timeout": 39.451240483729066,
+      "scenario_sha256": "8521563def2cf8fa90815b9a2e5e61bb3932657ac0ff5f3a104d3e306628af92",
+      "sampled_reference_sha256": "4a59935047f97bac145e0972e5aaabb4abbd1a4ca42410fda2b5ce6cac55071d",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_02.txt",
+      "world_goal": [
+        2.334984343074,
+        -0.067731983546
+      ],
+      "world_initial_yaw": -1.4745720568079055,
+      "bearing": 1.4455727206800664
+    },
+    {
+      "family": "wall",
+      "index": 3,
+      "candidate": 3,
+      "goal": [
+        -0.9586495021064995,
+        2.1846122120524405
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1210653610431893,
+      "duration": 30.381128431363774,
+      "timeout": 40.38112843136378,
+      "scenario_sha256": "5418d5ea860f1c69035b35377533f86d56a745cf3089e3c6aa249c676b993dd2",
+      "sampled_reference_sha256": "b1b5fe77121e68a40a8cea114dba00076b89c9b23f3175bf408c3f998534ca39",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_03.txt",
+      "world_goal": [
+        2.382447447561,
+        -0.124432891744
+      ],
+      "world_initial_yaw": -2.0364949915865544,
+      "bearing": 1.9843133868675837
+    },
+    {
+      "family": "wall",
+      "index": 4,
+      "candidate": 4,
+      "goal": [
+        0.9025907698297146,
+        2.2404317881640377
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.139439590983101,
+      "duration": 34.51294813135324,
+      "timeout": 44.51294813135324,
+      "scenario_sha256": "39827463dd4fd3ee24e33c3f6657b86caeef1d0d51dcd70676774ec2fef3e774",
+      "sampled_reference_sha256": "1e308185a0ad107de5c4742048070a2794ba9cc5648a9826c981df57ce6245b2",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_04.txt",
+      "world_goal": [
+        2.411963694863,
+        0.128979959143
+      ],
+      "world_initial_yaw": -1.134398666954799,
+      "bearing": 1.1878228652110554
+    },
+    {
+      "family": "wall",
+      "index": 5,
+      "candidate": 5,
+      "goal": [
+        0.6685076005855042,
+        -2.1218717126881144
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9556318052813726,
+      "duration": 29.56884396476214,
+      "timeout": 39.56884396476214,
+      "scenario_sha256": "a5e7cfd00c76a7331c3e9adaa4decc4cf4001d9872e3147cc6d46b1f6d063d8c",
+      "sampled_reference_sha256": "cbb6aa597bc3e73b902cc785cc77ee2746f0b212b08fec97582cab812b15bbc5",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_05.txt",
+      "world_goal": [
+        2.223310222614,
+        0.078317502301
+      ],
+      "world_initial_yaw": 1.3007959774293392,
+      "bearing": -1.2655849068790954
+    },
+    {
+      "family": "wall",
+      "index": 6,
+      "candidate": 6,
+      "goal": [
+        1.8647118714668842,
+        1.142066177946094
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.046792943701386,
+      "duration": 30.831916966159916,
+      "timeout": 40.831916966159916,
+      "scenario_sha256": "db32155230f97f61728157c65f7b066e14d39dacc491fc368bec37e000e2a817",
+      "sampled_reference_sha256": "484fd7440b29a19ec01339dd982a626c8854dd0725b5f4faa2299dc43b6419a0",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_06.txt",
+      "world_goal": [
+        2.185191437351,
+        0.080024374573
+      ],
+      "world_initial_yaw": -0.5129279146890808,
+      "bearing": 0.5495327759548575
+    },
+    {
+      "family": "wall",
+      "index": 7,
+      "candidate": 7,
+      "goal": [
+        0.3205510928320444,
+        -2.089537226640044
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9020656488927514,
+      "duration": 33.4378362857462,
+      "timeout": 43.4378362857462,
+      "scenario_sha256": "398f53d3d74081425e88387b9e08234e553788f32814f38c7490c5cf1b597fa7",
+      "sampled_reference_sha256": "7eafdd5d2b8236737c2ce34f0f6155f37e9d983c41fda2c65f7b657ba49b688a",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_07.txt",
+      "world_goal": [
+        2.108937357386,
+        -0.145952208795
+      ],
+      "world_initial_yaw": 1.3494790020095309,
+      "bearing": -1.4185753461371113
+    },
+    {
+      "family": "wall",
+      "index": 8,
+      "candidate": 8,
+      "goal": [
+        -1.3169718497114395,
+        1.6385400628225877
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9615117543876206,
+      "duration": 36.25193225297174,
+      "timeout": 46.25193225297174,
+      "scenario_sha256": "45eb9e1e5674cfe9cd5d09d881a6f51ea7ff20fed29e22db7462a0d8e488facd",
+      "sampled_reference_sha256": "f57970fbbc6ab84a436fe36c68104e0c12e59fff28d7745cafae4f344ba6d8ab",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_08.txt",
+      "world_goal": [
+        2.101110210168,
+        0.06755941929
+      ],
+      "world_initial_yaw": -2.2156748444339653,
+      "bearing": 2.2478179230801976
+    },
+    {
+      "family": "wall",
+      "index": 9,
+      "candidate": 9,
+      "goal": [
+        0.5777610430969866,
+        2.042131928758802
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9485371008580215,
+      "duration": 29.177750506991202,
+      "timeout": 39.1777505069912,
+      "scenario_sha256": "4af45635d606a82f702b260ef84402a299d257fc989cdc4cfd4f7de891052092",
+      "sampled_reference_sha256": "d9bbe788e59b595e644c1c9738105522cf1d084a856b2b5118e00b7f9128687f",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_09.txt",
+      "world_goal": [
+        2.120180338563,
+        -0.094583134583
+      ],
+      "world_initial_yaw": -1.3396628105523671,
+      "bearing": 1.2950814778310573
+    },
+    {
+      "family": "wall",
+      "index": 10,
+      "candidate": 10,
+      "goal": [
+        -1.9150881471052565,
+        -1.1362160974746551
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0556330687762365,
+      "duration": 33.39097621473868,
+      "timeout": 43.39097621473868,
+      "scenario_sha256": "d0f28931e84dbc8aba3e5b5caa5b629d837020181f01343405c6b8c6bd48b024",
+      "sampled_reference_sha256": "aa66dca7158f025e063194143e45083862abdffef6ada99f3f5ba97f87268061",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_10.txt",
+      "world_goal": [
+        2.226077004251,
+        -0.055953574403
+      ],
+      "world_initial_yaw": 2.580986174815793,
+      "bearing": -2.606116390462183
+    },
+    {
+      "family": "wall",
+      "index": 11,
+      "candidate": 11,
+      "goal": [
+        1.684977521380103,
+        1.7753208101369888
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1029746902414623,
+      "duration": 28.371304402103874,
+      "timeout": 38.371304402103874,
+      "scenario_sha256": "994fa562ebe3403a109c783cfae19578cff6fb8c3f80928ae9a59bb5534d96b0",
+      "sampled_reference_sha256": "fab2e0c7a854a5571852a4f67630242f4de8b973eddd59c20a2578462689450e",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_11.txt",
+      "world_goal": [
+        2.444568093159,
+        -0.122474749931
+      ],
+      "world_initial_yaw": -0.861559675855728,
+      "bearing": 0.8115007594281058
+    },
+    {
+      "family": "wall",
+      "index": 12,
+      "candidate": 12,
+      "goal": [
+        -0.4303204801649011,
+        2.2628291125945887
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0960515728709517,
+      "duration": 30.721900581873918,
+      "timeout": 40.72190058187392,
+      "scenario_sha256": "eeb3a0e3e381d627d4c4f12ad5fd0dd8a914fde53137e148ddbf05861a0dcd5d",
+      "sampled_reference_sha256": "16c471ac6a781bb5e596011227b44aedf6b92f97b066c9bcf0672980f1cd9b49",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_12.txt",
+      "world_goal": [
+        2.302531560385,
+        -0.062607682324
+      ],
+      "world_initial_yaw": -1.7859057112493641,
+      "bearing": 1.7587216062442694
+    },
+    {
+      "family": "wall",
+      "index": 13,
+      "candidate": 13,
+      "goal": [
+        -2.1169038152573956,
+        0.997224824354046
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1781940191064084,
+      "duration": 36.164255265972486,
+      "timeout": 46.164255265972486,
+      "scenario_sha256": "a88a5df6b57b35ab946207b674ad4013362b29cb2179c1d7529321b9b47fcbe1",
+      "sampled_reference_sha256": "8e4a3faab021143a9a15f43fd64948435815c22c7dc94037a9ef63b2c4b3688f",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_13.txt",
+      "world_goal": [
+        2.340006616295,
+        -0.01039947378
+      ],
+      "world_initial_yaw": -2.7057941251057867,
+      "bearing": 2.70134994736637
+    },
+    {
+      "family": "wall",
+      "index": 14,
+      "candidate": 14,
+      "goal": [
+        1.1628036356892368,
+        -1.956611929454713
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1398755064586745,
+      "duration": 34.18964117749596,
+      "timeout": 44.18964117749596,
+      "scenario_sha256": "bed67fa5c179591f4a25243d1ed798bdbb502235f9007ad8a9ddf0c1c6d70ce8",
+      "sampled_reference_sha256": "6dd17b783b20f4b1cad7f665da8cd4df61eaa99fdeda7f22ee6a2e536e5fccd4",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_14.txt",
+      "world_goal": [
+        2.275933967379,
+        0.023814150984
+      ],
+      "world_initial_yaw": 1.0450457175351282,
+      "bearing": -1.0345826363155362
+    },
+    {
+      "family": "wall",
+      "index": 15,
+      "candidate": 15,
+      "goal": [
+        0.8832751226657314,
+        -2.303509453392998
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2282116114290047,
+      "duration": 34.30677110736439,
+      "timeout": 44.30677110736439,
+      "scenario_sha256": "a3cdc2ff3d6058efb9059f59c00acbdf6c19fba20159464eb5cf48f5a9a13fdd",
+      "sampled_reference_sha256": "780fde20fd2568adc79f55641ea4373ac6c59335abdebf865c9a81620d957f37",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_15.txt",
+      "world_goal": [
+        2.466564244448,
+        -0.048903703354
+      ],
+      "world_initial_yaw": 1.1848161545757518,
+      "bearing": -1.2046402061993062
+    },
+    {
+      "family": "wall",
+      "index": 16,
+      "candidate": 16,
+      "goal": [
+        -0.1654199645276995,
+        2.376941035924112
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2089908367000817,
+      "duration": 31.76765280934797,
+      "timeout": 41.76765280934797,
+      "scenario_sha256": "0f7e786f1a18c3ccb228e2c903636fa3e53d8e70f4d398b93ea0ee8245e218b8",
+      "sampled_reference_sha256": "262e754bb5de122193f235e76396a1882460f6c88af9210fc573bcad074f5270",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_16.txt",
+      "world_goal": [
+        2.378959992796,
+        0.133273424209
+      ],
+      "world_initial_yaw": -1.584314711877685,
+      "bearing": 1.6402779325027506
+    },
+    {
+      "family": "wall",
+      "index": 17,
+      "candidate": 17,
+      "goal": [
+        -2.0871925197764347,
+        -0.5591545816478074
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.088299342968908,
+      "duration": 34.34618861597257,
+      "timeout": 44.34618861597257,
+      "scenario_sha256": "917c10eda5bf0b947d4e462d294a240a910e03508fd61313d5c48a440ecad636",
+      "sampled_reference_sha256": "9d24d148c39af881cded46a6215dcd445004435598ab3cae3f91f2aa9ab45503",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_17.txt",
+      "world_goal": [
+        2.160021808838,
+        0.057725610717
+      ],
+      "world_initial_yaw": 2.9065592736742314,
+      "bearing": -2.8798410832407315
+    },
+    {
+      "family": "wall",
+      "index": 18,
+      "candidate": 18,
+      "goal": [
+        -0.5157404771279938,
+        -2.177032940671814
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.124805898283026,
+      "duration": 35.94371104574206,
+      "timeout": 45.94371104574206,
+      "scenario_sha256": "a87492f1d53869af691b797a98e65fe3e53f0bf282d09f703f39aae72b7e1a4e",
+      "sampled_reference_sha256": "21310c9b76caa9d34e9921ab4afa5c3ed8e0fec106261b9eab7401f75170cd73",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_18.txt",
+      "world_goal": [
+        2.236973655014,
+        0.037543725064
+      ],
+      "world_initial_yaw": 1.8201903758978286,
+      "bearing": -1.8034086849312874
+    },
+    {
+      "family": "wall",
+      "index": 19,
+      "candidate": 19,
+      "goal": [
+        -0.2216395959543755,
+        2.098454380964421
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0165892145302458,
+      "duration": 32.486819005567064,
+      "timeout": 42.486819005567064,
+      "scenario_sha256": "a1524aa0974cf24bee5a62ce466643ea0171646cdc4f8fd943fd247847542984",
+      "sampled_reference_sha256": "e8f6cc17c680376236b497d086175399a7c503c12d2f647f041e514a1ed110a4",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_19.txt",
+      "world_goal": [
+        2.108141215243,
+        0.091517845677
+      ],
+      "world_initial_yaw": -1.6326421920865388,
+      "bearing": 1.6760265817813051
+    },
+    {
+      "family": "wall",
+      "index": 20,
+      "candidate": 20,
+      "goal": [
+        -2.355160790977044,
+        0.14450193387726257
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.095906393133089,
+      "duration": 34.61062490697078,
+      "timeout": 44.61062490697078,
+      "scenario_sha256": "fc9630fcc78ed6e8c6f6fd42485595f46f0c49f2d3393f09011f9d158ceabc5a",
+      "sampled_reference_sha256": "35898ba4909c0910a6ae784cac7360de310aad4f19e612b70655e1e321c469d3",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_20.txt",
+      "world_goal": [
+        2.359516570408,
+        0.018566481087
+      ],
+      "world_initial_yaw": -3.0724454252608715,
+      "bearing": 3.0803140277269994
+    },
+    {
+      "family": "wall",
+      "index": 21,
+      "candidate": 21,
+      "goal": [
+        -2.343883433553212,
+        -0.33123127156629917
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0454622984193067,
+      "duration": 33.66762372262313,
+      "timeout": 43.66762372262313,
+      "scenario_sha256": "6c63dd0b21d864d9c2e4ed3e3e06402dc2d146bc1381b74b8b9dc42867073232",
+      "sampled_reference_sha256": "8f198c1eb1340c1894621bb79e9df00837b7625d334f6c9141437914eea99041",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_21.txt",
+      "world_goal": [
+        2.364919161584,
+        0.103252431068
+      ],
+      "world_initial_yaw": 3.0448372877695498,
+      "bearing": -3.001204972061912
+    },
+    {
+      "family": "wall",
+      "index": 22,
+      "candidate": 22,
+      "goal": [
+        -2.1879018718609675,
+        -0.18592883278418346
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9585736532935845,
+      "duration": 32.490512143913854,
+      "timeout": 42.490512143913854,
+      "scenario_sha256": "d38c3add514678eb56bcf2c615ddec54067b8af228867edbf07880cbcbc16f94",
+      "sampled_reference_sha256": "fb8f6e56313f98e0fa501231465f70526f4078f73f0e94d6be3e72ce2d47acfb",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_22.txt",
+      "world_goal": [
+        2.191785724185,
+        -0.132512154205
+      ],
+      "world_initial_yaw": 2.9964308799514416,
+      "bearing": -3.056815912841985
+    },
+    {
+      "family": "wall",
+      "index": 23,
+      "candidate": 23,
+      "goal": [
+        2.1490578617417793,
+        1.1158479368592553
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.163803131937124,
+      "duration": 30.094057369201526,
+      "timeout": 40.09405736920152,
+      "scenario_sha256": "55df8f0956e6c2037d819d3ff00fb3c9cb9712af657b38410412168ed37d46f7",
+      "sampled_reference_sha256": "a38554c95fa7f30f9ccd07c1f6615a607efea0073e0fa9543f369bbe1c3e346f",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_23.txt",
+      "world_goal": [
+        2.419679005935,
+        -0.093379974002
+      ],
+      "world_initial_yaw": -0.5174830324326134,
+      "bearing": 0.47891028903266514
+    },
+    {
+      "family": "wall",
+      "index": 24,
+      "candidate": 24,
+      "goal": [
+        -2.3761838038126024,
+        -0.04144280461965909
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2646806854820754,
+      "duration": 35.69624516365738,
+      "timeout": 45.69624516365738,
+      "scenario_sha256": "f463341e3fbf0c66e46049794180861ae3a41a3cf9c51e280d4d0a5b4d68816f",
+      "sampled_reference_sha256": "c1ae0acd0e9bb73581c6ca23807455cee0399f202616278341c0e4a46e38ee1e",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "wall_24.txt",
+      "world_goal": [
+        2.374558568833,
+        -0.097152348082
+      ],
+      "world_initial_yaw": 3.0832624630087677,
+      "bearing": -3.124153513055842
+    },
+    {
+      "family": "staggered",
+      "index": 0,
+      "candidate": 0,
+      "goal": [
+        0.34317065061725677,
+        2.184283873976455
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.324616517132419,
+      "duration": 38.83784586265321,
+      "timeout": 48.83784586265321,
+      "scenario_sha256": "fb2c16e3ac0af2bbf3625e3cd7ed450fd4b0ccf62dba78244eeb3e519e420dd4",
+      "sampled_reference_sha256": "7bc41f1f969358a8c7262a294a0f2341e21c3f3fe62f85ca33f8acf50f17e7e9",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_00.txt",
+      "world_goal": [
+        2.211003947572,
+        -0.017991147259
+      ],
+      "world_initial_yaw": -1.423098083375449,
+      "bearing": 1.414961168823075
+    },
+    {
+      "family": "staggered",
+      "index": 1,
+      "candidate": 1,
+      "goal": [
+        2.239865693927579,
+        -0.46960882521250147
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.175165017834664,
+      "duration": 33.2792566753753,
+      "timeout": 43.2792566753753,
+      "scenario_sha256": "42b12e1845533647f68b1697b9d7213afd2e58842f9c52b775d4a5ee48e3899b",
+      "sampled_reference_sha256": "bfd858327c513224ac4d0db46eecba1519792e2d2fa2382e60857ae3cfe5143e",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_01.txt",
+      "world_goal": [
+        2.288035064005,
+        0.049257704319
+      ],
+      "world_initial_yaw": 0.22819098900723533,
+      "bearing": -0.206665927017247
+    },
+    {
+      "family": "staggered",
+      "index": 2,
+      "candidate": 2,
+      "goal": [
+        -2.2454329416630916,
+        -0.7366241629745415
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2592624381786606,
+      "duration": 34.71644131659073,
+      "timeout": 44.71644131659073,
+      "scenario_sha256": "d31c4da24a0e26e7249ec7ed1284a83a4fc335845e29aaeb726a364aa412e5e4",
+      "sampled_reference_sha256": "d55bee73717541e2eb95c1deb4c034430dc6af967fb3afb9d46286b8c78d761b",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_02.txt",
+      "world_goal": [
+        2.36316062781,
+        -0.007490003495
+      ],
+      "world_initial_yaw": 2.8214311617503576,
+      "bearing": -2.8246006367011436
+    },
+    {
+      "family": "staggered",
+      "index": 3,
+      "candidate": 3,
+      "goal": [
+        -0.8510232231167669,
+        -1.957241697044244
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.282834955409311,
+      "duration": 40.175051779231495,
+      "timeout": 50.175051779231495,
+      "scenario_sha256": "2a9b6426a8e994a90ad662079d63e1718df3cac02536aad8aac8e9b4062a325f",
+      "sampled_reference_sha256": "367c03317a736ca77bddbb30120af8afc049107288886659d2b6cfa792578a90",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_03.txt",
+      "world_goal": [
+        2.132386822618,
+        -0.089230183558
+      ],
+      "world_initial_yaw": 1.9391237224405975,
+      "bearing": -1.9809445384033184
+    },
+    {
+      "family": "staggered",
+      "index": 4,
+      "candidate": 4,
+      "goal": [
+        -0.42656038187821005,
+        2.3428404450001565
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.3294702776832277,
+      "duration": 31.502952659929765,
+      "timeout": 41.50295265992976,
+      "scenario_sha256": "9042be4a65bc8819d4e9343dbb8fc92f22a81b35f0d9865a087c30d265ca2ffa",
+      "sampled_reference_sha256": "eb3a765f159a947c0325897c036084903241fae6325dcba0b06b2970321f5d53",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_04.txt",
+      "world_goal": [
+        2.380997983152,
+        -0.041276074701
+      ],
+      "world_initial_yaw": -1.768227220081473,
+      "bearing": 1.7508933370099309
+    },
+    {
+      "family": "staggered",
+      "index": 5,
+      "candidate": 5,
+      "goal": [
+        0.8700384029688543,
+        -2.003886526486734
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2462591875804963,
+      "duration": 32.10983646861283,
+      "timeout": 42.10983646861283,
+      "scenario_sha256": "62a97c25c006c0998e0356cc12fc738d9f8c638c57a72a33b6fde89e94cc56c5",
+      "sampled_reference_sha256": "2ffc76ff45cb260a5a79d005e53eb26463e14a6024ccda61ac952d0751885eb5",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_05.txt",
+      "world_goal": [
+        2.184094518058,
+        0.04753072548
+      ],
+      "world_initial_yaw": 1.1829384782571033,
+      "bearing": -1.1611797018858498
+    },
+    {
+      "family": "staggered",
+      "index": 6,
+      "candidate": 6,
+      "goal": [
+        0.8555488558268642,
+        -2.029743430990798
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1935292058409415,
+      "duration": 31.181140298870503,
+      "timeout": 41.1811402988705,
+      "scenario_sha256": "c2302ced3fb75424ee463889bde314d1e0918003b5fa6c31b05475460d2e523b",
+      "sampled_reference_sha256": "efd599f054ba8d8d3e42cc25c2b00c807600f6a7f9bf838f98f87240dbbe86be",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_06.txt",
+      "world_goal": [
+        2.202684475484,
+        0.001828064203
+      ],
+      "world_initial_yaw": 1.172718847302404,
+      "bearing": -1.1718889219074429
+    },
+    {
+      "family": "staggered",
+      "index": 7,
+      "candidate": 7,
+      "goal": [
+        -1.497206115499694,
+        -1.5063377154298192
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2954665829434706,
+      "duration": 35.539976047793,
+      "timeout": 45.539976047793,
+      "scenario_sha256": "93b3cde5088bd2e380e68222456904e5710e42f0c86bc15c98b8d2e29b55d4bb",
+      "sampled_reference_sha256": "a90a70093fe32b261a5642b7d113a8efc300afc26fd584812e16eae6f9ed38f1",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_07.txt",
+      "world_goal": [
+        2.123824832814,
+        -0.006895269291
+      ],
+      "world_initial_yaw": 2.349907607673181,
+      "bearing": -2.3531542243234216
+    },
+    {
+      "family": "staggered",
+      "index": 8,
+      "candidate": 8,
+      "goal": [
+        -1.4445313492039302,
+        1.7147506028142634
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.243743526253199,
+      "duration": 38.07172330854174,
+      "timeout": 48.07172330854174,
+      "scenario_sha256": "9a825e445c0c07085ff4639dc276e2a2e2641eefc7d50b582c92ee22b150397d",
+      "sampled_reference_sha256": "08098a909077ed7a7b47603595718576e4dadd2a0b7dc9f11f5a3bdd18aff32e",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_08.txt",
+      "world_goal": [
+        2.240972415696,
+        0.071295727603
+      ],
+      "world_initial_yaw": -2.239066385861069,
+      "bearing": 2.2708702970590857
+    },
+    {
+      "family": "staggered",
+      "index": 9,
+      "candidate": 9,
+      "goal": [
+        -2.0377473773335986,
+        -1.324861252033461
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.4149183939266403,
+      "duration": 36.6832128725716,
+      "timeout": 46.6832128725716,
+      "scenario_sha256": "1c5ca810880d27b31e3db524420018eda8544cbc64921906454b8b780ee9c902",
+      "sampled_reference_sha256": "c63d66fbc9b447278e811d51740b37841b6e60a3d2d0b5c0f4b5cb1442e761f3",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_09.txt",
+      "world_goal": [
+        2.427725195519,
+        -0.117567367972
+      ],
+      "world_initial_yaw": 2.516716000533054,
+      "bearing": -2.5651051642215172
+    },
+    {
+      "family": "staggered",
+      "index": 10,
+      "candidate": 10,
+      "goal": [
+        -2.2143253292412464,
+        0.09269004315076922
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2966013150020723,
+      "duration": 37.078227805828654,
+      "timeout": 47.078227805828654,
+      "scenario_sha256": "90210be077f5ed35d4d6ac387f80b4a16a8faea6e435e41cf799dd7e625855a9",
+      "sampled_reference_sha256": "e89318943ebc7a7901b01e3ce1560351a6afbef17876886928f3a1a7f4071211",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_10.txt",
+      "world_goal": [
+        2.213872680522,
+        0.102936204792
+      ],
+      "world_initial_yaw": -3.053295277462546,
+      "bearing": 3.0997578059039346
+    },
+    {
+      "family": "staggered",
+      "index": 11,
+      "candidate": 11,
+      "goal": [
+        2.326693961992565,
+        0.0925713150147726
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.313811162632342,
+      "duration": 34.832855048166955,
+      "timeout": 44.832855048166955,
+      "scenario_sha256": "fbf6518303e43996034c564fb54e9ebe9e63751f40b48ed68096c7c7545269bf",
+      "sampled_reference_sha256": "20a7976227b6c9c9d9d45572e50b786a39f3a20945dd01498ca4d5982014bbb6",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_11.txt",
+      "world_goal": [
+        2.328396954707,
+        -0.025335004389
+      ],
+      "world_initial_yaw": -0.05064610667487246,
+      "bearing": 0.039765657542099604
+    },
+    {
+      "family": "staggered",
+      "index": 12,
+      "candidate": 12,
+      "goal": [
+        0.639548943240434,
+        -2.408543956924048
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.318565990737335,
+      "duration": 30.567338486069943,
+      "timeout": 40.56733848606994,
+      "scenario_sha256": "aedd296273944bb4592e40c3fbe1e90cac203f5d1ba40d5dc20b7e4e4a792443",
+      "sampled_reference_sha256": "74c653234aafaa2414e75262697d43fecc3a966c2cd8b3573613b91ffc9fdd61",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_12.txt",
+      "world_goal": [
+        2.489427753267,
+        0.113385645032
+      ],
+      "world_initial_yaw": 1.3567676466473406,
+      "bearing": -1.3112522323120732
+    },
+    {
+      "family": "staggered",
+      "index": 13,
+      "candidate": 13,
+      "goal": [
+        1.750312671332498,
+        1.682814176159172
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.401278205339294,
+      "duration": 36.61177516038817,
+      "timeout": 46.61177516038817,
+      "scenario_sha256": "3b3e6b413a4d4333bf91de97f93d75643b4eebce6f5fa92742401625fcc4eee1",
+      "sampled_reference_sha256": "4542022c66e818a98f7d13258b960359a2db30856f5f8b02423f2ab80b301b52",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_13.txt",
+      "world_goal": [
+        2.427903425795,
+        -0.027257181114
+      ],
+      "world_initial_yaw": -0.7769659193635663,
+      "bearing": 0.7657397578241167
+    },
+    {
+      "family": "staggered",
+      "index": 14,
+      "candidate": 14,
+      "goal": [
+        1.7461630064865232,
+        1.2689389768525103
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.3341546463024647,
+      "duration": 39.92835598064445,
+      "timeout": 49.92835598064445,
+      "scenario_sha256": "37fc52d262fb0df5982bd7f111c1edb2ac48693e1a3509563cdf36791d9458a4",
+      "sampled_reference_sha256": "a60317c6a472b8625226816d25e75f9ee54684a3a6be881d70866bee08fd7ef7",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_14.txt",
+      "world_goal": [
+        2.158038313806,
+        0.046497401464
+      ],
+      "world_initial_yaw": -0.6068796497778157,
+      "bearing": 0.6284224592405093
+    },
+    {
+      "family": "staggered",
+      "index": 15,
+      "candidate": 15,
+      "goal": [
+        2.198480603193601,
+        -0.4865609295544127
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.282130078910961,
+      "duration": 34.59927934845505,
+      "timeout": 44.59927934845505,
+      "scenario_sha256": "0eba915da045488e44dd77aacfa5786508bfddfdde27069567d45af038177bfc",
+      "sampled_reference_sha256": "19ab21d55a01c3af535630b09e15de02794895caa60a1188ef051175b04ceae8",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_15.txt",
+      "world_goal": [
+        2.251416308611,
+        0.034396309508
+      ],
+      "world_initial_yaw": 0.2330825129189602,
+      "bearing": -0.21780606953126289
+    },
+    {
+      "family": "staggered",
+      "index": 16,
+      "candidate": 16,
+      "goal": [
+        2.0770179980982806,
+        -0.9781199632547071
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.3016712690527212,
+      "duration": 34.21272991973848,
+      "timeout": 44.21272991973848,
+      "scenario_sha256": "d98eb49f98a46aa13083ca147f397fb70f5c84902c2c6af59a57f59d761517db",
+      "sampled_reference_sha256": "8a8f003719b7cb672b5f72b2f1fb43a910b1c15b53d95a6133f90ea49ac32cac",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_16.txt",
+      "world_goal": [
+        2.292757223228,
+        0.118265558289
+      ],
+      "world_initial_yaw": 0.49165492498323093,
+      "bearing": -0.4401183586996284
+    },
+    {
+      "family": "staggered",
+      "index": 17,
+      "candidate": 17,
+      "goal": [
+        1.9680467683475782,
+        -0.7815671393462703
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.310354547918295,
+      "duration": 37.861910682787,
+      "timeout": 47.861910682787,
+      "scenario_sha256": "2462dc3dd9ca7b909b6b47426923e3d397b46d266304d2ad980c91347f030798",
+      "sampled_reference_sha256": "a5cde9c13e02883494b071dbc0dc8497d57bdd8f811fa93ad26bf18d1eebc2ca",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_17.txt",
+      "world_goal": [
+        2.117312764481,
+        0.032278988136
+      ],
+      "world_initial_yaw": 0.39327243764139386,
+      "bearing": -0.3780283564236133
+    },
+    {
+      "family": "staggered",
+      "index": 18,
+      "candidate": 18,
+      "goal": [
+        1.9299615126922167,
+        1.0512435375926596
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2917724893284097,
+      "duration": 34.68181958148392,
+      "timeout": 44.68181958148392,
+      "scenario_sha256": "e5c6a395e383a1b3be182d44aeeaf7423052a0cf410b7bc5a1e56f21bb9cb60d",
+      "sampled_reference_sha256": "f82417e185001c74441747cff11e990af80c892fa8f3e442ea4fe3015924e4ea",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_18.txt",
+      "world_goal": [
+        2.195176442056,
+        0.105189372305
+      ],
+      "world_initial_yaw": -0.45088062435663856,
+      "bearing": 0.4987624118904689
+    },
+    {
+      "family": "staggered",
+      "index": 19,
+      "candidate": 19,
+      "goal": [
+        1.6712750192537935,
+        1.3709240038503994
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1454886300700697,
+      "duration": 36.29390438129838,
+      "timeout": 46.29390438129838,
+      "scenario_sha256": "8df4bfacd0c275dc11f0a872e8592faa6a8e35aecd1cb481497d5696bc02b14f",
+      "sampled_reference_sha256": "6f052c51a24f043907d2c1ba73c3ec9f2cab8241bd28279b791e92d7a134375e",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_19.txt",
+      "world_goal": [
+        2.160796515239,
+        0.059592231423
+      ],
+      "world_initial_yaw": -0.6594169802991279,
+      "bearing": 0.686988817555746
+    },
+    {
+      "family": "staggered",
+      "index": 20,
+      "candidate": 20,
+      "goal": [
+        -1.8647690946892288,
+        1.080628825874496
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2038129709571153,
+      "duration": 35.35817039416049,
+      "timeout": 45.35817039416049,
+      "scenario_sha256": "b328dfea3742951e5fce0e527e6317aa40b893e016d3ef3a436fb24d373c55fd",
+      "sampled_reference_sha256": "e443ea076a7944ccd1164aa9d018ce2104865e94b2c51e56063925f3a9f79b43",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_20.txt",
+      "world_goal": [
+        2.154066864632,
+        -0.071542843901
+      ],
+      "world_initial_yaw": -2.6495857462111405,
+      "bearing": 2.616385033540584
+    },
+    {
+      "family": "staggered",
+      "index": 21,
+      "candidate": 21,
+      "goal": [
+        1.2783923899742518,
+        -2.101300694561485
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.418649313843933,
+      "duration": 36.302528156314956,
+      "timeout": 46.302528156314956,
+      "scenario_sha256": "b3ab894d262ddb427d67b415d7eb71646e205373f8a04c975c4867e047cf7faf",
+      "sampled_reference_sha256": "53f652cba9b36429e551db3bae22fc00cd3b02903603495c567a7602ecef77c0",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_21.txt",
+      "world_goal": [
+        2.459620770787,
+        0.004168407588
+      ],
+      "world_initial_yaw": 1.025931502189465,
+      "bearing": -1.0242367679252329
+    },
+    {
+      "family": "staggered",
+      "index": 22,
+      "candidate": 22,
+      "goal": [
+        1.6541555149155869,
+        1.761030929279155
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.3611218407484875,
+      "duration": 36.31653782211873,
+      "timeout": 46.31653782211873,
+      "scenario_sha256": "cfd14484a1ab30ea0095e4117d0796718eb90e3091b3fba3b3bcfc314deb10af",
+      "sampled_reference_sha256": "93633367640d38d1ce48d2485f152bdfd37f16fe99ff077c593d5380ec4e133b",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_22.txt",
+      "world_goal": [
+        2.414174071763,
+        -0.09604141102
+      ],
+      "world_initial_yaw": -0.8564434592404706,
+      "bearing": 0.8166821205140972
+    },
+    {
+      "family": "staggered",
+      "index": 23,
+      "candidate": 23,
+      "goal": [
+        0.7636702411027552,
+        2.2259326370644823
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.3658131743387454,
+      "duration": 31.423970506799968,
+      "timeout": 41.42397050679997,
+      "scenario_sha256": "c85383ad992c8684ce42f92ccaa6dd13862df059ff6ea5dbcbe8c75eb0069db0",
+      "sampled_reference_sha256": "545346f107ffc5c563eb11fb7f19bd088720f53e3102e9b763fd089fb762e40e",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_23.txt",
+      "world_goal": [
+        2.350323802665,
+        -0.118094726898
+      ],
+      "world_initial_yaw": -1.290504597268881,
+      "bearing": 1.240300666471055
+    },
+    {
+      "family": "staggered",
+      "index": 24,
+      "candidate": 24,
+      "goal": [
+        -2.2857320624541084,
+        0.8351878395337543
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.397020980418738,
+      "duration": 33.79996244965081,
+      "timeout": 43.79996244965081,
+      "scenario_sha256": "b77a6447af2a74d9b6847a22039a6150d351bb12b862a909495ed68aedc7c2e0",
+      "sampled_reference_sha256": "b59484ffebbfc171aee45ddbe6f08892c1b657d9b976a3915a769052a26fb753",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "staggered_24.txt",
+      "world_goal": [
+        2.430667497017,
+        0.1181749025
+      ],
+      "world_initial_yaw": -2.7426920300034188,
+      "bearing": 2.791272069421183
+    },
+    {
+      "family": "elbow",
+      "index": 0,
+      "candidate": 0,
+      "goal": [
+        -1.7264368143173796,
+        1.3761729130934928
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.168590040256414,
+      "duration": 38.1363232707563,
+      "timeout": 48.1363232707563,
+      "scenario_sha256": "2cdc647a611f12d8d54e704c2e2da720ebd225092d244d40b8d544c29b5e307e",
+      "sampled_reference_sha256": "7c900ee89d248e8f4e632723bfc72c0d1051824e53dcbfc33fa8dcfe4476a8ff",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_00.txt",
+      "world_goal": [
+        2.207798390139,
+        0.007888539929
+      ],
+      "world_initial_yaw": -2.4650388168594395,
+      "bearing": 2.4686118362051412
+    },
+    {
+      "family": "elbow",
+      "index": 1,
+      "candidate": 1,
+      "goal": [
+        -1.4047630533666013,
+        -1.934884020430372
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.233168026156651,
+      "duration": 33.967350379345675,
+      "timeout": 43.967350379345675,
+      "scenario_sha256": "e9cc9bce5ee69fe40f2252f24b280b6bc252c1c0f8e342be70a443de42c7ee59",
+      "sampled_reference_sha256": "5b42d908a765df9f6afc9764926527fbd8e69dfbb75b2f239d61a045b72533c9",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_01.txt",
+      "world_goal": [
+        2.388137844311,
+        0.118038320855
+      ],
+      "world_initial_yaw": 2.2481590231378643,
+      "bearing": -2.1987722850943503
+    },
+    {
+      "family": "elbow",
+      "index": 2,
+      "candidate": 2,
+      "goal": [
+        0.7520103176582859,
+        1.9870672805469758
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9970734567635287,
+      "duration": 29.216440905089836,
+      "timeout": 39.21644090508984,
+      "scenario_sha256": "7216bcd650d0f69144344eae6cb64d8ba7cc926f825ede248427b6853e0dd4ea",
+      "sampled_reference_sha256": "e11fe02c63bd9a2c85d4627bf3b807e3296b08a6d64c4b054b0926ff7557abdd",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_02.txt",
+      "world_goal": [
+        2.124303859452,
+        -0.035902757585
+      ],
+      "world_initial_yaw": -1.2259017067662328,
+      "bearing": 1.209002363687926
+    },
+    {
+      "family": "elbow",
+      "index": 3,
+      "candidate": 3,
+      "goal": [
+        1.8825113020293034,
+        1.5948082151599077
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.237500003280501,
+      "duration": 34.70023697325587,
+      "timeout": 44.70023697325587,
+      "scenario_sha256": "0cdf37c0ce33133ac377e230fa6c8de3e124d03380293392cc4c37c374214f58",
+      "sampled_reference_sha256": "df4ba73a93090c988c5075906105515020c35df6374f94aae959ba501fee5c37",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_03.txt",
+      "world_goal": [
+        2.466207163163,
+        0.071304093663
+      ],
+      "world_initial_yaw": -0.6739447534927674,
+      "bearing": 0.7028491522314005
+    },
+    {
+      "family": "elbow",
+      "index": 4,
+      "candidate": 4,
+      "goal": [
+        1.2273490330813708,
+        -1.8701464146767135
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1855932183591107,
+      "duration": 35.39985584658458,
+      "timeout": 45.39985584658458,
+      "scenario_sha256": "412e268dafa4c96cc5c9bf668ebb4e109fa07db0025551a8db83497f89e90a05",
+      "sampled_reference_sha256": "b64efbe0bb5725ef1558316bcf3c6582127c9e7457a6e66f11eb22fc6dffbd3e",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_04.txt",
+      "world_goal": [
+        2.236918930983,
+        0.005192065467
+      ],
+      "world_initial_yaw": 0.9923365867430913,
+      "bearing": -0.9900155119507987
+    },
+    {
+      "family": "elbow",
+      "index": 5,
+      "candidate": 5,
+      "goal": [
+        1.5374147828605782,
+        1.5402332185952423
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9786654328484965,
+      "duration": 29.482880800244505,
+      "timeout": 39.4828808002445,
+      "scenario_sha256": "20fa9dc562aa284841e21afedd21764a190f50e0093ff261d16dc6b504541cff",
+      "sampled_reference_sha256": "fde312ad6041b30111bc5e3ab2bdae3516962499288bc97c3f0ae9f130064708",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_05.txt",
+      "world_goal": [
+        2.176226532752,
+        -0.000812630732
+      ],
+      "world_initial_yaw": -0.7866873517296105,
+      "bearing": 0.7863139389979854
+    },
+    {
+      "family": "elbow",
+      "index": 6,
+      "candidate": 6,
+      "goal": [
+        1.8179143038414234,
+        1.1957885138281954
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0866899387967255,
+      "duration": 39.40385997823639,
+      "timeout": 49.40385997823639,
+      "scenario_sha256": "0fadb645929a69ec70dc689edcbc39107e73742ef0daed69a3d9d01ee6bed683",
+      "sampled_reference_sha256": "3fe3ad4264c0422b3b59b10e11f5d41573749b29fda44ac55268b668f328c80a",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_06.txt",
+      "world_goal": [
+        2.171728208733,
+        0.135348340618
+      ],
+      "world_initial_yaw": -0.5195829903508393,
+      "bearing": 0.5818253602803595
+    },
+    {
+      "family": "elbow",
+      "index": 7,
+      "candidate": 7,
+      "goal": [
+        -2.3774650589568926,
+        -0.3057030595336616
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2630745849081064,
+      "duration": 35.79368135035245,
+      "timeout": 45.79368135035245,
+      "scenario_sha256": "668acc26b0d73856b01f04d1f9e2c6954f263bbec85c21505c8517d92581118b",
+      "sampled_reference_sha256": "e7190079704c78800c971fba2a8a90e2ce380196090695b6be22b72c98676cc3",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_07.txt",
+      "world_goal": [
+        2.39700624049,
+        -0.012471977435
+      ],
+      "world_initial_yaw": 3.0085076428836963,
+      "bearing": -3.0137107435998858
+    },
+    {
+      "family": "elbow",
+      "index": 8,
+      "candidate": 8,
+      "goal": [
+        -0.8118543544679768,
+        2.252370470546769
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2205307214695864,
+      "duration": 37.5260222466457,
+      "timeout": 47.5260222466457,
+      "scenario_sha256": "bd86e91af3666631213d951f02fd54beb96b235bf276d5f818bb34541d23cfb4",
+      "sampled_reference_sha256": "3c78a1acfbc32124a5728f4f0958cec25eeef7612961e765679de4e42d6162a5",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_08.txt",
+      "world_goal": [
+        2.390375670298,
+        0.135589027237
+      ],
+      "world_initial_yaw": -1.8600831009399474,
+      "bearing": 1.916745277673091
+    },
+    {
+      "family": "elbow",
+      "index": 9,
+      "candidate": 9,
+      "goal": [
+        -1.0542781659191094,
+        1.8226199626488468
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9860090021054737,
+      "duration": 32.0400347138924,
+      "timeout": 42.0400347138924,
+      "scenario_sha256": "949f99458e81d1eefb8a68e1a69047595ce9bcc3f9b06464698ffce9b81301fa",
+      "sampled_reference_sha256": "f7948c5aab1f90c3b353f7ef8d87f948a10624e3976c6c59e1b243e85e626739",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_09.txt",
+      "world_goal": [
+        2.100824998204,
+        -0.141351711348
+      ],
+      "world_initial_yaw": -2.1623954321004293,
+      "bearing": 2.0952127855573215
+    },
+    {
+      "family": "elbow",
+      "index": 10,
+      "candidate": 10,
+      "goal": [
+        1.4654096602859572,
+        1.9850870968707377
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.323911417005416,
+      "duration": 29.54777507605773,
+      "timeout": 39.54777507605773,
+      "scenario_sha256": "b47cfdd939eb1a2f676c0263fd849d5153442de73d7fbf184b90abe85905b466",
+      "sampled_reference_sha256": "73f7b9ce226c3ae9f5339710726fcce133509f80fb723e249f918617f45de188",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_10.txt",
+      "world_goal": [
+        2.465661031318,
+        0.092260139074
+      ],
+      "world_initial_yaw": -0.8974835361994442,
+      "bearing": 0.9348841018052213
+    },
+    {
+      "family": "elbow",
+      "index": 11,
+      "candidate": 11,
+      "goal": [
+        2.2567874120565015,
+        0.9246455843773219
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1860717139211183,
+      "duration": 33.62883128593764,
+      "timeout": 43.62883128593764,
+      "scenario_sha256": "f8e0cb2880d843798b9559641c70e52a1a26cbaa8767c9fc402920f5939925d5",
+      "sampled_reference_sha256": "df23290df502aa98a11442a5ebbdd5b6d69516fa8dc83f184c45c1d69e8478c3",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_11.txt",
+      "world_goal": [
+        2.436228197484,
+        0.113362470461
+      ],
+      "world_initial_yaw": -0.3423570520900685,
+      "bearing": 0.38885547057007913
+    },
+    {
+      "family": "elbow",
+      "index": 12,
+      "candidate": 12,
+      "goal": [
+        -2.079439231231389,
+        -0.45030583601464413
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.042094308002502,
+      "duration": 35.16774545882255,
+      "timeout": 45.16774545882255,
+      "scenario_sha256": "c9d4b784841d265a2091d4b04d082e2f870a340f506b7e504250fc48a4249c82",
+      "sampled_reference_sha256": "7aa3d0b3181d2ce5dee17883d1d1feb706e1b703dbb9d591a1aae7d85d390304",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_12.txt",
+      "world_goal": [
+        2.125752937071,
+        -0.089539448664
+      ],
+      "world_initial_yaw": 2.8862375446989406,
+      "bearing": -2.9283339471968364
+    },
+    {
+      "family": "elbow",
+      "index": 13,
+      "candidate": 13,
+      "goal": [
+        1.162130036995344,
+        1.8910297062594206
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2046748023062674,
+      "duration": 36.534736404722665,
+      "timeout": 46.534736404722665,
+      "scenario_sha256": "43d8287784748394262db63ba6510859c6ab73ae80df9a891068c7f02d22c066",
+      "sampled_reference_sha256": "ceb3571569704dbdeccaf7b0d56bfab08798676cd7a1fe26d17d50e1aa41b12c",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_13.txt",
+      "world_goal": [
+        2.219423852194,
+        -0.026407142116
+      ],
+      "world_initial_yaw": -1.031645441077191,
+      "bearing": 1.019747805540696
+    },
+    {
+      "family": "elbow",
+      "index": 14,
+      "candidate": 14,
+      "goal": [
+        -1.2668325350391574,
+        1.8850383639634298
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.22385772208526,
+      "duration": 33.4311287024903,
+      "timeout": 43.4311287024903,
+      "scenario_sha256": "590d195f1bbaf5b81d51ddb96e9961064bb3f57d7c35c902e77bd6e867352eb7",
+      "sampled_reference_sha256": "538b4f98631d3856ad7773a16f4fea96da2a1abfec9607454d71c18b1a93bb05",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_14.txt",
+      "world_goal": [
+        2.271019118475,
+        0.026579483981
+      ],
+      "world_initial_yaw": -2.1508106243655907,
+      "bearing": 2.16251385938509
+    },
+    {
+      "family": "elbow",
+      "index": 15,
+      "candidate": 15,
+      "goal": [
+        -1.6513225699451632,
+        -1.3351966878088004
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.079136793033302,
+      "duration": 36.04166635526814,
+      "timeout": 46.04166635526814,
+      "scenario_sha256": "36646ea3cf1e8c8b6376cebd17c59c22cbf2c4d7f15bcaa6661d579be48699a3",
+      "sampled_reference_sha256": "f876f4a34157d835c7a4126115e99977c9806dd6dc6c28b4f51e8d3aa5c9a541",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_15.txt",
+      "world_goal": [
+        2.122611049747,
+        0.064333169033
+      ],
+      "world_initial_yaw": 2.4919519679689124,
+      "bearing": -2.4616527377089756
+    },
+    {
+      "family": "elbow",
+      "index": 16,
+      "candidate": 16,
+      "goal": [
+        -0.2976248615457625,
+        -2.2938261864753855
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2442274558186472,
+      "duration": 36.56163650563299,
+      "timeout": 46.56163650563299,
+      "scenario_sha256": "55f1935d9f9b3f46869ed46d2694fcd0777cc63ecf5e627fb13a104120bc7c2e",
+      "sampled_reference_sha256": "eb763a487fc5f7633e151c8364f3e26cf259690b2dcaab8eed3906dc44fb34dd",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_16.txt",
+      "world_goal": [
+        2.309241766097,
+        0.13274636599
+      ],
+      "world_initial_yaw": 1.7572475032907464,
+      "bearing": -1.6998258695744537
+    },
+    {
+      "family": "elbow",
+      "index": 17,
+      "candidate": 17,
+      "goal": [
+        -2.034554116607666,
+        -0.7803979857001108
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.161411522599019,
+      "duration": 35.89647260949576,
+      "timeout": 45.89647260949576,
+      "scenario_sha256": "e27db4d47ef9a2b2d428f4e8c988ba582828197bd593cef47bdf5cd920668e0c",
+      "sampled_reference_sha256": "dffd7e34ce7c60bbe7df9bd1d808292cde728b178b2a44c30c67b6d132b9251f",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_17.txt",
+      "world_goal": [
+        2.175387166436,
+        0.126973011288
+      ],
+      "world_initial_yaw": 2.833629925783069,
+      "bearing": -2.7753280677516377
+    },
+    {
+      "family": "elbow",
+      "index": 18,
+      "candidate": 18,
+      "goal": [
+        1.1689893614293279,
+        1.8559612151253546
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9329059861909017,
+      "duration": 27.373853435997006,
+      "timeout": 37.373853435997006,
+      "scenario_sha256": "8c62b37149f1fe792eae73c584704f11b3afc9912a68d642b6eaeddf7381fa29",
+      "sampled_reference_sha256": "b43ee8c6a8264caf3626ffcc41901accd578ff94995ceaaf053f4cb86bf0422a",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_18.txt",
+      "world_goal": [
+        2.192500371237,
+        -0.063798756337
+      ],
+      "world_initial_yaw": -1.0378026892113947,
+      "bearing": 1.0087122682758276
+    },
+    {
+      "family": "elbow",
+      "index": 19,
+      "candidate": 19,
+      "goal": [
+        -0.6434502051837537,
+        2.014847547762065
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0201592087478226,
+      "duration": 31.771905849461824,
+      "timeout": 41.771905849461824,
+      "scenario_sha256": "e9fb07619554eac0781559af916d242cc0307bf8aa4eb4424e0278b996c6476c",
+      "sampled_reference_sha256": "e4795c9da056b8bebc0468d20cf7b737cbdaaf3a795006cd134b0a66a52a9927",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_19.txt",
+      "world_goal": [
+        2.112392843127,
+        -0.106935885369
+      ],
+      "world_initial_yaw": -1.9304933569290303,
+      "bearing": 1.8799134291641875
+    },
+    {
+      "family": "elbow",
+      "index": 20,
+      "candidate": 20,
+      "goal": [
+        -0.8406330318751408,
+        -2.074802218784433
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.020860060309825,
+      "duration": 35.92302799012056,
+      "timeout": 45.92302799012056,
+      "scenario_sha256": "5bba6ae4329d807459f827ecd97dcb93858ff815c2275b936b6cddaa957f05db",
+      "sampled_reference_sha256": "45ea3d8a37c7d1e06b111d458bb2c007278d714a5155678fb089f75437fd6ae0",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_20.txt",
+      "world_goal": [
+        2.238630859583,
+        -0.000125996337
+      ],
+      "world_initial_yaw": 1.955689319358184,
+      "bearing": -1.9557456021242008
+    },
+    {
+      "family": "elbow",
+      "index": 21,
+      "candidate": 21,
+      "goal": [
+        2.1469209208612683,
+        0.6089513491281314
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2123060359593545,
+      "duration": 34.842635606853754,
+      "timeout": 44.842635606853754,
+      "scenario_sha256": "7ed8d7d1c6cfa3645316aaed7828b059b1c4fbc498a8030999ff386e7732274b",
+      "sampled_reference_sha256": "a46f278cd91d799a376bec9ed914d02e512fd6836de7535f45adb2bef9cf1297",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_21.txt",
+      "world_goal": [
+        2.230739702951,
+        0.062382399079
+      ],
+      "world_initial_yaw": -0.2484227058971502,
+      "bearing": 0.27638031335656843
+    },
+    {
+      "family": "elbow",
+      "index": 22,
+      "candidate": 22,
+      "goal": [
+        0.8873660291860334,
+        2.100967018693732
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.102950779283982,
+      "duration": 29.30340980928027,
+      "timeout": 39.30340980928027,
+      "scenario_sha256": "c2d542e8199e3cf3043295fec6552fa3d250773675dc03d05d697ecb726e21ab",
+      "sampled_reference_sha256": "7941f6c62467d142da58731960779598105108513e20d5564153e4dff3c6d043",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_22.txt",
+      "world_goal": [
+        2.280467734627,
+        -0.030786274822
+      ],
+      "world_initial_yaw": -1.1846624231373974,
+      "bearing": 1.1711632605324345
+    },
+    {
+      "family": "elbow",
+      "index": 23,
+      "candidate": 23,
+      "goal": [
+        -0.9881061567359886,
+        -1.9746812819484312
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0137732602236467,
+      "duration": 36.17007125316368,
+      "timeout": 46.17007125316368,
+      "scenario_sha256": "71f2d8a6d4fcfb3ef27c35cb7c595348b9db7e2dd9a8ecf384b96ef9631a18cb",
+      "sampled_reference_sha256": "19b6e992022137c4c6f2f007c9007998c72b29cd4a132aeafcbd2d6cc9e58eca",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_23.txt",
+      "world_goal": [
+        2.208029337185,
+        0.018066222279
+      ],
+      "world_initial_yaw": 2.0429358946800162,
+      "bearing": -2.03475402008405
+    },
+    {
+      "family": "elbow",
+      "index": 24,
+      "candidate": 24,
+      "goal": [
+        0.8841104497106931,
+        -2.195666152361106
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.2366187581260513,
+      "duration": 31.383556059468035,
+      "timeout": 41.383556059468035,
+      "scenario_sha256": "2781132ab06992ea4772d0115a1fc2e9c7ee1fc0d2cd4ade9fa37d86caca970d",
+      "sampled_reference_sha256": "7abd5be43255c3f534e24c994e00dd42322025f52aa5732d9c9f9eb1eb7afd08",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "elbow_24.txt",
+      "world_goal": [
+        2.36698144001,
+        5.0596979e-05
+      ],
+      "world_initial_yaw": 1.18801894956718,
+      "bearing": -1.1879975734050618
+    },
+    {
+      "family": "corridor",
+      "index": 0,
+      "candidate": 1,
+      "goal": [
+        0.38704238860701756,
+        -2.216841268128444
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9411366380901125,
+      "duration": 32.928767651928574,
+      "timeout": 42.928767651928574,
+      "scenario_sha256": "68a5b4d34c9d22f867647ac6418f50bbcaf4f2e34e6389b9c6c0c93ac2fa4a92",
+      "sampled_reference_sha256": "c2a66bb1b0ede8bcda5bdd90e85aaea9a399394fc4459af879aa8970a11ba2f4",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_00.txt",
+      "world_goal": [
+        2.246655396126,
+        -0.129331162965
+      ],
+      "world_initial_yaw": 1.3404440966261504,
+      "bearing": -1.39794672253726
+    },
+    {
+      "family": "corridor",
+      "index": 1,
+      "candidate": 2,
+      "goal": [
+        2.045161132710719,
+        -0.8092979685922901
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9731977131641987,
+      "duration": 32.11652559741432,
+      "timeout": 42.11652559741432,
+      "scenario_sha256": "f6a3e39dc7b588c6775ff3ef463e61a3fc743090d846de1b1d3345c60d06b540",
+      "sampled_reference_sha256": "bdf28e40fcc28c9d274e589285830229e7697e02ff0556383c8ec728f4332fda",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_01.txt",
+      "world_goal": [
+        2.199278976984,
+        -0.028622405811
+      ],
+      "world_initial_yaw": 0.3637919919713708,
+      "bearing": -0.37680570705380606
+    },
+    {
+      "family": "corridor",
+      "index": 2,
+      "candidate": 5,
+      "goal": [
+        -0.5272084101507046,
+        -2.0427694330948634
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.8298837208601992,
+      "duration": 30.332378074805924,
+      "timeout": 40.33237807480592,
+      "scenario_sha256": "bc291ff2ba1c9c99d27809e81e75d0b890b87ef7391a6b3bb1bb3693a6eed8fd",
+      "sampled_reference_sha256": "293ea21104735380a1de6aa1e3aa1df70768dbfd8c225321f6f55e9990b69383",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_02.txt",
+      "world_goal": [
+        2.105140995731,
+        0.138697702263
+      ],
+      "world_initial_yaw": 1.8891600734395197,
+      "bearing": -1.8233699271494432
+    },
+    {
+      "family": "corridor",
+      "index": 3,
+      "candidate": 6,
+      "goal": [
+        2.165948663943374,
+        -0.4119405532570404
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0797596906443716,
+      "duration": 32.02457942382995,
+      "timeout": 42.02457942382995,
+      "scenario_sha256": "b60a512487b0436256a80a6f16d5fb7b53dfb7e4dbbbcc169f2f5673fb60fdfc",
+      "sampled_reference_sha256": "dacfd2fc23c76ffb538cd03185d4549fe778580f8363659f04781c3ee3d0add2",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_03.txt",
+      "world_goal": [
+        2.202186302616,
+        -0.106790087678
+      ],
+      "world_initial_yaw": 0.13948997446842037,
+      "bearing": -0.1879447751062617
+    },
+    {
+      "family": "corridor",
+      "index": 4,
+      "candidate": 9,
+      "goal": [
+        1.2330923115915975,
+        2.061101783136623
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.23942089111902,
+      "duration": 35.47376273111909,
+      "timeout": 45.47376273111909,
+      "scenario_sha256": "64bc1b26c2396585f48193ec82e77c78d8b65bd129319e71cd3d5e06cbe5caa9",
+      "sampled_reference_sha256": "fcdf70715b9f40b1212611ac3486e97bda0a1bbe85b66cac096a9d2550d7a2ee",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_04.txt",
+      "world_goal": [
+        2.397191791292,
+        -0.148757269125
+      ],
+      "world_initial_yaw": -1.0936262818101588,
+      "bearing": 1.0316509468133797
+    },
+    {
+      "family": "corridor",
+      "index": 5,
+      "candidate": 10,
+      "goal": [
+        -2.033000936049617,
+        -0.6948184217535869
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9681004492500285,
+      "duration": 34.752235737780566,
+      "timeout": 44.752235737780566,
+      "scenario_sha256": "e82d305aaaae20dd369ef1253f2f544bdaac7ed1dd4ea468e33beef27157d828",
+      "sampled_reference_sha256": "160c784e5b8b50265cff8d18e356003795320413a5fa730285c9255f23e1f427",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_05.txt",
+      "world_goal": [
+        2.148439133047,
+        0.00864504361
+      ],
+      "world_initial_yaw": 2.8162923991657838,
+      "bearing": -2.8122685490977934
+    },
+    {
+      "family": "corridor",
+      "index": 6,
+      "candidate": 14,
+      "goal": [
+        1.291301431817189,
+        1.9766693047385735
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1485733467271686,
+      "duration": 34.636854751766826,
+      "timeout": 44.636854751766826,
+      "scenario_sha256": "fe67408edb27b7d29f7ad1eab07ac28c6cacc94466dfca6ad952751a9a3cc422",
+      "sampled_reference_sha256": "db254c08cfd3637a27b44b7dcf685963020105c4b9acce767f73316b6b1a5d66",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_06.txt",
+      "world_goal": [
+        2.360376731788,
+        -0.057468357751
+      ],
+      "world_initial_yaw": -1.016467124954323,
+      "bearing": 0.992124821620378
+    },
+    {
+      "family": "corridor",
+      "index": 7,
+      "candidate": 21,
+      "goal": [
+        2.095983522916054,
+        -0.33152135546958716
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0146495460865252,
+      "duration": 31.61511571655038,
+      "timeout": 41.61511571655038,
+      "scenario_sha256": "0e7630c7c96daea8a6fd386f40b9b03622216621dcaac8010f59f5e9f8b911ff",
+      "sampled_reference_sha256": "8b6cdfda00369b976c2c8c37695dff6393b222b9738c77a2223a33a2a12beb18",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_07.txt",
+      "world_goal": [
+        2.120356239895,
+        -0.084514811757
+      ],
+      "world_initial_yaw": 0.11703257497016706,
+      "bearing": -0.1568702663578969
+    },
+    {
+      "family": "corridor",
+      "index": 8,
+      "candidate": 22,
+      "goal": [
+        -1.7473247296460603,
+        -1.468209321276472
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.120476979862082,
+      "duration": 36.32535000279626,
+      "timeout": 46.32535000279626,
+      "scenario_sha256": "36089b0f7a3fd9c420c9a0ef29ba0abfdc60c18f43cb793c2fe1c6c13c3a0fa7",
+      "sampled_reference_sha256": "2e891c3f61e39ee65db1478536586bb38f51f38156c2b95172f90b59c4f68179",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_08.txt",
+      "world_goal": [
+        2.280227766353,
+        0.096662585671
+      ],
+      "world_initial_yaw": 2.485145926739695,
+      "bearing": -2.4427796566140647
+    },
+    {
+      "family": "corridor",
+      "index": 9,
+      "candidate": 23,
+      "goal": [
+        -2.0084170697942008,
+        -1.1200818989224095
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.073314736665334,
+      "duration": 35.49938918665984,
+      "timeout": 45.49938918665984,
+      "scenario_sha256": "d8ac39caa344fd404c131be3f5359d1d94af3950510e78e1999072ba90c84c13",
+      "sampled_reference_sha256": "c938f1dee018931ed811f85fad82af7233a8f94c1a71491306cc5d1f142682b9",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_09.txt",
+      "world_goal": [
+        2.299593351832,
+        0.013892542763
+      ],
+      "world_initial_yaw": 2.6389028641528736,
+      "bearing": -2.6328616335405375
+    },
+    {
+      "family": "corridor",
+      "index": 10,
+      "candidate": 24,
+      "goal": [
+        -0.6194987764711722,
+        -2.0166900563496784
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9825547038236335,
+      "duration": 36.80605454792257,
+      "timeout": 46.80605454792257,
+      "scenario_sha256": "c4521b2011752ef2292861e403157f4b0de1beb582100cb42390d037f74b52f1",
+      "sampled_reference_sha256": "de3fd98f73bc017d579b42ad46ce8e4eb74d65fcd57e7276fb826069b267938c",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_10.txt",
+      "world_goal": [
+        2.108991132405,
+        0.054533667271
+      ],
+      "world_initial_yaw": 1.8946845370453733,
+      "bearing": -1.8688325942886719
+    },
+    {
+      "family": "corridor",
+      "index": 11,
+      "candidate": 25,
+      "goal": [
+        0.9675323286991152,
+        -1.9976181393530787
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0466809526624203,
+      "duration": 34.412177103593095,
+      "timeout": 44.412177103593095,
+      "scenario_sha256": "d3c7bb65e265490cdfc61bccb0be41f87da9caeabb5c95099ac239fb97845eba",
+      "sampled_reference_sha256": "fa094813c9581f1ea1a8c6a106ecc908dece7aed3eb33e15eb89a8199a0a1b2c",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_11.txt",
+      "world_goal": [
+        2.218981940674,
+        0.052117029012
+      ],
+      "world_initial_yaw": 1.143235196390087,
+      "bearing": -1.1197526037487935
+    },
+    {
+      "family": "corridor",
+      "index": 12,
+      "candidate": 26,
+      "goal": [
+        0.6314304809584321,
+        2.052265510844397
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.841177157173908,
+      "duration": 28.007091950553974,
+      "timeout": 38.00709195055397,
+      "scenario_sha256": "6406eed046abbcade64af73931ca6ec9be55052b4c65c02edf5c779c57bad12f",
+      "sampled_reference_sha256": "9baab904b4f5b9dd2be2b0532dc98091b8802d5338220d0993ca1542a6ee6500",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_12.txt",
+      "world_goal": [
+        2.142303377407,
+        -0.145032473727
+      ],
+      "world_initial_yaw": -1.339909517361937,
+      "bearing": 1.2723133441267027
+    },
+    {
+      "family": "corridor",
+      "index": 13,
+      "candidate": 27,
+      "goal": [
+        1.4057638745830756,
+        -1.6477593134941064
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0073502807872114,
+      "duration": 33.68895790505188,
+      "timeout": 43.68895790505188,
+      "scenario_sha256": "ea876d40c1b437768d66b707afc91b34ca0f6d4566989b88065e4b707bb10387",
+      "sampled_reference_sha256": "9c3a3296b94c3519b3c67952f205a57378d3474053e877a646392644cb7a7c78",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_13.txt",
+      "world_goal": [
+        2.165462524802,
+        0.045330783884
+      ],
+      "world_initial_yaw": 0.8854145642391682,
+      "bearing": -0.864484086987971
+    },
+    {
+      "family": "corridor",
+      "index": 14,
+      "candidate": 29,
+      "goal": [
+        2.082710867983789,
+        0.5643466926772616
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0487662994774882,
+      "duration": 32.921789856496204,
+      "timeout": 42.921789856496204,
+      "scenario_sha256": "70cc3d9a9ed3286bd745c43726ec5bc1f71dcfbc7096f3343ddcbac2906c242f",
+      "sampled_reference_sha256": "f1755f1fd5249a7a5bee076b5531150fc0094a4ad10dd1b928905326e547f490",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_14.txt",
+      "world_goal": [
+        2.155335072534,
+        -0.103452763416
+      ],
+      "world_initial_yaw": -0.31257490803322563,
+      "bearing": 0.26461325800954644
+    },
+    {
+      "family": "corridor",
+      "index": 15,
+      "candidate": 30,
+      "goal": [
+        -0.5915474640234519,
+        -2.3182085049071914
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0956301872280467,
+      "duration": 31.389875689238806,
+      "timeout": 41.389875689238806,
+      "scenario_sha256": "c3dc9ec2e430da9a9c0c9325cdefacb8dfee47654ba5675d2b9782a0917a00dd",
+      "sampled_reference_sha256": "f6f15f24af924ec44869acd677b9b4f2d7fc209739e5e23b645e95241db39819",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_15.txt",
+      "world_goal": [
+        2.391820626996,
+        0.05668476597
+      ],
+      "world_initial_yaw": 1.8443340391948304,
+      "bearing": -1.8206390529009622
+    },
+    {
+      "family": "corridor",
+      "index": 16,
+      "candidate": 31,
+      "goal": [
+        1.32688569779827,
+        2.0461061993734284
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1503893390917055,
+      "duration": 34.19811295922746,
+      "timeout": 44.19811295922746,
+      "scenario_sha256": "ab9ad6b460f8724107bc6f779fa8187166bfde762e7bc18fc4a7bcec304160a8",
+      "sampled_reference_sha256": "60fb86301fd9a36ccd25cb9a6b0f6e9de66e40d9010e43beea18901c690b1fcb",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_16.txt",
+      "world_goal": [
+        2.438530269779,
+        0.027319544424
+      ],
+      "world_initial_yaw": -0.9842783724000848,
+      "bearing": 0.9954811865942129
+    },
+    {
+      "family": "corridor",
+      "index": 17,
+      "candidate": 32,
+      "goal": [
+        1.120648033487168,
+        -2.073136698682639
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.017188113745281,
+      "duration": 28.838656698587418,
+      "timeout": 38.838656698587414,
+      "scenario_sha256": "f844b4e81388fc7994d8aec65c7d3958d4d4c554d685e598b0c6095866108e4a",
+      "sampled_reference_sha256": "94bcd2a860ab4e35d9cab77496691397ca01bb001919b87b5e6bf43ea0b4d994",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_17.txt",
+      "world_goal": [
+        2.352840626525,
+        0.133748916096
+      ],
+      "world_initial_yaw": 1.1320167160727745,
+      "bearing": -1.0752321101524576
+    },
+    {
+      "family": "corridor",
+      "index": 18,
+      "candidate": 33,
+      "goal": [
+        0.09548668881101068,
+        -2.263111751837803
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0888606298263857,
+      "duration": 31.1342570699451,
+      "timeout": 41.1342570699451,
+      "scenario_sha256": "d8124cc1761a151f8f7fe258ea6084d4880d2e05b0ba4f4fbc1346e511e96a2a",
+      "sampled_reference_sha256": "f6e6856ffd8dd4f875ce4204828002c2593d1cdad4af345a8017e0d67ce2c500",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_18.txt",
+      "world_goal": [
+        2.264140962782,
+        -0.066769826262
+      ],
+      "world_initial_yaw": 1.4991470923268135,
+      "bearing": -1.5286286845019388
+    },
+    {
+      "family": "corridor",
+      "index": 19,
+      "candidate": 35,
+      "goal": [
+        2.227847793277339,
+        0.08533906020944652
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.9297432384522657,
+      "duration": 30.865767248828288,
+      "timeout": 40.86576724882829,
+      "scenario_sha256": "fe8af3378fb1caa09e8e81062af4c4db46d313e0959f6edcf6c6c1d0caf8bbce",
+      "sampled_reference_sha256": "617cfca0f0b96440c4320742dd6d3585d7a7c10ea6f1f7fe9c100ead0533e524",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_19.txt",
+      "world_goal": [
+        2.22630211139,
+        0.119027114678
+      ],
+      "world_initial_yaw": 0.015126303718553391,
+      "bearing": 0.03828688714182071
+    },
+    {
+      "family": "corridor",
+      "index": 20,
+      "candidate": 38,
+      "goal": [
+        -2.08239698886297,
+        -0.28782231333275266
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.0032995561338978,
+      "duration": 34.02413682599918,
+      "timeout": 44.02413682599918,
+      "scenario_sha256": "5a843bf3474cf8daa5c9711bf60b187a7480a3823e94a5c2bed643646d9de661",
+      "sampled_reference_sha256": "beda1b2c60e8cfc6d039675fa34f84320abb83b2b948e8e941602ec01cebb6e8",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_20.txt",
+      "world_goal": [
+        2.10052534761,
+        -0.083738684762
+      ],
+      "world_initial_yaw": 2.964401536780853,
+      "bearing": -3.004246029070897
+    },
+    {
+      "family": "corridor",
+      "index": 21,
+      "candidate": 39,
+      "goal": [
+        -2.204806378290797,
+        -0.8659346607841317
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1553599361074847,
+      "duration": 34.09939972328551,
+      "timeout": 44.09939972328551,
+      "scenario_sha256": "085db81731c49324e1fdf4d4a7d78329f1412e81514887239a16a6d842179de6",
+      "sampled_reference_sha256": "f9cfcfb111230de42f74b23b7478de5db5dca1ed327698ee14ff0c86bc5e7737",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_21.txt",
+      "world_goal": [
+        2.368013753044,
+        -0.059370597888
+      ],
+      "world_initial_yaw": 2.742286408882073,
+      "bearing": -2.7673530548766085
+    },
+    {
+      "family": "corridor",
+      "index": 22,
+      "candidate": 40,
+      "goal": [
+        2.4071671488453235,
+        -0.35006606165679344
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.1998648138421912,
+      "duration": 32.28140036941742,
+      "timeout": 42.28140036941742,
+      "scenario_sha256": "74f9b7c48e4310a716dba8542d7bef8fa7098b77072cf28dae66139d87346920",
+      "sampled_reference_sha256": "a3f5a3e2303db0bc36ca22485dbbdcadb392626e0d76751f38ba7a87db7c2b82",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_22.txt",
+      "world_goal": [
+        2.431832737486,
+        -0.056475365385
+      ],
+      "world_initial_yaw": 0.12119498023657904,
+      "bearing": -0.14441418233734307
+    },
+    {
+      "family": "corridor",
+      "index": 23,
+      "candidate": 41,
+      "goal": [
+        1.430965125001321,
+        -1.8988310311585561
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 3.177593222411958,
+      "duration": 33.70511337146232,
+      "timeout": 43.70511337146232,
+      "scenario_sha256": "4a355e9262d250b1dbf6bdffd0128e845fda925ecbda7c25d01b925f8379eb2a",
+      "sampled_reference_sha256": "adb7cfb2f97a1f89775dff25decf7e814883c3dfbe529ce273bd4b8e18d0d60d",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_23.txt",
+      "world_goal": [
+        2.376285109088,
+        0.080557769255
+      ],
+      "world_initial_yaw": 0.9588809002234591,
+      "bearing": -0.9249931610631262
+    },
+    {
+      "family": "corridor",
+      "index": 24,
+      "candidate": 43,
+      "goal": [
+        1.33855215107682,
+        -1.7843938271403852
+      ],
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "length": 2.995102740024939,
+      "duration": 28.782458819594478,
+      "timeout": 38.78245881959448,
+      "scenario_sha256": "ee8f2e9873966c42ff1cbf59c1b1b614858e7469f38688bd8cda967158a9b452",
+      "sampled_reference_sha256": "337d729828573b8f99115dd045eec1a2e6ff30311d5fafc2d36761cb53f28e80",
+      "reference_hash_format": "little-endian float64, seven sample columns, times arange(0,duration+0.002,0.002)",
+      "scenario": "corridor_24.txt",
+      "world_goal": [
+        2.230446818804,
+        0.029835884036
+      ],
+      "world_initial_yaw": 0.9405789682438224,
+      "bearing": -0.927203126049687
+    }
+  ],
+  "rejected": [
+    {
+      "family": "corridor",
+      "candidate": 0,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.423900384801 0.142882981514\nobstacle divider 0.950000000000 -0.312186193683 1.150000000000 0.387813806317 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 3,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.181964058180 0.048494353395\nobstacle divider 0.950000000000 -0.376633241364 1.150000000000 0.323366758636 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 4,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.183375150376 0.094635587245\nobstacle divider 0.950000000000 -0.323432999587 1.150000000000 0.376567000413 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 7,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.422338490380 0.046614748014\nobstacle divider 0.950000000000 -0.321440963923 1.150000000000 0.378559036077 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 8,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.203937171492 -0.076116392812\nobstacle divider 0.950000000000 -0.322712944356 1.150000000000 0.377287055644 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 11,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.160133769138 0.053277341854\nobstacle divider 0.950000000000 -0.364385386544 1.150000000000 0.335614613456 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 12,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.137786575632 0.109005275765\nobstacle divider 0.950000000000 -0.383361059352 1.150000000000 0.316638940648 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 13,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.160076975673 -0.114540932264\nobstacle divider 0.950000000000 -0.326997603204 1.150000000000 0.373002396796 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 15,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.388624732338 -0.108989661191\nobstacle divider 0.950000000000 -0.322425201464 1.150000000000 0.377574798536 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 16,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.219040473485 0.026909365092\nobstacle divider 0.950000000000 -0.353366712115 1.150000000000 0.346633287885 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 17,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.204610297009 0.084898804061\nobstacle divider 0.950000000000 -0.364766554764 1.150000000000 0.335233445236 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 18,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.354437238575 -0.075457280475\nobstacle divider 0.950000000000 -0.315142389047 1.150000000000 0.384857610953 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 19,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.251067334409 -0.088351039340\nobstacle divider 0.950000000000 -0.324179375926 1.150000000000 0.375820624074 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 20,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.113695586635 0.067159909245\nobstacle divider 0.950000000000 -0.305628283334 1.150000000000 0.394371716666 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 28,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.100537088560 0.134287345012\nobstacle divider 0.950000000000 -0.356117867628 1.150000000000 0.343882132372 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 34,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.270723896175 -0.124347816004\nobstacle divider 0.950000000000 -0.307658892390 1.150000000000 0.392341107610 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 36,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.396472293150 0.040539639157\nobstacle divider 0.950000000000 -0.386683541129 1.150000000000 0.313316458871 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 37,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.145406199026 0.147440395626\nobstacle divider 0.950000000000 -0.343008047044 1.150000000000 0.356991952956 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    },
+    {
+      "family": "corridor",
+      "candidate": 42,
+      "scenario": "grid 120 100 0.05 -1.5 -2.5\ngoal 2.200796684618 -0.136024889640\nobstacle divider 0.950000000000 -0.316283988962 1.150000000000 0.383716011038 0.6\nobstacle lower 0.300000000000 -1.700000000000 1.800000000000 -1.500000000000 0.6\nobstacle upper 0.300000000000 1.500000000000 1.800000000000 1.700000000000 0.6\n",
+      "reason": "No complete A* path exists."
+    }
+  ],
+  "initial_pitch": 0,
+  "initial_velocity": 0,
+  "physics_dt": 0.001,
+  "control_dt": 0.002,
+  "torque_limit": 2,
+  "success": {
+    "distance": 0.1,
+    "velocity": 0.05,
+    "yaw_rate": 0.1,
+    "pitch": 0.1,
+    "hold": 0.5
+  },
+  "selection": "Original 100 obstacle scenes retained. All 100 bearings drawn once before control; no angular rejection.",
+  "version": "d18_full_circle_v1",
+  "bearing_seed": 518000,
+  "bearing_range": [
+    -3.141592653589793,
+    3.141592653589793
+  ],
+  "coordinate_frame": "Episode odometry; world geometry unchanged, configured initial world yaw varies.",
+  "source_manifest_sha256": "c82aad33d41953b174e0230bf5fa340dfde16b1c8e647fb424462aafa5da78eb"
+}
